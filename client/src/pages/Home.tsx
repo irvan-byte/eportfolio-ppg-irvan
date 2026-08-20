@@ -49,10 +49,10 @@ export default function Home() {
 
               <div className="lg:col-span-6 xl:col-span-7 relative">
                 <div className="relative min-h-[430px] rounded-[2rem] overflow-hidden shadow-2xl shadow-slate-300/70 border border-white">
-                  <img src="/manus-storage/hero-journey_8cb0c991.jpg" alt="Meja belajar dengan perangkat Informatika dan catatan refleksi" className="absolute inset-0 w-full h-full object-cover" />
+                  <img src="home.webp" alt="Meja belajar dengan perangkat Informatika dan catatan refleksi" className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/25 to-transparent" />
                   <div className="absolute left-6 sm:left-10 bottom-7 sm:bottom-10 max-w-xs text-white">
-                    <div className="font-mono text-cyan-300 text-xs tracking-[0.18em] uppercase mb-3">IRVANN</div>
+                    <div className="font-mono text-cyan-300 text-xs tracking-[0.18em] uppercase mb-3">IHA / 01</div>
                     <p className="font-serif text-2xl sm:text-3xl leading-tight">"Setiap kelas adalah ruang untuk belajar kembali."</p>
                   </div>
                   <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-sm rounded-2xl p-4 w-40 shadow-lg">
@@ -63,7 +63,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="absolute -bottom-5 -left-5 w-24 h-24 rounded-2xl bg-cyan-400 hidden sm:flex items-center justify-center shadow-xl rotate-3">
-                  <div className="font-mono font-black text-slate-950 text-center text-sm leading-[0.85] tracking-[-0.12em]"><span className="block">IRVOO</span><span className="block text-xs tracking-[-0.2em] opacity-70">&lt;/&gt;</span></div>
+                  <div className="font-mono font-black text-slate-950 text-center text-sm leading-[0.85] tracking-[-0.12em]"><span className="block">IHA</span><span className="block text-xs tracking-[-0.2em] opacity-70">&lt;/&gt;</span></div>
                 </div>
               </div>
             </div>
