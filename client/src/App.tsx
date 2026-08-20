@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch, useLocation } from "wouter";
+import { Route, Router as WouterRouter, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
@@ -25,6 +25,7 @@ function Router() {
   }
 
   return (
+     <WouterRouter base="/eportfolio-ppg-irvan">
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/tentang" component={About} />
@@ -43,7 +44,8 @@ function Router() {
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
-  );
+  </WouterRouter>
+      );
 }
 
 function App() {
