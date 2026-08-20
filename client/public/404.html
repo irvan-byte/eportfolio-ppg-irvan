@@ -1,21 +1,19 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>E-Portfolio</title>
-    <script>
-      const path = window.location.pathname;
-      const base = "/eportfolio-ppg-irvan/";
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script>
+    const path = window.location.pathname;
+    const repo = "/eportfolio-ppg-irvan";
 
-      if (path.startsWith(base)) {
-        const route = path.slice(base.length);
-        sessionStorage.setItem("spa-route", route + window.location.search);
-      }
+    const route = path.startsWith(repo)
+      ? path.slice(repo.length)
+      : path;
 
-      window.location.replace(base);
-    </script>
-  </head>
-  <body>
-    <p>Loading...</p>
-  </body>
+    window.location.replace(
+      repo + "/?redirect=" + encodeURIComponent(route + window.location.search + window.location.hash)
+    );
+  </script>
+</head>
+<body></body>
 </html>
