@@ -49,7 +49,7 @@ export default function Home() {
 
               <div className="lg:col-span-6 xl:col-span-7 relative">
                 <div className="relative min-h-[430px] rounded-[2rem] overflow-hidden shadow-2xl shadow-slate-300/70 border border-white">
-                  <img src="home.webp" alt="Meja belajar dengan perangkat Informatika dan catatan refleksi" className="absolute inset-0 w-full h-full object-cover" />
+                  <img src="../assets/home.webp" alt="Meja belajar dengan perangkat Informatika dan catatan refleksi" className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/25 to-transparent" />
                   <div className="absolute left-6 sm:left-10 bottom-7 sm:bottom-10 max-w-xs text-white">
                     <div className="font-mono text-cyan-300 text-xs tracking-[0.18em] uppercase mb-3">IHA / 01</div>
