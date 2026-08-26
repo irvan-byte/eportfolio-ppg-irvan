@@ -53,7 +53,11 @@ export function Navbar() {
       <div className="container mx-auto px-4 flex items-center justify-between gap-6">
         <Link href="/" className="flex items-center gap-3 group shrink-0">
           <div className="w-10 h-10 rounded-xl bg-cyan-400 text-slate-950 flex items-center justify-center shadow-md group-hover:-rotate-3 group-hover:scale-105 transition-transform overflow-hidden">
-            <img src="../assets/logo.png" alt="Monogram IHA" className="w-full h-full object-contain" />
+ <img
+  src={`${import.meta.env.BASE_URL}logo.png`}
+  alt="Monogram IHA"
+  className="w-full h-full object-contain"
+/>
           </div>
           <div>
             <span className="font-extrabold text-lg tracking-tight block text-white">Irvan Hadi Abiyoga</span>
