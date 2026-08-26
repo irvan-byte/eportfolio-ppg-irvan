@@ -28,9 +28,9 @@ export default function About() {
             </div>
 
             <div className="lg:col-span-7 space-y-7">
-              <div className="bg-white border border-slate-200 rounded-[2rem] p-7 sm:p-9 shadow-sm">
+              <div className="bg-white ">
                 <div className="flex flex-col sm:flex-row items-start gap-7">
-                  <div className=" flex flex-col items-center justify-center text-slate-500 shrink-0">
+                  <div className=" flex flex-col items-center justify-center">
                     <img src={foto} alt="foto profil" className="w-full h-full object-contain" />
                   </div>
                   <div className="space-y-3">
