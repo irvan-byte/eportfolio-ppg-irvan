@@ -117,6 +117,7 @@ export interface CourseItem {
   semester: 1 | 2;
   deskripsi: string;
   halDipelajari: string[];
+  arsipUrl?: string;
   tugas: string[];
   refleksi: string;
   dokumentasi: string[];
@@ -143,7 +144,8 @@ dokumentasi: [
   "Dokumentasi materi Growth Mindset belum ditambahkan",
   "Dokumentasi tugas belum ditambahkan",
   "Dokumentasi refleksi belum ditambahkan"
-]
+], 
+  arsipUrl: "https://drive.google.com/drive/folders/19g4VYGIyOGqVNAPEKPtKo2pRJkYDphg8?usp=sharing";
   },
   {
     id: "filosofi-1",
