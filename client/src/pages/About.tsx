@@ -31,7 +31,7 @@ export default function About() {
               <div className="bg-white ">
                 <div className="flex flex-col sm:flex-row items-start gap-7">
                   <div className=" flex flex-col items-center justify-center">
-                    <img src={foto} alt="foto profil" className="w-full h-full object-contain" />
+                    <img src={foto} alt="foto profil" className="w-full h-full object-contain" border border-slate-200 rounded-[2rem] p-7 sm:p-9 shadow-sm />
                   </div>
                   <div className="space-y-3">
                     <h2 className="text-2xl font-bold text-slate-950">Siapa Saya?</h2>
