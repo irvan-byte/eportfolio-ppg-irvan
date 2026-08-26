@@ -31,7 +31,7 @@ export default function About() {
               <div className="bg-white border border-slate-200 rounded-[2rem] p-7 sm:p-9 shadow-sm">
                 <div className="flex flex-col sm:flex-row items-start gap-7">
                   <div className="w-32 h-32 rounded-2xl bg-slate-100 border border-slate-200 overflow-hidden shrink-0">
-  <img src={profil} alt="iniprofil" className="w-full h-full object-cover" />
+  <img src={profil} alt="iniprofil" className="w-full h-full object-contain" />
 
                     <User className="w-12 h-12 text-blue-700 mb-2" />
                     <span className="text-[10px] font-semibold uppercase tracking-wide"></span>
