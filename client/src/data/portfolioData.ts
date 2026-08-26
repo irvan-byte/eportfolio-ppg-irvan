@@ -123,23 +123,27 @@ export interface CourseItem {
 }
 
 export const coursesData: CourseItem[] = [
-  {
-    id: "ct-1",
-    nama: "Computational Thinking",
-    semester: 1,
-    deskripsi: "Mata kuliah yang membekali calon guru dengan kemampuan memecahkan masalah kompleks menggunakan dekomposisi, pengenalan pola, abstraksi, dan algoritma.",
-    halDipelajari: [
-      "Fondasi Computational Thinking (CT) dalam kurikulum sekolah",
-      "Integrasi CT ke dalam mata pelajaran Informatika maupun mata pelajaran lain",
-      "Penyelesaian problem-solving berbasis tantangan Bebras dan PISA"
-    ],
-    tugas: [
-      "Eksplorasi soal Bebras dan analisis solusinya",
-      "Desain aktivitas unplugged untuk pembelajaran CT di SMP",
-      "Portofolio pemecahan masalah kasus nyata"
-    ],
-    refleksi: "Computational Thinking mengubah cara pandang saya bahwa koding bukanlah satu-satunya inti Informatika, melainkan cara berpikir logis yang sangat penting ditanamkan pada peserta didik sejak dini.",
-    dokumentasi: ["Dokumentasi modul CT belum ditambahkan", "Dokumentasi tugas belum ditambahkan", "Refleksi PDF belum ditambahkan"]
+{
+  id: "gm-1",
+  nama: "Growth Mindset",
+  semester: 1,
+  deskripsi: "Mata kuliah yang membekali calon guru untuk memahami pola pikir berkembang dalam menghadapi tantangan, kegagalan, dan proses belajar.",
+  halDipelajari: [
+    "Konsep dan karakteristik Growth Mindset",
+    "Perbedaan Growth Mindset dan Fixed Mindset",
+    "Penerapan Growth Mindset dalam proses pembelajaran dan pengembangan diri"
+  ],
+   tugas: [
+  "Refleksi mengenai penerapan Growth Mindset dalam proses belajar",
+  "Analisis diri terkait pola pikir berkembang dan pola pikir tetap",
+  "Penerapan Growth Mindset dalam menghadapi tantangan sebagai calon guru"
+],
+refleksi: "Saya belajar bahwa kemampuan seseorang tidak bersifat tetap, tetapi dapat berkembang melalui usaha, proses belajar, dan kemauan untuk memperbaiki diri. Growth Mindset membantu saya melihat kesalahan dan tantangan sebagai bagian dari proses untuk berkembang.",
+dokumentasi: [
+  "Dokumentasi materi Growth Mindset belum ditambahkan",
+  "Dokumentasi tugas belum ditambahkan",
+  "Dokumentasi refleksi belum ditambahkan"
+]
   },
   {
     id: "filosofi-1",
