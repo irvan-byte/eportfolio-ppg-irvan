@@ -39,7 +39,7 @@ export const profileData: ProfileData = {
     "Inovasi pembelajaran berbasis teknologi bermakna",
     "Refleksi berkelanjutan untuk pengembangan diri"
   ],
-  visiGuru: "Menjadi pendidik profesional yang inspiratif, adaptif terhadap perkembangan teknologi, serta mampu menumbuhkan karakter profil Pelajar Pancasila melalui pembelajaran Informatika yang menyenangkan.",
+  visiGuru: "Menjadi guru yang mampu membantu siswa belajar dengan cara yang sederhana, nyaman, dan bermakna.",
   bioNarasi: "Perjalanan saya sebagai calon guru dimulai dari kecintaan terhadap dunia teknologi dan pendidikan. Melalui program PPG Prajabatan di bidang Informatika, saya belajar memahami bahwa mengajar bukan sekadar mentransfer materi koding atau perangkat lunak, melainkan membangun cara pandang logis, kreatif, dan humanis pada setiap peserta didik di tingkat Sekolah Menengah Pertama."
 };
 
