@@ -1,7 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { profileData } from "@/data/portfolioData";
-import foto from "@/assets/foto-profil.png";
 import { User, Compass, Award, Heart, CheckCircle2 } from "lucide-react";
 
 /**
@@ -28,10 +27,11 @@ export default function About() {
             </div>
 
             <div className="lg:col-span-7 space-y-7">
-              <div className="bg-white ">
+              <div className="bg-white border border-slate-200 rounded-[2rem] p-7 sm:p-9 shadow-sm">
                 <div className="flex flex-col sm:flex-row items-start gap-7">
-                  <div className=" flex flex-col items-center justify-center">
-                    <img src={foto} alt="foto profil" className="w-full h-full object-contain" border border-slate-200 rounded-[2rem] p-7 sm:p-9 shadow-sm />
+                  <div className="w-32 h-32 rounded-2xl bg-slate-100 border border-slate-200 flex flex-col items-center justify-center text-slate-500 shrink-0">
+                    <User className="w-12 h-12 text-blue-700 mb-2" />
+                    <span className="text-[10px] font-semibold uppercase tracking-wide">Foto belum ditambahkan</span>
                   </div>
                   <div className="space-y-3">
                     <h2 className="text-2xl font-bold text-slate-950">Siapa Saya?</h2>
