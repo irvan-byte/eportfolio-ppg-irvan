@@ -145,7 +145,7 @@ dokumentasi: [
   "Dokumentasi tugas belum ditambahkan",
   "Dokumentasi refleksi belum ditambahkan"
 ], 
-  arsipUrl: "https://drive.google.com/drive/folders/19g4VYGIyOGqVNAPEKPtKo2pRJkYDphg8?usp=sharing";
+  arsipUrl: "https://drive.google.com/drive/folders/19g4VYGIyOGqVNAPEKPtKo2pRJkYDphg8?usp=sharing",
   },
   {
     id: "filosofi-1",
