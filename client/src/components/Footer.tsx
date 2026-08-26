@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { MapPin, Mail, ArrowUp } from "lucide-react";
+import logo from "@/assets/logo.png";
 import { profileData } from "@/data/portfolioData";
 
 /**
@@ -15,7 +16,7 @@ export function Footer() {
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-11 h-11 rounded-xl bg-cyan-400 text-slate-950 flex items-center justify-center overflow-hidden">
-                <img src="/manus-storage/iha-monogram_d15946d3.png" alt="Monogram IHA" className="w-full h-full object-contain" />
+<img src={logo} alt="Monogram IHA" className="w-full h-full object-contain" />
               </div>
               <div>
                 <span className="font-extrabold text-lg text-white block">{profileData.nama}</span>
