@@ -32,6 +32,7 @@ export default function About() {
                 <img src={profil} alt="ini foto profil" className="border border-slate-200 rounded-[2rem] p-7 sm:p-9 shadow-sm" />
                 <div className="flex flex-col sm:flex-row items-start gap-7">
                   <div className="w-32 h-32 rounded-2xl bg-slate-100 border border-slate-200 flex flex-col items-center justify-center text-slate-500 shrink-0">
+                     <img src={profil} alt="ini foto profil" className="border border-slate-200 rounded-[2rem] p-7 sm:p-9 shadow-sm" />
                     <User className="w-12 h-12 text-blue-700 mb-2" />
                     <span className="text-[10px] font-semibold uppercase tracking-wide">Foto belum ditambahkan</span>
                   </div>
