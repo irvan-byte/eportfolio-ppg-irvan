@@ -12,6 +12,7 @@ interface SemesterPageProps { semesterNum: 1 | 2; }
  */
 export default function SemesterPage({ semesterNum }: SemesterPageProps) {
   const filteredCourses = coursesData.filter((c) => c.semester === semesterNum);
+  console.log("COURSES:", filteredCourses);
   const [expandedId, setExpandedId] = useState<string | null>(filteredCourses[0]?.id || null);
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
