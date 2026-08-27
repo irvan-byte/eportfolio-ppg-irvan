@@ -151,7 +151,7 @@ dokumentasi: [
     id: "filosofi-1",
     nama: "Filosofi Pendidikan Indonesia",
     semester: 1,
-    deskripsi: "Mengkaji sejarah, landasan filosofis, dan pemikiran Ki Hadjar Dewantara serta relevansinya dengan pendidikan Indonesia abad ke-21.",
+    deskripsi: "Mata kuliah yang membantu saya memahami kembali hakikat pendidikan dan peran guru dalam mendampingi perkembangan peserta didik. Saya belajar melihat pendidikan tidak hanya sebagai proses menyampaikan ilmu, tetapi juga membentuk manusia..",
     halDipelajari: [
       "Pemikiran KHD: Trikon, Among, Ing Ngarsa Sung Tuladha, Ing Madya Mangun Karsa, Tut Wuri Handayani",
       "Perjalanan pendidikan nasional dari masa kolonial hingga Kurikulum Merdeka",
@@ -165,10 +165,10 @@ dokumentasi: [
     dokumentasi: ["Esai reflektif belum ditambahkan", "Presentasi kelompok belum ditambahkan"]
   },
   {
-    id: "peserta-didik-1",
-    nama: "Pemahaman tentang Peserta Didik & Pembelajarannya",
+    id: "kbg-1",
+    nama: "Kebugaran",
     semester: 1,
-    deskripsi: "Memahami karakteristik perkembangan peserta didik (fisik, kognitif, sosial-emosional) serta asesmen yang sesuai.",
+    deskripsi: "Mata kuliah yang mengingatkan saya bahwa kondisi fisik juga berpengaruh terhadap kesiapan seseorang dalam belajar dan menjalankan aktivitas sehari-hari..",
     halDipelajari: [
       "Teori perkembangan anak dan remaja usia SMP",
       "Teori belajar behavioristik, kognitif, konstruktivistik, dan humanistik",
@@ -182,11 +182,10 @@ dokumentasi: [
     dokumentasi: ["Laporan studi kasus belum ditambahkan", "Instrumen observasi belum ditambahkan"]
   },
   {
-    id: "prinsip-asesmen-1",
-    nama: "Prinsip Pengajaran dan Asesmen I",
+      id: "PPP-1",
+    nama: "Pemahaman tentang Peserta Didik dan Pembelajaran",
     semester: 1,
-    deskripsi: "Perancangan pembelajaran berbasis Backward Design dan asesmen yang adil, bermakna, dan komprehensif (formatif & sumatif).",
-    halDipelajari: [
+    deskripsi: "Membantu saya memahami bahwa setiap peserta didik memiliki karakter, kebutuhan, kemampuan, dan cara belajar yang berbeda. Hal ini menjadi dasar bagi saya untuk menyesuaikan pembelajaran dengan kondisi murid.: [
       "Prinsip Understanding by Design (UbD)",
       "Penyusunan tujuan pembelajaran dan Alur Tujuan Pembelajaran (ATP)",
       "Rubrik asesmen autentik"
