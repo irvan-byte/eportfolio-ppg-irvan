@@ -139,12 +139,7 @@ export const coursesData: CourseItem[] = [
   "Analisis diri terkait pola pikir berkembang dan pola pikir tetap",
   "Penerapan Growth Mindset dalam menghadapi tantangan sebagai calon guru"
 ],
-refleksi: "Saya belajar bahwa kemampuan seseorang tidak bersifat tetap, tetapi dapat berkembang melalui usaha, proses belajar, dan kemauan untuk memperbaiki diri. Growth Mindset membantu saya melihat kesalahan dan tantangan sebagai bagian dari proses untuk berkembang.",
-dokumentasi: [
-  "Dokumentasi materi Growth Mindset belum ditambahkan",
-  "Dokumentasi tugas belum ditambahkan",
-  "Dokumentasi refleksi belum ditambahkan"
-], 
+
   arsipUrl: "https://drive.google.com/drive/folders/19g4VYGIyOGqVNAPEKPtKo2pRJkYDphg8?usp=sharing",
   },
   {
