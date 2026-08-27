@@ -128,7 +128,7 @@ export const coursesData: CourseItem[] = [
   id: "gm-1",
   nama: "Growth Mindset",
   semester: 1,
-  deskripsi: "Mata kuliah yang membekali calon guru untuk memahami pola pikir berkembang dalam menghadapi tantangan, kegagalan, dan proses belajar.",
+  deskripsi: "Salah satu materi yang paling menarik bagi saya karena mengajarkan bahwa kemampuan bukan sesuatu yang tetap. Materi ini membuat saya lebih sadar untuk membantu murid melihat kesulitan sebagai bagian dari proses belajar.",
   halDipelajari: [
     "Konsep dan karakteristik Growth Mindset",
     "Perbedaan Growth Mindset dan Fixed Mindset",
