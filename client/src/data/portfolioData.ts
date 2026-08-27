@@ -163,6 +163,7 @@ dokumentasi: [
     ],
     refleksi: "Saya menyadari bahwa guru sejati adalah among yang menuntun kodrat anak, bukan menuntut anak sesuai kehendak guru.",
     dokumentasi: ["Esai reflektif belum ditambahkan", "Presentasi kelompok belum ditambahkan"]
+    arsipUrl: "https://drive.google.com/drive/folders/1f8FVLS1DvW3sJTPx7E-AIDGBj_Vc0Rvy?usp=sharing",
   },
   {
     id: "kbg-1",
