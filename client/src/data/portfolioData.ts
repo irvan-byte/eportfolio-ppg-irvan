@@ -185,7 +185,8 @@ dokumentasi: [
       id: "PPP-1",
     nama: "Pemahaman tentang Peserta Didik dan Pembelajaran",
     semester: 1,
-    deskripsi: "Membantu saya memahami bahwa setiap peserta didik memiliki karakter, kebutuhan, kemampuan, dan cara belajar yang berbeda. Hal ini menjadi dasar bagi saya untuk menyesuaikan pembelajaran dengan kondisi murid.": [
+    deskripsi: "Membantu saya memahami bahwa setiap peserta didik memiliki karakter, kebutuhan, kemampuan, dan cara belajar yang berbeda. Hal ini menjadi dasar bagi saya untuk menyesuaikan pembelajaran dengan kondisi murid.",
+    halDipelajari: [
       "Prinsip Understanding by Design (UbD)",
       "Penyusunan tujuan pembelajaran dan Alur Tujuan Pembelajaran (ATP)",
       "Rubrik asesmen autentik"
@@ -201,7 +202,8 @@ dokumentasi: [
       id: "PMAD-1",
     nama: "Pembelajaran Mendalam",
     semester: 1,
-    deskripsi: " Memberikan perspektif tentang pembelajaran yang tidak hanya mengejar penyelesaian materi, tetapi mendorong peserta didik untuk memahami, menghubungkan, dan merefleksikan apa yang mereka pelajari": [
+    deskripsi: " Memberikan perspektif tentang pembelajaran yang tidak hanya mengejar penyelesaian materi, tetapi mendorong peserta didik untuk memahami, menghubungkan, dan merefleksikan apa yang mereka pelajari",
+      halDipelajari: [
       "Prinsip Understanding by Design (UbD)",
       "Penyusunan tujuan pembelajaran dan Alur Tujuan Pembelajaran (ATP)",
       "Rubrik asesmen autentik"
