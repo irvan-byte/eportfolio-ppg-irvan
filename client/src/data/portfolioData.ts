@@ -197,8 +197,9 @@ dokumentasi: [
       "Perancangan instrumen asesmen formatif dan sumatif"
     ],
     refleksi: "Merancang pembelajaran harus dimulai dari akhir—menentukan tujuan terlebih dahulu baru merumuskan kegiatan dan bukti pencapaian.",
-    dokumentasi: ["Modul ajar UbD belum ditambahkan", "Rubrik penilaian belum ditambahkan"]
-  },
+    dokumentasi: ["Modul ajar UbD belum ditambahkan", "Rubrik penilaian belum ditambahkan"],
+    arsipUrl: "https://drive.google.com/drive/folders/1j0LHhEHLC5P5-CryMHV66hrGBwzUWLuR?usp=sharing",
+    },
   {
       id: "PMAD-1",
     nama: "Pembelajaran Mendalam",
@@ -214,8 +215,9 @@ dokumentasi: [
       "Perancangan instrumen asesmen formatif dan sumatif"
     ],
     refleksi: "Merancang pembelajaran harus dimulai dari akhir—menentukan tujuan terlebih dahulu baru merumuskan kegiatan dan bukti pencapaian.",
-    dokumentasi: ["Modul ajar UbD belum ditambahkan", "Rubrik penilaian belum ditambahkan"]
-  },
+    dokumentasi: ["Modul ajar UbD belum ditambahkan", "Rubrik penilaian belum ditambahkan"],
+    arsipUrl: "https://drive.google.com/drive/folders/14MdZeu60NHaEwTiBXJL88Vsscy2sgL-8?usp=sharing",
+    },
   // Semester 2
   {
     id: "pse-2",
