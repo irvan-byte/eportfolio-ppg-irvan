@@ -185,7 +185,7 @@ dokumentasi: [
       id: "PPP-1",
     nama: "Pemahaman tentang Peserta Didik dan Pembelajaran",
     semester: 1,
-    deskripsi: "Membantu saya memahami bahwa setiap peserta didik memiliki karakter, kebutuhan, kemampuan, dan cara belajar yang berbeda. Hal ini menjadi dasar bagi saya untuk menyesuaikan pembelajaran dengan kondisi murid.: [
+    deskripsi: "Membantu saya memahami bahwa setiap peserta didik memiliki karakter, kebutuhan, kemampuan, dan cara belajar yang berbeda. Hal ini menjadi dasar bagi saya untuk menyesuaikan pembelajaran dengan kondisi murid.": [
       "Prinsip Understanding by Design (UbD)",
       "Penyusunan tujuan pembelajaran dan Alur Tujuan Pembelajaran (ATP)",
       "Rubrik asesmen autentik"
