@@ -197,6 +197,22 @@ dokumentasi: [
     refleksi: "Merancang pembelajaran harus dimulai dari akhir—menentukan tujuan terlebih dahulu baru merumuskan kegiatan dan bukti pencapaian.",
     dokumentasi: ["Modul ajar UbD belum ditambahkan", "Rubrik penilaian belum ditambahkan"]
   },
+  {
+      id: "PMAD-1",
+    nama: "Pembelajaran Mendalam",
+    semester: 1,
+    deskripsi: " Memberikan perspektif tentang pembelajaran yang tidak hanya mengejar penyelesaian materi, tetapi mendorong peserta didik untuk memahami, menghubungkan, dan merefleksikan apa yang mereka pelajari": [
+      "Prinsip Understanding by Design (UbD)",
+      "Penyusunan tujuan pembelajaran dan Alur Tujuan Pembelajaran (ATP)",
+      "Rubrik asesmen autentik"
+    ],
+    tugas: [
+      "Penyusunan Modul Ajar berbasis UbD",
+      "Perancangan instrumen asesmen formatif dan sumatif"
+    ],
+    refleksi: "Merancang pembelajaran harus dimulai dari akhir—menentukan tujuan terlebih dahulu baru merumuskan kegiatan dan bukti pencapaian.",
+    dokumentasi: ["Modul ajar UbD belum ditambahkan", "Rubrik penilaian belum ditambahkan"]
+  },
   // Semester 2
   {
     id: "pse-2",
