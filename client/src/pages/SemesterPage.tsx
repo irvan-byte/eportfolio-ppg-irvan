@@ -24,12 +24,33 @@ export default function SemesterPage({ semesterNum }: SemesterPageProps) {
   const isExpanded = expandedId === course.id;
   return (
     <div key={course.id} className="bg-white border rounded-2xl overflow-hidden transition-all duration-300">
-      <button 
-        onClick={() => setExpandedId(isExpanded ? null : course.id)} 
-        className="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-5"
-      >
-        {/* button content */}
-      </button>
+<button 
+  onClick={() => setExpandedId(isExpanded ? null : course.id)} 
+  className="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-5"
+>
+  <div className="flex items-center gap-4">
+    <div className="w-11 h-11 rounded-xl bg-cyan-50 text-cyan-700 flex items-center justify-center shrink-0">
+      <BookOpen className="w-5 h-5" />
+    </div>
+
+    <div>
+      <div className="text-xs font-bold text-cyan-700 uppercase tracking-wider mb-1">
+        Semester {course.semester}
+      </div>
+      <h2 className="text-xl font-extrabold text-slate-950">
+        {course.nama}
+      </h2>
+    </div>
+  </div>
+
+  <div className="text-slate-400 shrink-0">
+    {isExpanded ? (
+      <ChevronUp className="w-5 h-5" />
+    ) : (
+      <ChevronDown className="w-5 h-5" />
+    )}
+  </div>
+</button>
       
       {isExpanded && (
         <div className="p-6 sm:p-7 pt-0 border-t border-slate-100 space-y-6 animate-in fade-in duration-300">
