@@ -183,17 +183,18 @@ dokumentasi: [ "Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahk
       id: "PPP-1",
     nama: "Pemahaman tentang Peserta Didik dan Pembelajaran",
     semester: 1,
-    deskripsi: "Membantu saya memahami bahwa setiap peserta didik memiliki karakter, kebutuhan, kemampuan, dan cara belajar yang berbeda. Hal ini menjadi dasar bagi saya untuk menyesuaikan pembelajaran dengan kondisi murid.",
-    halDipelajari: [
-      "Prinsip Understanding by Design (UbD)",
-      "Penyusunan tujuan pembelajaran dan Alur Tujuan Pembelajaran (ATP)",
-      "Rubrik asesmen autentik"
-    ],
-    tugas: [
-      "Penyusunan Modul Ajar berbasis UbD",
-      "Perancangan instrumen asesmen formatif dan sumatif"
-    ],
-    refleksi: "Merancang pembelajaran harus dimulai dari akhir—menentukan tujuan terlebih dahulu baru merumuskan kegiatan dan bukti pencapaian.",
+ deskripsi: "Mata kuliah yang membantu saya memahami bahwa setiap peserta didik memiliki karakteristik, kebutuhan, kemampuan, dan latar belakang yang berbeda. Pemahaman tersebut menjadi dasar bagi saya dalam merancang pembelajaran yang sesuai dengan kondisi murid.",
+  halDipelajari: [
+    "Karakteristik dan kebutuhan belajar peserta didik",
+    "Asesmen untuk memahami kondisi dan perkembangan peserta didik",
+    "Perancangan pembelajaran yang sesuai dengan kebutuhan peserta didik"
+  ],
+  tugas: [
+    "Analisis karakteristik dan kebutuhan peserta didik",
+    "Penyusunan perangkat pembelajaran berdasarkan kondisi peserta didik",
+    "Perancangan asesmen untuk mengetahui kebutuhan belajar murid"
+  ],
+  refleksi: "Saya belajar bahwa sebelum menentukan cara mengajar, saya perlu memahami terlebih dahulu siapa yang akan saya ajar. Setiap murid memiliki kondisi yang berbeda sehingga pembelajaran tidak seharusnya menggunakan satu pendekatan yang sama untuk semua.",
  dokumentasi: ["Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahkan"],
     arsipUrl: "https://drive.google.com/drive/folders/1j0LHhEHLC5P5-CryMHV66hrGBwzUWLuR?usp=drive_link",
     },
@@ -201,17 +202,18 @@ dokumentasi: [ "Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahk
       id: "PMAD-1",
     nama: "Pembelajaran Mendalam",
     semester: 1,
-    deskripsi: " Memberikan perspektif tentang pembelajaran yang tidak hanya mengejar penyelesaian materi, tetapi mendorong peserta didik untuk memahami, menghubungkan, dan merefleksikan apa yang mereka pelajari",
-      halDipelajari: [
-      "Prinsip Understanding by Design (UbD)",
-      "Penyusunan tujuan pembelajaran dan Alur Tujuan Pembelajaran (ATP)",
-      "Rubrik asesmen autentik"
-    ],
-    tugas: [
-      "Penyusunan Modul Ajar berbasis UbD",
-      "Perancangan instrumen asesmen formatif dan sumatif"
-    ],
-    refleksi: "Merancang pembelajaran harus dimulai dari akhir—menentukan tujuan terlebih dahulu baru merumuskan kegiatan dan bukti pencapaian.",
+  deskripsi: "Mata kuliah yang memberikan pemahaman bahwa pembelajaran seharusnya tidak hanya berfokus pada penyelesaian materi, tetapi membantu peserta didik memahami, menghubungkan, dan menggunakan pengetahuan dalam situasi yang bermakna.",
+  halDipelajari: [
+    "Konsep dan prinsip pembelajaran mendalam",
+    "Pembelajaran yang bermakna, relevan, dan berkesadaran",
+    "Perancangan pengalaman belajar yang mendorong pemahaman dan refleksi peserta didik"
+  ],
+  tugas: [
+    "Analisis penerapan pembelajaran mendalam",
+    "Perancangan kegiatan pembelajaran yang bermakna bagi peserta didik",
+    "Refleksi terhadap pengalaman belajar dan penerapan pembelajaran mendalam"
+  ],
+  refleksi: "Saya memahami bahwa pembelajaran yang baik bukan hanya tentang seberapa banyak materi yang dapat disampaikan, tetapi seberapa jauh peserta didik memahami dan mampu menghubungkan pembelajaran dengan kehidupan mereka. Hal ini membuat saya lebih memperhatikan kualitas pengalaman belajar yang saya berikan.",
  dokumentasi: ["Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahkan"],
     arsipUrl: "https://drive.google.com/drive/folders/14MdZeu60NHaEwTiBXJL88Vsscy2sgL-8?usp=drive_link",
     },
