@@ -31,6 +31,7 @@ export const profileData: ProfileData = {
   tahunPpg: "2025/2026",
   email: "Irvan00001@gmail.com",
   instagram: "@ir_van00000",
+  linkedin: "//www.linkedin.com/in/irvan-hadi-abiyoga",
   alasanMenjadiGuru: "Menjadi guru Informatika adalah panggilan jiwa untuk menjembatani generasi muda dengan literasi digital yang bijak, kritis, dan beretika. Di era transformasi digital saat ini, komputer bukan sekadar alat, melainkan cara berpikir (computational thinking) yang dapat membentuk problem solver masa depan.",
   nilaiPribadi: [
     "Empati dan berpusat pada peserta didik",
