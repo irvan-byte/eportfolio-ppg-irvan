@@ -83,7 +83,7 @@ export const timelineData: TimelineItem[] = [
     periode: "Semester 2",
     ringkasan: "Mata kuliah lanjutan: Pembelajaran Sosial Emosional, Projek Kepemimpinan, dan Inklusi.",
     detail: "Memperluas wawasan pedagogik khusus untuk menangani keberagaman peserta didik, manajemen emosi di kelas, dan kepemimpinan kolaboratif.",
-    status: "selesai"
+    status: "berlangsung"
   },
   {
     id: "ppl",
