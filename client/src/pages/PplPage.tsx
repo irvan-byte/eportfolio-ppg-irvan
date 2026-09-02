@@ -20,8 +20,6 @@ export default function PplPage() {
        <div className="mt-12 flex justify-center">
   <a
     href="https://irvan-byte.github.io/Ppl-Eporto/"
-    target="_blank"
-    rel="noopener noreferrer"
     className="inline-flex items-center gap-2 rounded-xl bg-cyan-500 px-6 py-3 font-bold text-slate-950 transition hover:bg-cyan-400"
   >
     Lihat E-Portfolio PPL Lengkap
