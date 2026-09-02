@@ -140,9 +140,7 @@ export const coursesData: CourseItem[] = [
   "Penerapan Growth Mindset dalam menghadapi tantangan sebagai calon guru"
 ],
 refleksi: "Saya belajar bahwa kemampuan seseorang tidak bersifat tetap, tetapi dapat berkembang melalui usaha, proses belajar, dan kemauan untuk memperbaiki diri. Growth Mindset membantu saya melihat kesalahan dan tantangan sebagai bagian dari proses untuk berkembang.",
-dokumentasi: [
-  "Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahkan"
-], 
+dokumentasi: [ "Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahkan"], 
   arsipUrl: "https://drive.google.com/drive/folders/19g4VYGIyOGqVNAPEKPtKo2pRJkYDphg8?usp=sharing",
   },
   {
@@ -160,7 +158,7 @@ dokumentasi: [
       "Karya visual mengenai intisari pemikiran Ki Hadjar Dewantara"
     ],
     refleksi: "Saya menyadari bahwa guru sejati adalah among yang menuntun kodrat anak, bukan menuntut anak sesuai kehendak guru.",
-    dokumentasi: ["Esai reflektif belum ditambahkan", "Presentasi kelompok belum ditambahkan"],
+    dokumentasi: ["Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahkan"],
     arsipUrl: "https://drive.google.com/drive/folders/1f8FVLS1DvW3sJTPx7E-AIDGBj_Vc0Rvy?usp=sharing",
   },
   {
@@ -178,7 +176,8 @@ dokumentasi: [
       "Penyusunan lembar observasi karakteristik peserta didik"
     ],
     refleksi: "Setiap anak memiliki keunikan dan kecepatan belajar yang berbeda. Asesmen awal (diagnostik) sangat esensial sebelum merancang pembelajaran.",
-    dokumentasi: ["Laporan studi kasus belum ditambahkan", "Instrumen observasi belum ditambahkan"]
+    dokumentasi: ["Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahkan"],
+    arsipUrl: "https://drive.google.com/drive/folders/1vZ_J1_EHEatm-yYeE8XRMPeKz809OLxy?usp=drive_link",
   },
   {
       id: "PPP-1",
@@ -195,8 +194,8 @@ dokumentasi: [
       "Perancangan instrumen asesmen formatif dan sumatif"
     ],
     refleksi: "Merancang pembelajaran harus dimulai dari akhir—menentukan tujuan terlebih dahulu baru merumuskan kegiatan dan bukti pencapaian.",
-    dokumentasi: ["Modul ajar UbD belum ditambahkan", "Rubrik penilaian belum ditambahkan"],
-    arsipUrl: "https://drive.google.com/drive/folders/1j0LHhEHLC5P5-CryMHV66hrGBwzUWLuR?usp=sharing",
+ dokumentasi: ["Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahkan"],
+    arsipUrl: "https://drive.google.com/drive/folders/1j0LHhEHLC5P5-CryMHV66hrGBwzUWLuR?usp=drive_link",
     },
   {
       id: "PMAD-1",
@@ -213,8 +212,8 @@ dokumentasi: [
       "Perancangan instrumen asesmen formatif dan sumatif"
     ],
     refleksi: "Merancang pembelajaran harus dimulai dari akhir—menentukan tujuan terlebih dahulu baru merumuskan kegiatan dan bukti pencapaian.",
-    dokumentasi: ["Modul ajar UbD belum ditambahkan", "Rubrik penilaian belum ditambahkan"],
-    arsipUrl: "https://drive.google.com/drive/folders/14MdZeu60NHaEwTiBXJL88Vsscy2sgL-8?usp=sharing",
+ dokumentasi: ["Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahkan"],
+    arsipUrl: "https://drive.google.com/drive/folders/14MdZeu60NHaEwTiBXJL88Vsscy2sgL-8?usp=drive_link",
     },
   // Semester 2
   {
