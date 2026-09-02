@@ -25,11 +25,11 @@ export const profileData: ProfileData = {
   jenjang: "SMP",
   kota: "Probolinggo",
   status: "Mahasiswa PPG / Calon Guru Informatika",
-  nim: "Belum ditambahkan",
-  universitas: "Belum ditambahkan",
-  sekolahPpl: "Belum ditambahkan",
+  nim: "2500103916225025",
+  universitas: "Universitas Negeri Surabaya (UNESA)",
+  sekolahPpl: "SMAN 15 Surabaya, SMPN 8 Surabaya",
   tahunPpg: "2025/2026",
-  email: "Email belum ditambahkan",
+  email: "Irvan00001@gmail.com",
   instagram: "Instagram belum ditambahkan",
   linkedin: "LinkedIn belum ditambahkan",
   alasanMenjadiGuru: "Menjadi guru Informatika adalah panggilan jiwa untuk menjembatani generasi muda dengan literasi digital yang bijak, kritis, dan beretika. Di era transformasi digital saat ini, komputer bukan sekadar alat, melainkan cara berpikir (computational thinking) yang dapat membentuk problem solver masa depan.",
@@ -141,9 +141,7 @@ export const coursesData: CourseItem[] = [
 ],
 refleksi: "Saya belajar bahwa kemampuan seseorang tidak bersifat tetap, tetapi dapat berkembang melalui usaha, proses belajar, dan kemauan untuk memperbaiki diri. Growth Mindset membantu saya melihat kesalahan dan tantangan sebagai bagian dari proses untuk berkembang.",
 dokumentasi: [
-  "Dokumentasi materi Growth Mindset belum ditambahkan",
-  "Dokumentasi tugas belum ditambahkan",
-  "Dokumentasi refleksi belum ditambahkan"
+  "Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahkan"
 ], 
   arsipUrl: "https://drive.google.com/drive/folders/19g4VYGIyOGqVNAPEKPtKo2pRJkYDphg8?usp=sharing",
   },
