@@ -17,6 +17,18 @@ export default function PplPage() {
           <div className="bg-slate-950 text-white rounded-[2rem] p-7 sm:p-9 mb-14 shadow-2xl shadow-slate-300"><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7"><div><span className="text-xs font-bold text-cyan-300 uppercase tracking-wider">Sekolah mitra</span><h3 className="text-base font-bold mt-2">{pplData.sekolah}</h3></div><div><span className="text-xs font-bold text-cyan-300 uppercase tracking-wider">Jenjang & bidang</span><h3 className="text-base font-bold mt-2">{pplData.jenjang} · {pplData.bidangStudi}</h3></div><div><span className="text-xs font-bold text-cyan-300 uppercase tracking-wider">Periode</span><h3 className="text-base font-bold mt-2">{pplData.periode}</h3></div><div><span className="text-xs font-bold text-cyan-300 uppercase tracking-wider">Guru pamong</span><h3 className="text-base font-bold mt-2">{pplData.guruPamong}</h3></div></div><div className="border-t border-white/15 mt-7 pt-6 text-slate-300 text-sm leading-relaxed">{pplData.deskripsi}</div></div>
           <div className="max-w-3xl mb-7"><h2 className="text-2xl font-extrabold text-slate-950">Catatan siklus PPL</h2><p className="text-slate-500 mt-2">Setiap tahap menyimpan bukti, pertanyaan, dan pelajaran yang akan saya bawa ke kelas berikutnya.</p></div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">{pplData.tahapan.map((tahap, idx) => <article key={idx} className={`bg-white border border-slate-200 rounded-2xl p-6 sm:p-7 shadow-sm hover:shadow-lg transition-all duration-200 ${idx === 4 ? "md:col-span-2 bg-cyan-50 border-cyan-100" : ""}`}><div className="flex items-start justify-between gap-4 mb-5"><div className="w-10 h-10 rounded-full bg-blue-50 text-blue-700 flex items-center justify-center font-mono font-bold text-xs shrink-0">0{idx + 1}</div><span className="text-[11px] text-slate-400 text-right">{tahap.dokumentasiPlaceholder}</span></div><h3 className="text-xl font-bold text-slate-950 mb-3">{tahap.judul.replace(/^\d+\.\s*/, "")}</h3><p className="text-sm text-slate-600 leading-relaxed mb-5">{tahap.deskripsi}</p><div className="border-t border-slate-200 pt-4"><h4 className="text-xs font-bold text-cyan-700 uppercase tracking-wider mb-3">Aktivitas & poin penting</h4><ul className="space-y-2 text-sm text-slate-600">{tahap.poinPenting.map((poin, pIdx) => <li key={pIdx} className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-cyan-600 mt-0.5 shrink-0" />{poin}</li>)}</ul></div></article>)}</div>
+       <div className="mt-12 flex justify-center">
+  <a
+    href="https://irvan-byte.github.io/Ppl-Eporto/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 rounded-xl bg-cyan-500 px-6 py-3 font-bold text-slate-950 transition hover:bg-cyan-400"
+  >
+    Lihat E-Portfolio PPL Lengkap
+    <span>→</span>
+  </a>
+</div>
+
         </div>
       </main>
       <Footer />
