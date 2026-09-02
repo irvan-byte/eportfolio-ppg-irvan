@@ -217,6 +217,25 @@ dokumentasi: [ "Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahk
  dokumentasi: ["Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahkan"],
     arsipUrl: "https://drive.google.com/drive/folders/14MdZeu60NHaEwTiBXJL88Vsscy2sgL-8?usp=drive_link",
     },
+  {
+  id: "ppl-terbimbing-1",
+  nama: "PPL Terbimbing",
+  semester: 1,
+  deskripsi: "Mata kuliah yang memberikan pengalaman kepada saya untuk menerapkan pengetahuan dan keterampilan mengajar secara langsung di sekolah dengan mendapatkan bimbingan dari guru pamong dan dosen.",
+  halDipelajari: [
+    "Observasi kondisi dan karakteristik peserta didik serta lingkungan sekolah",
+    "Perencanaan dan pelaksanaan pembelajaran di kelas",
+    "Pengelolaan kelas, komunikasi dengan peserta didik, dan evaluasi pembelajaran"
+  ],
+  tugas: [
+    "Melakukan observasi dan mengenali kondisi sekolah serta karakteristik peserta didik",
+    "Menyusun perangkat dan rencana pembelajaran",
+    "Melaksanakan praktik mengajar dengan bimbingan guru pamong dan dosen"
+  ],
+  refleksi: "PPL Terbimbing menjadi pengalaman penting bagi saya karena memberikan kesempatan untuk mencoba mengajar secara langsung. Saya belajar bahwa mengajar tidak hanya tentang menyampaikan materi, tetapi juga bagaimana mengelola kelas, memahami kondisi murid, dan menyesuaikan pembelajaran ketika situasi di kelas tidak sesuai dengan rencana.",
+ dokumentasi: ["Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahkan"],
+    arsipUrl: "https://drive.google.com/drive/folders/1WS1svN-awoqU_UM_1VChGPjBaW3oQPKZ?usp=drive_link",
+  },
   // Semester 2
   {
     id: "pse-2",
