@@ -25,18 +25,11 @@ export default function PortfolioPage() {
       });
       return;
     }
-
     const url = item.fileUrl.startsWith("http")
       ? item.fileUrl
       : `${import.meta.env.BASE_URL}${item.fileUrl.replace(/^\/+/, "")}`;
 
     window.open(url, "_blank", "noopener,noreferrer");
-
-  const url = item.fileUrl.startsWith("http")
-    ? item.fileUrl
-    : `${import.meta.env.BASE_URL}${item.fileUrl.replace(/^\/+/, "")}`;
-
-  window.open(url, "_blank", "noopener,noreferrer");
 };
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
