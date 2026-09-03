@@ -343,13 +343,13 @@ export interface PplData {
 }
 
 export const pplData: PplData = {
-  sekolah: "Sekolah mitra belum ditambahkan",
+  sekolah: "SMP Negeri 8 Surabaya",
   jenjang: "Sekolah Menengah Pertama (SMP)",
   bidangStudi: "Informatika",
   periode: "PPL I & PPL II (2025/2026)",
-  kepalaSekolah: "Belum ditambahkan",
-  guruPamong: "Belum ditambahkan",
-  dosenPembimbing: "Belum ditambahkan",
+  kepalaSekolah: "Drs. Sudjasmi Marginono, M.Si",
+  guruPamong: "Pamuji Raharjo., S.Pd",
+  dosenPembimbing: "Prof. Dr. Joko, M.Pd., M.T.",
   deskripsi: "Praktik Pengalaman Lapangan (PPL) adalah muara dari seluruh teori PPG. Di sini saya belajar mengelola kelas secara langsung, merancang perangkat pembelajaran Informatika berbasis kurikulum merdeka, melaksanakan asesmen autentik, dan merefleksikan setiap praktik mengajar bersama guru pamong.",
   tahapan: [
     {
