@@ -493,10 +493,10 @@ export interface ReflectionItem {
 export const reflectionsData: ReflectionItem[] = [
   {
     id: "ref-1",
-    tanggal: "15 November 2025",
+    tanggal: " Agustus 2026",
     judul: "Refleksi Mengajar Pertama di Kelas PPL",
     kategori: "Praktik Mengajar",
-    experience: "Menyampaikan materi Berpikir Komputasional menggunakan metode unplugged activity kepada siswa kelas VII.",
+    experience: "Menyampaikan materi Berpikir Komputasional menggunakan metode unplugged activity kepada siswa kelas 9.",
     fact: "Sebagian siswa tampak antusias ketika bermain peran, namun beberapa siswa di barisan belakang kurang fokus karena penjelasan terlalu cepat.",
     feeling: "Awalnya merasa gugup dan cemas apakah instruksi saya dapat dipahami, namun perlahan mencair ketika melihat gelak tawa siswa saat permainan logika berhasil.",
     finding: "Manajemen kelas dan pengaturan tempo bicara sangat menentukan keterlibatan seluruh peserta didik. Media fisik (unplugged) sangat membantu pemahaman konsep abstrak.",
@@ -505,12 +505,12 @@ export const reflectionsData: ReflectionItem[] = [
   },
   {
     id: "ref-2",
-    tanggal: "10 Desember 2025",
+    tanggal: "September 2026",
     judul: "Refleksi Integrasi Pembelajaran Sosial Emosional (PSE)",
     kategori: "Pedagogik",
 
-    experience: "Menerapkan teknik kesadaran diri (mindfulness) sebelum memulai materi praktik komputer yang cukup rumit.",
-    fact: "Murid yang sebelumnya tegang dan panik menghadapi eror koding menjadi lebih tenang setelah melakukan teknik pernapasan 2 menit.",
+    experience: "Menerapkan teknik kesadaran diri (mindfulness) sebelum memulai materi Berpikir komputasional.",
+    fact: "Murid yang sebelumnya tegang dan panik menghadapi tantangan tugas dan kuis",
     feeling: "Takjub melihat betapa sederhana namun kuatnya pengaruh kesejahteraan emosional terhadap kemampuan kognitif anak.",
     finding: "Kecerdasan akademik tidak akan optimal jika siswa berada dalam tekanan atau kecemasan yang tinggi di kelas.",
     future: "Selalu menyempatkan waktu 2-3 menit di awal pelajaran untuk membangun koneksi emosional positif dan kesiapan belajar.",
