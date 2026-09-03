@@ -463,7 +463,7 @@ export const portfolioItems: PortfolioItem[] = [
     mataKuliah: "PPL Mandiri",
     deskripsi: "Slide presentasi visual tentang Dekomposisi",
     fileTipe: "PPTX",
-    fileUrl: "https://docs.google.com/presentation/d/1nkGTFyvgGAWASmUOVUI1trOxPQG2UM_untJmbn-q-D0/edit?usp=drive_link"
+    fileUrl: "https://docs.google.com/presentation/d/1nkGTFyvgGAWASmUOVUI1trOxPQG2UM_untJmbn-q-D0/edit?usp=sharing"
   },
   {
     id: "port-6",
