@@ -433,7 +433,7 @@ export const portfolioItems: PortfolioItem[] = [
     mataKuliah: "PPL 2 / Bidang Studi Informatika",
     deskripsi: "Slide presentasi visual interaktif untuk menjelaskan topologi jaringan dan cara kerja internet di tingkat SMP.",
     fileTipe: "PPTX",
-    fileUrl: "assets/portfolio/PENGENALAN-POLA.pptx"
+    fileUrl: "../assets/portfolio/PENGENALAN-POLA.pptx"
   },
   {
     id: "port-3",
