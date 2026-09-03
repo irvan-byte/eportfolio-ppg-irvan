@@ -420,60 +420,60 @@ export const portfolioItems: PortfolioItem[] = [
     judul: "Modul Ajar Berpikir Komputasional Kelas 9",
     kategori: "Perangkat Pembelajaran",
     tanggal: "September 2026",
-    mataKuliah: "PPL 2 / Bidang Studi Informatika",
+    mataKuliah: "PPL Mandiri / Bidang Studi Informatika",
     deskripsi: "Modul ajar lengkap dengan pendekatan UbD untuk materi Berpikir Komputasional (Dekomposisi, Pengenalan Pola, Abstraksi, Algoritma).",
     fileTipe: "PDF",
-    fileUrl: "/assets/portfolio/Modul_Ajar_Kelas_9_BK.pdf"
+    fileUrl: "https://drive.google.com/file/d/1cFWbWKndGXuh0GPMY5uLn9fEI-20wUds/view?usp=sharing"
   },
   {
     id: "port-2",
-    judul: "Power Point Pengenalan Pola kelas 9",
-    kategori: "PPT",
-    tanggal: "September 2026",
-    mataKuliah: "PPL 2 / Bidang Studi Informatika",
-    deskripsi: "Slide presentasi visual interaktif untuk menjelaskan topologi jaringan dan cara kerja internet di tingkat SMP.",
-    fileTipe: "PPTX",
-    fileUrl: "/assets/portfolio/PENGENALAN-POLA.pptx"
+    judul: "Lembar Observasi Sekolah",
+    kategori: "PDF",
+    tanggal: "Agustus 2026",
+    mataKuliah: "PPL Mandiri",
+    deskripsi: "Lembar hasil observasi kami terhadap SMPN 8 Surabaya.",
+    fileTipe: "PDF",
+    fileUrl: "https://drive.google.com/file/d/1RIAyNt_nX_7yDfvzpnKwuSNqIxZDteLN/view?usp=sharing"
   },
   {
     id: "port-3",
-    judul: "LKPD Praktikum Algoritma & Pemrograman Visual (Scratch)",
+    judul: "LKPD Dekomposisi dan Pengenalan Pola",
     kategori: "LKPD",
-    tanggal: "Desember 2025",
+    tanggal: "September 2026",
     mataKuliah: "Prinsip Pengajaran dan Asesmen II",
-    deskripsi: "Lembar Kerja Peserta Didik berbasis proyek kreatif membuat game sederhana menggunakan platform Scratch.",
-    fileTipe: "PDF",
-    fileUrl: "#"
+    deskripsi: "Lembar Kerja Peserta Didik pada sub-bab Dekomposisi dan Pengenalan Pola",
+    fileTipe: "DOCX",
+    fileUrl: "https://docs.google.com/document/d/1Je1IkO3PPQc1PMhccJ_qfaC8JeT6eab2KAdJmZaX-QE/edit?usp=sharing"
   },
   {
     id: "port-4",
     judul: "Instrumen Asesmen Diagnostik Kognitif & Non-Kognitif",
     kategori: "Asesmen",
-    tanggal: "September 2025",
+    tanggal: "Agustus 2026",
     mataKuliah: "Pemahaman Peserta Didik",
     deskripsi: "Kumpulan instrumen angket gaya belajar dan kuis diagnostik awal untuk memetakan kebutuhan belajar murid sebelum memulai materi.",
-    fileTipe: "DOCX",
-    fileUrl: "#"
+    fileTipe: "PDF",
+    fileUrl: "https://drive.google.com/file/d/1BfZgk7IfssQPajdVnL1KBjpfe6WCY4tB/view?usp=sharing"
   },
   {
     id: "port-5",
-    judul: "Laporan Projek Kepemimpinan: Literasi Digital Desa",
-    kategori: "Proyek",
-    tanggal: "Januari 2026",
-    mataKuliah: "Projek Kepemimpinan",
-    deskripsi: "Dokumentasi perancangan dan pelaksanaan sosialisasi keamanan berinternet bagi remaja dan orang tua.",
-    fileTipe: "PDF",
-    fileUrl: "#"
+    judul: "Power Point",
+    kategori: "PPT",
+    tanggal: "Agustus 2026",
+    mataKuliah: "PPL Mandiri",
+    deskripsi: "Slide presentasi visual tentang Dekomposisi",
+    fileTipe: "PPTX",
+    fileUrl: "https://docs.google.com/presentation/d/1nkGTFyvgGAWASmUOVUI1trOxPQG2UM_untJmbn-q-D0/edit?usp=drive_link"
   },
   {
     id: "port-6",
-    judul: "Video Praktik Mengajar Siklus 1 di Sekolah PPL",
+    judul: "Video Praktik Mengajar dengan pendekatan secara emosional",
     kategori: "Dokumentasi PPL",
-    tanggal: "Februari 2026",
+    tanggal: "Agustus 2026",
     mataKuliah: "Praktik Pengalaman Lapangan",
-    deskripsi: "Rekaman video pelaksanaan pembelajaran Informatika materi Analisis Data dengan model PjBL.",
+    deskripsi: "Rekaman video pelaksanaan pembelajaran Informatika dengan fokus pendekatan secara emosional.",
     fileTipe: "Video",
-    fileUrl: "#"
+    fileUrl: "https://drive.google.com/file/d/1glRcMieoR8ET3MAD3mfFbim39NLl6FNX/view?usp=sharing"
   }
 ];
 
