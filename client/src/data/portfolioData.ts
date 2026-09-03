@@ -237,6 +237,28 @@ dokumentasi: [ "Artefak / Dokumentasi tugas, refleksi dan materi sudah ditambahk
     arsipUrl: "https://drive.google.com/drive/folders/1WS1svN-awoqU_UM_1VChGPjBaW3oQPKZ?usp=drive_link",
   },
   // Semester 2
+{
+  id: "pmal-2",
+  nama: "Praktik Mengajar Lanjut (PMAL)",
+  semester: 2,
+  deskripsi: "Memperdalam kemampuan peserta dalam merancang, melaksanakan, dan mengevaluasi pembelajaran secara mandiri dengan menerapkan prinsip pembelajaran yang berpusat pada peserta didik serta melakukan refleksi untuk meningkatkan kualitas praktik mengajar.",
+  halDipelajari: [
+    "Pengembangan perangkat pembelajaran yang sesuai dengan karakteristik, kebutuhan, dan konteks peserta didik",
+    "Penerapan strategi pembelajaran aktif, diferensiasi, asesmen, dan pengelolaan kelas secara lebih mandiri",
+    "Refleksi dan evaluasi praktik mengajar berdasarkan hasil belajar serta umpan balik dari peserta didik dan guru pamong"
+  ],
+  tugas: [
+    "Penyusunan dan pengembangan perangkat pembelajaran",
+    "Pelaksanaan praktik mengajar secara mandiri",
+    "Evaluasi dan refleksi hasil praktik mengajar"
+  ],
+  refleksi: "Praktik mengajar lanjut menjadi kesempatan untuk mengembangkan kemandirian sebagai calon guru. Melalui pengalaman mengajar, menerima umpan balik, dan melakukan refleksi secara berkelanjutan, guru dapat mengenali kekuatan dan kekurangan dalam pembelajaran serta menentukan langkah perbaikan yang lebih tepat.",
+  dokumentasi: [
+    "Perangkat pembelajaran belum ditambahkan",
+    "Dokumentasi praktik mengajar belum ditambahkan",
+    "Refleksi dan evaluasi praktik mengajar belum ditambahkan"
+  ]
+},
   {
     id: "pse-2",
     nama: "Pembelajaran Sosial Emosional (PSE)",
