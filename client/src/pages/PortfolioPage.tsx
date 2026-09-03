@@ -31,9 +31,6 @@ export default function PortfolioPage() {
       : `${import.meta.env.BASE_URL}${item.fileUrl.replace(/^\/+/, "")}`;
 
     window.open(url, "_blank", "noopener,noreferrer");
-  };
-
-
 
   const url = item.fileUrl.startsWith("http")
     ? item.fileUrl
