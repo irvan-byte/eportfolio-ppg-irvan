@@ -37,7 +37,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Clean dist
-        run: rm -rf dist && mkdir -p dist
+        run: rm -rf dist && rm -rf dist/public
 
       - name: Build
         run: pnpm build
