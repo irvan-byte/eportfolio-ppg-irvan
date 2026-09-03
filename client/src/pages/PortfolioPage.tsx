@@ -21,8 +21,7 @@ export default function PortfolioPage() {
 const handleOpenItem = (item: PortfolioItem) => {
   if (!item.fileUrl || item.fileUrl === "#") {
     toast.info(`Dokumen ${item.judul} belum ditautkan`, {
-      description:
-        "Tambahkan fileUrl di client/src/data/portfolioData.ts.",
+      description: "Tambahkan fileUrl di client/src/data/portfolioData.ts.",
     });
     return;
   }
@@ -33,6 +32,7 @@ const handleOpenItem = (item: PortfolioItem) => {
 
   window.open(url, "_blank", "noopener,noreferrer");
 };
+
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
