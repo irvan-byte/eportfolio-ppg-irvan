@@ -423,7 +423,7 @@ export const portfolioItems: PortfolioItem[] = [
     mataKuliah: "Prinsip Pengajaran dan Asesmen I",
     deskripsi: "Modul ajar lengkap dengan pendekatan UbD untuk materi Berpikir Komputasional (Dekomposisi, Pengenalan Pola, Abstraksi, Algoritma).",
     fileTipe: "PDF",
-    fileUrl: "#"
+    fileUrl: "/assets/Modul_Ajar_Kelas_9_BK.pdf"
   },
   {
     id: "port-2",
@@ -433,7 +433,7 @@ export const portfolioItems: PortfolioItem[] = [
     mataKuliah: "PPL I / Bidang Studi Informatika",
     deskripsi: "Slide presentasi visual interaktif untuk menjelaskan topologi jaringan dan cara kerja internet di tingkat SMP.",
     fileTipe: "PPTX",
-    fileUrl: "#"
+    fileUrl: "/assets/PENGENALAN-POLA.pptx"
   },
   {
     id: "port-3",
