@@ -17,13 +17,17 @@ export default function PortfolioPage() {
   const [selectedCategory, setSelectedCategory] = useState("Semua");
   const [searchQuery, setSearchQuery] = useState("");
   const filteredItems = useMemo(() => portfolioItems.filter((item) => { const matchesCategory = selectedCategory === "Semua" || item.kategori === selectedCategory; const q = searchQuery.toLowerCase(); return matchesCategory && (item.judul.toLowerCase().includes(q) || item.mataKuliah.toLowerCase().includes(q) || item.deskripsi.toLowerCase().includes(q)); }), [selectedCategory, searchQuery]);
- const handleOpenItem = (item: PortfolioItem) => {
+const handleOpenItem = (item: PortfolioItem) => {
   if (!item.fileUrl || item.fileUrl === "#") {
     toast.info(`Dokumen ${item.judul} belum ditautkan`, {
       description: "Tambahkan fileUrl di client/src/data/portfolioData.ts.",
     });
     return;
   }
+
+  window.open(item.fileUrl, "_blank", "noopener,noreferrer");
+};
+
 
   const url = item.fileUrl.startsWith("http")
     ? item.fileUrl
