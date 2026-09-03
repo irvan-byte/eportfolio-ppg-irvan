@@ -37,7 +37,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Clean dist
-        run: rm -rf dist node_modules/.vite .vite
+        run: rm -rf dist node_modules/.vite .vite node_modules/.rollup.cache
 
       - name: Build
         run: pnpm build
