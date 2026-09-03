@@ -18,19 +18,22 @@ export default function PortfolioPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const filteredItems = useMemo(() => portfolioItems.filter((item) => { const matchesCategory = selectedCategory === "Semua" || item.kategori === selectedCategory; const q = searchQuery.toLowerCase(); return matchesCategory && (item.judul.toLowerCase().includes(q) || item.mataKuliah.toLowerCase().includes(q) || item.deskripsi.toLowerCase().includes(q)); }), [selectedCategory, searchQuery]);
 
-  const handleOpenItem = (item: PortfolioItem) => {
-    if (!item.fileUrl || item.fileUrl === "#") {
-      toast.info(`Dokumen ${item.judul} belum ditautkan`, {
-        description: "Tambahkan fileUrl di client/src/data/portfolioData.ts.",
-      });
-      return;
-    }
-    const url = item.fileUrl.startsWith("http")
-      ? item.fileUrl
-      : `${import.meta.env.BASE_URL}${item.fileUrl.replace(/^\/+/, "")}`;
+const handleOpenItem = (item: PortfolioItem) => {
+  if (!item.fileUrl || item.fileUrl === "#") {
+    toast.info(`Dokumen ${item.judul} belum ditautkan`, {
+      description:
+        "Tambahkan fileUrl di client/src/data/portfolioData.ts.",
+    });
+    return;
+  }
 
-    window.open(url, "_blank", "noopener,noreferrer");
+  const url = item.fileUrl.startsWith("http")
+    ? item.fileUrl
+    : `${import.meta.env.BASE_URL}${item.fileUrl.replace(/^\/+/, "")}`;
+
+  window.open(url, "_blank", "noopener,noreferrer");
 };
+
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
       <Navbar />
