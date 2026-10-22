@@ -25,7 +25,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 
-const STORAGE_KEY = "ppg_gallery_items_v3";
+const STORAGE_KEY = "ppg_gallery_items_v6";
 const TOKEN_KEY = "ppg_gh_token_v3";
 const REPO_OWNER = "irvan-byte";
 const REPO_NAME = "eportfolio-ppg-irvan";
@@ -46,13 +46,16 @@ export default function GalleryPage() {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        // Ensure cache is only accepted if it has at least as many items as the default 16 photos
+        if (Array.isArray(parsed) && parsed.length >= defaultGalleryItems.length) return parsed;
       }
     } catch (e) {
       console.error("Failed to load local gallery items", e);
     }
     return defaultGalleryItems;
   });
+
+  const [schoolFilter, setSchoolFilter] = useState<"semua" | "smpn8" | "sman15">("semua");
 
   const [selectedCategory, setSelectedCategory] = useState("Semua");
   const [activeImage, setActiveImage] = useState<GalleryItem | null>(null);
