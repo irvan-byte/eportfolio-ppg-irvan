@@ -6,6 +6,8 @@ import {
   taskComponentsList,
   utsPplData,
   pplTimelineSteps,
+  galleryItems,
+  GalleryItem,
 } from "@/data/portfolioData";
 import {
   School,
@@ -18,6 +20,8 @@ import {
   Image as ImageIcon,
   FolderOpen,
   MapPin,
+  X,
+  ZoomIn,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -25,6 +29,30 @@ type PplTab = "overview" | "siklus" | "tugas1" | "uts" | "dokumentasi";
 
 export default function PplPage() {
   const [activeTab, setActiveTab] = useState<PplTab>("overview");
+  const [photoSchoolFilter, setPhotoSchoolFilter] = useState<"semua" | "smpn8" | "sman15">("semua");
+  const [activeModalImage, setActiveModalImage] = useState<GalleryItem | null>(null);
+
+  const getImgSrc = (path: string) => {
+    if (!path) return "";
+    if (path.startsWith("data:") || path.startsWith("http://") || path.startsWith("https://")) {
+      return path;
+    }
+    const clean = path.replace(/^\/+/, "");
+    const base = import.meta.env.BASE_URL.endsWith("/")
+      ? import.meta.env.BASE_URL
+      : `${import.meta.env.BASE_URL}/`;
+    return `${base}${clean}`;
+  };
+
+  const filteredPplPhotos = galleryItems.filter((item) => {
+    if (photoSchoolFilter === "smpn8") {
+      return item.id.includes("smp") || item.judul.toLowerCase().includes("smp") || item.deskripsi.toLowerCase().includes("smp");
+    }
+    if (photoSchoolFilter === "sman15") {
+      return item.id.includes("sma") || item.judul.toLowerCase().includes("sma") || item.deskripsi.toLowerCase().includes("sma");
+    }
+    return true;
+  });
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
@@ -119,7 +147,7 @@ export default function PplPage() {
               }`}
             >
               <ImageIcon className="w-4 h-4" />
-              Galeri & Dokumentasi Drive
+              Galeri Dokumentasi PPL ({galleryItems.length})
             </button>
           </div>
 
@@ -576,91 +604,216 @@ export default function PplPage() {
             </div>
           )}
 
-          {/* TAB 5: DOKUMENTASI & GALERI DRIVE */}
+          {/* TAB 5: DOKUMENTASI & GALERI FOTO PPL */}
           {activeTab === "dokumentasi" && (
             <div className="space-y-8 animate-in fade-in duration-200">
-              <div className="bg-gradient-to-r from-blue-900 to-slate-950 text-white rounded-3xl p-8 sm:p-10 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+              {/* Hero Banner with Drive Links */}
+              <div className="bg-gradient-to-r from-blue-950 via-slate-950 to-slate-900 text-white rounded-3xl p-8 sm:p-10 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
                   <span className="text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest block mb-2">
-                    ARSIP TERPADU GOOGLE DRIVE
+                    ARSIP TERPADU DOKUMENTASI LAPANGAN
                   </span>
                   <h2 className="text-2xl sm:text-3xl font-extrabold mb-3">
-                    Folder Artefak & Dokumentasi PPL
+                    Galeri Dokumentasi PPL Terpadu
                   </h2>
                   <p className="text-slate-300 text-sm max-w-xl leading-relaxed">
-                    Seluruh dokumen perangkat pembelajaran (PDF/DOCX), slide presentasi (PPTX), video rekaman mengajar, serta dokumentasi foto PPL di SMAN 15 Surabaya dan SMPN 8 Surabaya tersimpan rapi dan dapat diakses langsung oleh dosen serta guru pamong.
+                    Dokumentasi foto kegiatan lapangan autentik di <strong>SMP Negeri 8 Surabaya</strong> (PPL Mandiri - Semester 2) dan <strong>SMA Negeri 15 Surabaya</strong> (PPL Terbimbing - Semester 1).
                   </p>
                 </div>
-                <a
-                  href="https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3.5 rounded-2xl bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-extrabold text-sm transition-all shadow-lg hover:scale-105 shrink-0 flex items-center gap-2"
-                >
-                  <FolderOpen className="w-4 h-4" />
-                  Buka Folder ARTEFAK PPG di Drive
-                </a>
+                <div className="flex flex-col sm:flex-row gap-3 shrink-0">
+                  <a
+                    href="https://drive.google.com/drive/folders/15jdJG-jMIXDMqSRh8idgvRfWTYWGDNfG?hl=ID"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-3 rounded-2xl bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-extrabold text-xs transition-all shadow-md hover:scale-105 flex items-center justify-center gap-2"
+                  >
+                    <FolderOpen className="w-4 h-4" />
+                    Drive Foto SMPN 8 (50+ Foto)
+                  </a>
+                  <a
+                    href="https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-3 rounded-2xl bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-extrabold text-xs transition-all shadow-md hover:scale-105 flex items-center justify-center gap-2"
+                  >
+                    <FolderOpen className="w-4 h-4" />
+                    Drive Dokumen Artefak
+                  </a>
+                </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                <div className="bg-white p-6 rounded-2xl border border-slate-200">
-                  <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-4">
-                    <FileText className="w-5 h-5" />
-                  </div>
-                  <h4 className="font-bold text-slate-950 text-base mb-1">
-                    Modul Ajar & LKPD
-                  </h4>
-                  <p className="text-xs text-slate-500 leading-relaxed mb-4">
-                    Perangkat ajar berbasis kurikulum merdeka materi Berpikir Komputasional & Analisis Data.
-                  </p>
-                  <a
-                    href="https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs font-bold text-cyan-700 hover:text-cyan-900 inline-flex items-center gap-1"
-                  >
-                    Buka Berkas &rarr;
-                  </a>
-                </div>
+              {/* School Filter Selector */}
+              <div className="flex flex-wrap items-center gap-2 pb-2">
+                <span className="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider mr-2">
+                  Tampilkan Sekolah:
+                </span>
+                <button
+                  onClick={() => setPhotoSchoolFilter("semua")}
+                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
+                    photoSchoolFilter === "semua"
+                      ? "bg-slate-950 text-white shadow-xs"
+                      : "bg-white text-slate-600 hover:bg-slate-100 border border-slate-200"
+                  }`}
+                >
+                  Semua Foto ({galleryItems.length})
+                </button>
+                <button
+                  onClick={() => setPhotoSchoolFilter("smpn8")}
+                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                    photoSchoolFilter === "smpn8"
+                      ? "bg-emerald-700 text-white shadow-xs"
+                      : "bg-emerald-50 text-emerald-800 hover:bg-emerald-100 border border-emerald-200"
+                  }`}
+                >
+                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  SMP Negeri 8 Surabaya (PPL Mandiri - Semester 2)
+                </button>
+                <button
+                  onClick={() => setPhotoSchoolFilter("sman15")}
+                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                    photoSchoolFilter === "sman15"
+                      ? "bg-blue-700 text-white shadow-xs"
+                      : "bg-blue-50 text-blue-800 hover:bg-blue-100 border border-blue-200"
+                  }`}
+                >
+                  <span className="w-2 h-2 rounded-full bg-blue-400"></span>
+                  SMA Negeri 15 Surabaya (PPL Terbimbing - Semester 1)
+                </button>
+              </div>
 
-                <div className="bg-white p-6 rounded-2xl border border-slate-200">
-                  <div className="w-10 h-10 rounded-xl bg-red-50 text-red-700 flex items-center justify-center mb-4">
-                    <Video className="w-5 h-5" />
-                  </div>
-                  <h4 className="font-bold text-slate-950 text-base mb-1">
-                    Video Praktik Mengajar
-                  </h4>
-                  <p className="text-xs text-slate-500 leading-relaxed mb-4">
-                    Rekaman praktik mengajar mandiri (video full durasi dan video ringkasan berpendekatan emosional).
-                  </p>
-                  <a
-                    href="https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs font-bold text-cyan-700 hover:text-cyan-900 inline-flex items-center gap-1"
+              {/* Responsive Photo Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                {filteredPplPhotos.map((item) => (
+                  <div
+                    key={item.id}
+                    className="group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
                   >
-                    Tonton Video &rarr;
-                  </a>
-                </div>
+                    <div>
+                      {/* Image Preview with Hover */}
+                      <div
+                        onClick={() => setActiveModalImage(item)}
+                        className="relative aspect-video overflow-hidden bg-slate-100 cursor-pointer"
+                      >
+                        <img
+                          src={getImgSrc(item.imageUrl)}
+                          alt={item.judul}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                          <span className="p-2 rounded-full bg-white/80 text-slate-900 shadow-sm backdrop-blur-xs">
+                            <ZoomIn className="w-4 h-4" />
+                          </span>
+                        </div>
+                        <div className="absolute top-2 left-2 flex gap-1">
+                          {item.id.includes("smp") || item.judul.toLowerCase().includes("smp") ? (
+                            <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-700 text-white shadow-xs">
+                              SMPN 8 Surabaya
+                            </span>
+                          ) : (
+                            <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-blue-700 text-white shadow-xs">
+                              SMAN 15 Surabaya
+                            </span>
+                          )}
+                        </div>
+                      </div>
 
-                <div className="bg-white p-6 rounded-2xl border border-slate-200">
-                  <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4">
-                    <ImageIcon className="w-5 h-5" />
+                      {/* Content */}
+                      <div className="p-4">
+                        <div className="flex items-center justify-between text-[11px] mb-1.5">
+                          <span className="font-bold text-cyan-700">{item.kategori}</span>
+                        </div>
+                        <h4
+                          onClick={() => setActiveModalImage(item)}
+                          className="font-bold text-slate-950 text-sm mb-1.5 line-clamp-2 hover:text-cyan-700 cursor-pointer transition-colors"
+                        >
+                          {item.judul}
+                        </h4>
+                        <p className="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+                          {item.deskripsi}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Bottom Actions */}
+                    <div className="p-4 pt-0 border-t border-slate-100 mt-2 flex items-center justify-between text-xs">
+                      <button
+                        onClick={() => setActiveModalImage(item)}
+                        className="text-cyan-700 hover:text-cyan-900 font-bold inline-flex items-center gap-1"
+                      >
+                        <ZoomIn className="w-3.5 h-3.5" />
+                        Perbesar
+                      </button>
+                      <a
+                        href={item.linkDrive}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-slate-500 hover:text-slate-800 inline-flex items-center gap-1 font-semibold"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                        Drive
+                      </a>
+                    </div>
                   </div>
-                  <h4 className="font-bold text-slate-950 text-base mb-1">
-                    Foto Kegiatan PPL Terbaru
-                  </h4>
-                  <p className="text-xs text-slate-500 leading-relaxed mb-4">
-                    Dokumentasi suasana laboratorium komputer, bimbingan guru pamong, dan interaksi bersama murid di SMPN 8 & SMAN 15 Surabaya.
-                  </p>
-                  <a
-                    href="https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs font-bold text-cyan-700 hover:text-cyan-900 inline-flex items-center gap-1"
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Lightbox Modal */}
+          {activeModalImage && (
+            <div
+              className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-xs flex items-center justify-center p-4"
+              onClick={() => setActiveModalImage(null)}
+            >
+              <div
+                className="bg-white rounded-3xl max-w-3xl w-full overflow-hidden shadow-2xl animate-in zoom-in-95 duration-200"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div className="relative aspect-video bg-black flex items-center justify-center">
+                  <img
+                    src={getImgSrc(activeModalImage.imageUrl)}
+                    alt={activeModalImage.judul}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                  <button
+                    onClick={() => setActiveModalImage(null)}
+                    className="absolute top-4 right-4 p-2 rounded-full bg-slate-950/60 hover:bg-slate-950 text-white transition-colors"
                   >
-                    Lihat Galeri Foto &rarr;
-                  </a>
+                    <X className="w-5 h-5" />
+                  </button>
+                  <div className="absolute top-4 left-4">
+                    {activeModalImage.id.includes("smp") || activeModalImage.judul.toLowerCase().includes("smp") ? (
+                      <span className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-600 text-white shadow-md">
+                        SMP Negeri 8 Surabaya (Semester 2)
+                      </span>
+                    ) : (
+                      <span className="px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white shadow-md">
+                        SMA Negeri 15 Surabaya (Semester 1)
+                      </span>
+                    )}
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-mono font-bold text-cyan-700 uppercase tracking-wider">
+                      {activeModalImage.kategori}
+                    </span>
+                    <a
+                      href={activeModalImage.linkDrive}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-cyan-700 hover:text-cyan-900"
+                    >
+                      <FolderOpen className="w-3.5 h-3.5" />
+                      Buka di Google Drive &rarr;
+                    </a>
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    {activeModalImage.judul}
+                  </h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    {activeModalImage.deskripsi}
+                  </p>
                 </div>
               </div>
             </div>
