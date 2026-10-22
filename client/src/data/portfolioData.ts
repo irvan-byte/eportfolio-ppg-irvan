@@ -1046,67 +1046,67 @@ export interface GalleryItem {
 
 export const galleryItems: GalleryItem[] = [
   {
-    id: "gal-1",
-    judul: "Penerimaan & Koordinasi Awal Mahasiswa PPL",
-    kategori: "PPL",
-    deskripsi: "Sesi penerimaan resmi dan penyerahan mahasiswa PPL oleh Dosen Pembimbing Lapangan Prof. Dr. Joko, M.Pd., M.T. bersama jajaran pimpinan sekolah mitra.",
-    imageUrl: "images/galeri/penerimaan-ppl.jpg",
-    linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+    "id": "gal-1",
+    "judul": "Penerimaan & Sambutan Resmi PPL UNESA di SMAN 15 Surabaya",
+    "kategori": "PPL",
+    "deskripsi": "Sesi penerimaan resmi dan penyerahan mahasiswa PPL oleh Dosen Pembimbing Lapangan PPG UNESA bersama jajaran kepala sekolah dan pimpinan SMAN 15 Surabaya.",
+    "imageUrl": "images/galeri/penerimaan-ppl.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    id: "gal-2",
-    judul: "Partisipasi Upacara Bendera & Pembiasaan Apel Pagi",
-    kategori: "Kegiatan Sekolah",
-    deskripsi: "Mengikuti upacara bendera hari Senin dan pembiasaan budaya positif 5S (Senyum, Salam, Sapa, Sopan, Santun) menyambut peserta didik di gerbang sekolah.",
-    imageUrl: "images/galeri/upacara-apel-pagi.jpg",
-    linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+    "id": "gal-2",
+    "judul": "Koordinasi Awal Perangkat Ajar & Arahan Pimpinan Sekolah",
+    "kategori": "Diskusi",
+    "deskripsi": "Sesi koordinasi mendalam antara mahasiswa PPG dengan pimpinan sekolah dan guru pamong terkait pemetaan jadwal mengajar dan fasilitas laboratorium.",
+    "imageUrl": "images/galeri/koordinasi-awal.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    id: "gal-3",
-    judul: "Koordinasi Perangkat Ajar Bersama Guru Pamong",
-    kategori: "Diskusi",
-    deskripsi: "Konsultasi dan validasi modul ajar Informatika serta lembar kerja peserta didik (LKPD) bersama Guru Pamong Pamuji Raharjo, S.Pd.",
-    imageUrl: "images/galeri/koordinasi-pamong.jpg",
-    linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+    "id": "gal-3",
+    "judul": "Observasi Lingkungan Pembelajaran & Fasilitas Lab Komputer",
+    "kategori": "Kegiatan Sekolah",
+    "deskripsi": "Mahasiswa PPG mengobservasi kesiapan sarana prasarana laboratorium komputer, jaringan internet, serta budaya belajar siswa sebelum memulai siklus praktik.",
+    "imageUrl": "images/galeri/observasi-lab.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    id: "gal-4",
-    judul: "Praktik Mengajar Aktif di Laboratorium Komputer",
-    kategori: "Mengajar",
-    deskripsi: "Suasana pembelajaran aktif materi Berpikir Komputasional dan pengolahan data menggunakan model Problem Based Learning di laboratorium komputer.",
-    imageUrl: "images/galeri/praktik-mengajar-lab.jpg",
-    linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+    "id": "gal-4",
+    "judul": "Praktik Mengajar Nyata di Laboratorium Komputer SMAN 15",
+    "kategori": "Mengajar",
+    "deskripsi": "Pelaksanaan pembelajaran aktif di laboratorium komputer; guru memberikan penjelasan konsep di papan tulis sementara peserta didik mempraktikkan langsung pada PC masing-masing.",
+    "imageUrl": "images/galeri/praktik-mengajar-lab.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    id: "gal-5",
-    judul: "Pendampingan Individual & Scaffolding Peserta Didik",
-    kategori: "Mengajar",
-    deskripsi: "Bimbingan langsung satu per satu kepada peserta didik yang mengalami kendala logika komputasi untuk menumbuhkan rasa percaya diri dan kemandirian.",
-    imageUrl: "images/galeri/bimbingan-siswa.jpg",
-    linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+    "id": "gal-5",
+    "judul": "Pendampingan Praktik Komputer & Kolaborasi Pembelajaran Aktif",
+    "kategori": "Mengajar",
+    "deskripsi": "Suasana kerja kolaboratif dan pendampingan terbimbing di laboratorium komputer SMAN 15 Surabaya menggunakan laptop dan sarana pembelajaran digital sekolah.",
+    "imageUrl": "images/galeri/pendampingan-komputasi.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    id: "gal-6",
-    judul: "Presentasi Kelompok & Unjuk Pemecahan Masalah Logika",
-    kategori: "Presentasi",
-    deskripsi: "Peserta didik mempresentasikan hasil dekomposisi masalah dan bagan alir (flowchart) di depan kelas dengan antusias dan kerja sama yang solid.",
-    imageUrl: "images/galeri/presentasi-kelompok.jpg",
-    linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+    "id": "gal-6",
+    "judul": "Supervisi Klinis & Refleksi Berkala Bersama DPL dan Pamong",
+    "kategori": "Diskusi",
+    "deskripsi": "Pertemuan supervisi klinis dan evaluasi kemajuan pembelajaran di ruang tamu sekolah bersama Dosen Pembimbing Lapangan dan Guru Pamong.",
+    "imageUrl": "images/galeri/supervisi-dpl-pamong.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    id: "gal-7",
-    judul: "Penerapan Pembelajaran Sosial Emosional (PSE) & Ice Breaking",
-    kategori: "PPL",
-    deskripsi: "Sesi peregangan dinamis dan teknik kesadaran penuh (mindfulness STOP) sebelum kuis untuk menciptakan suasana kelas yang relaks dan menyenangkan.",
-    imageUrl: "images/galeri/icebreaking-pse.jpg",
-    linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+    "id": "gal-7",
+    "judul": "Penyampaian Laporan & Acara Penarikan Resmi Mahasiswa PPL",
+    "kategori": "PPL",
+    "deskripsi": "Acara resmi penarikan mahasiswa Praktik Lapangan Persekolahan PPG Prajabatan Informatika UNESA di ruang rapat pimpinan sekolah mitra.",
+    "imageUrl": "images/galeri/penarikan-resmi.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    id: "gal-8",
-    judul: "Pemanfaatan LMS & Media Interaktif Kompulogika SMPN 8",
-    kategori: "Dokumentasi Tugas",
-    deskripsi: "Dokumentasi antarmuka pembelajaran digital, kuis interaktif, dan pemantauan capaian nilai siswa melalui platform LMS sekolah mitra.",
-    imageUrl: "images/galeri/lms-smpn8.jpg",
-    linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+    "id": "gal-8",
+    "judul": "Foto Bersama Mahasiswa PPL, DPL & Guru di Monumen SMAN 15",
+    "kategori": "Kegiatan Sekolah",
+    "deskripsi": "Momen kenang-kenangan bersama DPL dan perwakilan guru pamong di depan monumen SMAN 15 Surabaya sebagai penutup rangkaian kegiatan PPL yang bermakna.",
+    "imageUrl": "images/galeri/foto-bersama-sman15.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   }
 ];
