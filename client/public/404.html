@@ -1,19 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
   <meta charset="utf-8">
-  <script>
-    const path = window.location.pathname;
-    const repo = "/eportfolio-ppg-irvan";
+  <title>E-Portfolio PPG Informatika — Mengalihkan...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript">
+    // Single Page Apps for GitHub Pages
+    // MIT License - https://github.com/rafgraph/spa-github-pages
+    // Mengubah path dan query parameter menjadi query string untuk diarahkan ke index.html
+    var pathSegmentsToKeep = 1; // 1 segment untuk subdirektori repositori: /eportfolio-ppg-irvan
 
-    const route = path.startsWith(repo)
-      ? path.slice(repo.length)
-      : path;
+    var l = window.location;
+    var pathParts = l.pathname.split('/');
+    var repoBase = pathParts.slice(0, 1 + pathSegmentsToKeep).join('/');
+    var routePath = pathParts.slice(1 + pathSegmentsToKeep).join('/');
 
-    window.location.replace(
-      repo + "/?redirect=" + encodeURIComponent(route + window.location.search + window.location.hash)
+    // Arahkan peramban kembali ke basis aplikasi dengan query string '?/...'
+    l.replace(
+      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      repoBase + '/?/' +
+      routePath.replace(/&/g, '~and~') +
+      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
     );
   </script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #0b1329;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+      padding: 20px;
+    }
+    .card {
+      background: #111e38;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 400px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(56, 189, 248, 0.2);
+      border-top-color: #38bdf8;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 16px auto;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
 </head>
-<body></body>
+<body>
+  <div class="card">
+    <div class="spinner"></div>
+    <h3 style="color: #ffffff; margin: 0 0 8px 0; font-size: 18px;">Memuat Halaman E-Portfolio...</h3>
+    <p style="margin: 0; font-size: 13px; line-height: 1.5;">Sedang mengarahkan ke halaman yang Anda tuju. Mohon tunggu sebentar.</p>
+  </div>
+</body>
 </html>
