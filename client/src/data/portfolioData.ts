@@ -1046,7 +1046,71 @@ export interface GalleryItem {
 
 export const galleryItems: GalleryItem[] = [
   {
-    "id": "gal-1",
+    "id": "gal-smp-1",
+    "judul": "Partisipasi Upacara Bendera Hari Senin di SMPN 8 Surabaya",
+    "kategori": "Kegiatan Sekolah",
+    "deskripsi": "Mahasiswa PPG berbaris khidmat bersama dewan guru dan seluruh peserta didik dalam pelaksanaan Upacara Bendera hari Senin di halaman sekolah SMP Negeri 8 Surabaya.",
+    "imageUrl": "images/galeri/smpn8-upacara-bendera-senin.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/15jdJG-jMIXDMqSRh8idgvRfWTYWGDNfG?hl=ID"
+  },
+  {
+    "id": "gal-smp-2",
+    "judul": "Pembiasaan Budaya Positif 5S & Salim Menyambut Siswa",
+    "kategori": "Kegiatan Sekolah",
+    "deskripsi": "Menyambut kedatangan peserta didik di gerbang utama sekolah (Jl. Bunguran) pada pagi hari melalui pembiasaan 5S (Senyum, Salam, Sapa, Sopan, Santun) dan jabat tangan hormat.",
+    "imageUrl": "images/galeri/smpn8-budaya-5s-salim.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/15jdJG-jMIXDMqSRh8idgvRfWTYWGDNfG?hl=ID"
+  },
+  {
+    "id": "gal-smp-3",
+    "judul": "Pembiasaan Apel Pagi & Senam Kebugaran Bersama Murid",
+    "kategori": "Kegiatan Sekolah",
+    "deskripsi": "Kegiatan apel pagi terpusat dan senam kesegaran jasmani bersama ratusan murid berseragam putih-biru di lapangan sekolah SMP Negeri 8 Surabaya.",
+    "imageUrl": "images/galeri/smpn8-senam-apel-pagi.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/15jdJG-jMIXDMqSRh8idgvRfWTYWGDNfG?hl=ID"
+  },
+  {
+    "id": "gal-smp-4",
+    "judul": "Penerimaan & Koordinasi Perdana di SMP Negeri 8 Surabaya",
+    "kategori": "PPL",
+    "deskripsi": "Pertemuan resmi penyerahan dan penerimaan mahasiswa PPL PPG Prajabatan di ruang pimpinan SMPN 8 Surabaya bersama DPL dan Guru Pamong Pamuji Raharjo, S.Pd.",
+    "imageUrl": "images/galeri/smpn8-penerimaan-koordinasi.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/15jdJG-jMIXDMqSRh8idgvRfWTYWGDNfG?hl=ID"
+  },
+  {
+    "id": "gal-smp-5",
+    "judul": "Pengerjaan LKPD Berpikir Komputasional oleh Peserta Didik",
+    "kategori": "Mengajar",
+    "deskripsi": "Peserta didik kelas 9 berkonsentrasi menyelesaikan Lembar Kerja Peserta Didik (LKPD) materi Dekomposisi dan Abstraksi secara mandiri dan tekun.",
+    "imageUrl": "images/galeri/smpn8-pembelajaran-lkpd.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/15jdJG-jMIXDMqSRh8idgvRfWTYWGDNfG?hl=ID"
+  },
+  {
+    "id": "gal-smp-6",
+    "judul": "Diskusi Kelompok & Pemecahan Kasus Logika Komputasi",
+    "kategori": "Presentasi",
+    "deskripsi": "Aktivitas belajar kelompok peserta didik berseragam batik khas SMPN 8 dalam mendiskusikan pemecahan masalah logika dan diagram alir (flowchart).",
+    "imageUrl": "images/galeri/smpn8-kolaborasi-kelompok.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/15jdJG-jMIXDMqSRh8idgvRfWTYWGDNfG?hl=ID"
+  },
+  {
+    "id": "gal-smp-7",
+    "judul": "Pendampingan Pembelajaran Aktif & Refleksi Kelas TIK",
+    "kategori": "Mengajar",
+    "deskripsi": "Guru membimbing kelompok kerja peserta didik pada jam pelajaran Informatika (TIK) untuk memastikan setiap siswa memahami konsep instruksi tugas.",
+    "imageUrl": "images/galeri/smpn8-pendampingan-kelas.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/15jdJG-jMIXDMqSRh8idgvRfWTYWGDNfG?hl=ID"
+  },
+  {
+    "id": "gal-smp-8",
+    "judul": "Konsultasi Modul Ajar di Studio Spendela SMPN 8",
+    "kategori": "Diskusi",
+    "deskripsi": "Koordinasi perangkat ajar dan integrasi LMS digital bersama Guru Pamong di studio/ruang podcast SpEIGHTaculer SMP Negeri 8 Surabaya.",
+    "imageUrl": "images/galeri/smpn8-diskusi-pamong-podcast.jpg",
+    "linkDrive": "https://drive.google.com/drive/folders/15jdJG-jMIXDMqSRh8idgvRfWTYWGDNfG?hl=ID"
+  },
+  {
+    "id": "gal-sma-1",
     "judul": "Penerimaan & Sambutan Resmi PPL UNESA di SMAN 15 Surabaya",
     "kategori": "PPL",
     "deskripsi": "Sesi penerimaan resmi dan penyerahan mahasiswa PPL oleh Dosen Pembimbing Lapangan PPG UNESA bersama jajaran kepala sekolah dan pimpinan SMAN 15 Surabaya.",
@@ -1054,7 +1118,7 @@ export const galleryItems: GalleryItem[] = [
     "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    "id": "gal-2",
+    "id": "gal-sma-2",
     "judul": "Koordinasi Awal Perangkat Ajar & Arahan Pimpinan Sekolah",
     "kategori": "Diskusi",
     "deskripsi": "Sesi koordinasi mendalam antara mahasiswa PPG dengan pimpinan sekolah dan guru pamong terkait pemetaan jadwal mengajar dan fasilitas laboratorium.",
@@ -1062,7 +1126,7 @@ export const galleryItems: GalleryItem[] = [
     "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    "id": "gal-3",
+    "id": "gal-sma-3",
     "judul": "Observasi Lingkungan Pembelajaran & Fasilitas Lab Komputer",
     "kategori": "Kegiatan Sekolah",
     "deskripsi": "Mahasiswa PPG mengobservasi kesiapan sarana prasarana laboratorium komputer, jaringan internet, serta budaya belajar siswa sebelum memulai siklus praktik.",
@@ -1070,7 +1134,7 @@ export const galleryItems: GalleryItem[] = [
     "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    "id": "gal-4",
+    "id": "gal-sma-4",
     "judul": "Praktik Mengajar Nyata di Laboratorium Komputer SMAN 15",
     "kategori": "Mengajar",
     "deskripsi": "Pelaksanaan pembelajaran aktif di laboratorium komputer; guru memberikan penjelasan konsep di papan tulis sementara peserta didik mempraktikkan langsung pada PC masing-masing.",
@@ -1078,7 +1142,7 @@ export const galleryItems: GalleryItem[] = [
     "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    "id": "gal-5",
+    "id": "gal-sma-5",
     "judul": "Pendampingan Praktik Komputer & Kolaborasi Pembelajaran Aktif",
     "kategori": "Mengajar",
     "deskripsi": "Suasana kerja kolaboratif dan pendampingan terbimbing di laboratorium komputer SMAN 15 Surabaya menggunakan laptop dan sarana pembelajaran digital sekolah.",
@@ -1086,7 +1150,7 @@ export const galleryItems: GalleryItem[] = [
     "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    "id": "gal-6",
+    "id": "gal-sma-6",
     "judul": "Supervisi Klinis & Refleksi Berkala Bersama DPL dan Pamong",
     "kategori": "Diskusi",
     "deskripsi": "Pertemuan supervisi klinis dan evaluasi kemajuan pembelajaran di ruang tamu sekolah bersama Dosen Pembimbing Lapangan dan Guru Pamong.",
@@ -1094,7 +1158,7 @@ export const galleryItems: GalleryItem[] = [
     "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    "id": "gal-7",
+    "id": "gal-sma-7",
     "judul": "Penyampaian Laporan & Acara Penarikan Resmi Mahasiswa PPL",
     "kategori": "PPL",
     "deskripsi": "Acara resmi penarikan mahasiswa Praktik Lapangan Persekolahan PPG Prajabatan Informatika UNESA di ruang rapat pimpinan sekolah mitra.",
@@ -1102,7 +1166,7 @@ export const galleryItems: GalleryItem[] = [
     "linkDrive": "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    "id": "gal-8",
+    "id": "gal-sma-8",
     "judul": "Foto Bersama Mahasiswa PPL, DPL & Guru di Monumen SMAN 15",
     "kategori": "Kegiatan Sekolah",
     "deskripsi": "Momen kenang-kenangan bersama DPL dan perwakilan guru pamong di depan monumen SMAN 15 Surabaya sebagai penutup rangkaian kegiatan PPL yang bermakna.",
