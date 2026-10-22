@@ -89,8 +89,8 @@ export const timelineData: TimelineItem[] = [
     id: "ppl2",
     tahap: "PPL II Mandiri (SMPN 8 Surabaya)",
     periode: "PPL Mandiri",
-    ringkasan: "Praktik mengajar mandiri 4 siklus di SMPN 8 Surabaya didampingi Guru Pamong Pamuji Raharjo, S.Pd.",
-    detail: "Mengimplementasikan pembelajaran mandiri penuh, manajemen kelas, tugas 1 analisis komponen praktik mengajar, dan evaluasi UTS-UAS berbasis artefak digital di SMPN 8 Surabaya.",
+    ringkasan: "Praktik mengajar mandiri dan inovasi Kompulogika di SMPN 8 Surabaya didampingi Guru Pamong Pamuji Raharjo, S.Pd.",
+    detail: "Mengimplementasikan pembelajaran mandiri penuh 4 pilar Berpikir Komputasional (Dekomposisi, Pola, Abstraksi, Algoritma), manajemen kelas, inovasi Kompulogika, dan evaluasi UTS-UAS di SMPN 8 Surabaya.",
     status: "berlangsung"
   },
   {
@@ -191,9 +191,9 @@ export const coursesData: CourseItem[] = [
     ],
     refleksi: "Mengajar beberapa jam pelajaran di laboratorium komputer membutuhkan stamina prima untuk berkeliling memantau layar siswa. Ketika kondisi fisik saya prima, saya dapat menyapa siswa dengan senyum hangat dan tidak mudah terpancing emosi ketika terjadi kendala teknis. Kebugaran fisik adalah bentuk dedikasi saya dalam melayani peserta didik dengan performa terbaik.",
     dokumentasi: [
-      "Laporan Tes Kebugaran Jasmani Mandiri",
-      "Logbook Aktivitas Fisik & Ergonomi",
-      "Panduan Ice Breaking Gerak & Relaksasi"
+      "Laporan Tes Kebugaran Jasmani Mandiri (TKJI)",
+      "Logbook Aktivitas Fisik & Ergonomi Pendidik",
+      "Panduan Ice Breaking Gerak & Relaksasi Siswa"
     ],
     arsipUrl: "https://drive.google.com/drive/folders/1vZ_J1_EHEatm-yYeE8XRMPeKz809OLxy?usp=drive_link"
   },
@@ -267,7 +267,7 @@ export const coursesData: CourseItem[] = [
       "Modul Ajar Siklus Terbimbing SMA",
       "Video Praktik Mengajar & Jurnal Refleksi Harian"
     ],
-    arsipUrl: "https://drive.google.com/drive/folders/1RIAyNt_nX_7yDfvzpnKwuSNqIxZDteLN/view?usp=sharing"
+    arsipUrl: "https://drive.google.com/file/d/1RIAyNt_nX_7yDfvzpnKwuSNqIxZDteLN/view?usp=sharing"
   },
 
   // ================= SEMESTER 2 =================
@@ -289,9 +289,9 @@ export const coursesData: CourseItem[] = [
     ],
     refleksi: "Melalui mata kuliah PMAL, saya memahami bahwa asesmen lanjutan bukanlah instrumen penghakiman nilai akhir semata, melainkan sarana diagnosis yang sangat berharga bagi guru untuk memetakan kekuatan dan kebutuhan belajar setiap murid. Menyusun rubrik analitik yang jelas membantu peserta didik memahami ekspektasi kualitas kerja mereka serta menumbuhkan keterampilan refleksi mandiri (self-assessment).",
     dokumentasi: [
+      "Laporan UTS PMAL: DUP Dekomposisi & Pengenalan Pola",
       "Paket Instrumen Asesmen Autentik HOTS",
-      "Rubrik Penilaian Unjuk Kinerja Analitik",
-      "Laporan Analisis Hasil Asesmen Peserta Didik"
+      "Rubrik Penilaian Unjuk Kinerja Analitik"
     ],
     arsipUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
@@ -313,8 +313,8 @@ export const coursesData: CourseItem[] = [
     ],
     refleksi: "Saya pernah mendapati seorang siswa yang frustrasi dan enggan melanjutkan tugas akibat kesalahan logika program yang berulang. Berkat bekal ilmu PSE, saya mendekatinya dengan empati dan mengajak mengambil jeda napas sejenak sebelum menelaah eror secara bersama. Pendekatan yang menenangkan tersebut mengembalikan rasa percaya dirinya. Menjadi pendidik adalah menyentuh hati sebelum mengisi daya pikir anak.",
     dokumentasi: [
-      "Rencana Aksi Integrasi KSE Modul Ajar",
-      "Jurnal Refleksi Emosional Guru & Peserta Didik",
+      "Modul Ajar UTS PSE Berpikir Komputasional",
+      "Jurnal Refleksi Emosional Guru & Peserta Didik (1A-1E)",
       "Panduan Praktik STOP & Regulasi Diri di Kelas"
     ],
     arsipUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
@@ -337,7 +337,7 @@ export const coursesData: CourseItem[] = [
     ],
     refleksi: "Memimpin proyek sosial bersama rekan mahasiswa di tengah padatnya jadwal PPL menuntut kematangan komunikasi dan manajemen waktu. Dari pengalaman ini, saya belajar bahwa kepemimpinan sejati bukanlah tentang mendikte, melainkan kemampuan mendengar, memfasilitasi kekuatan rekan tim, dan merawat komitmen bersama demi kemanfaatan yang berkelanjutan.",
     dokumentasi: [
-      "Proposal Prakarsa Perubahan Projek Kepemimpinan",
+      "Proposal Prakarsa Perubahan Projek Kepemimpinan (UTS PK)",
       "Dokumentasi Foto & Video Pelaksanaan Aksi Nyata",
       "Laporan Akhir Dampak & Gelar Karya Projek"
     ],
@@ -361,8 +361,8 @@ export const coursesData: CourseItem[] = [
     ],
     refleksi: "Di laboratorium komputer, saya pernah mendampingi siswa dengan kecepatan membaca yang lebih lambat sehingga tertinggal saat membaca panduan tertulis. Pengalaman tersebut menegaskan bahwa pendidiklah yang wajib menyediakan jalur belajar alternatif—misalnya melalui infografis visual dan rekaman audio instruksi. Tidak ada satu pun anak yang boleh merasa tersisih di ruang kelas saya.",
     dokumentasi: [
-      "Laporan Identifikasi Kasus Siswa Inklusif",
-      "Modul Ajar Informatika Berbasis Prinsip UDL",
+      "Studi Kasus Mengenal Profil Siswa Inklusif Alya",
+      "RPP Berdiferensiasi Informatika Berbasis UDL",
       "Instrumen Asesmen Akomodasi yang Layak"
     ],
     arsipUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
@@ -385,7 +385,7 @@ export const coursesData: CourseItem[] = [
     ],
     refleksi: "Menjalani ujian sidang seminar proposal memberikan pengalaman berharga dalam mempertahankan argumentasi pedagogis dengan dukungan data kelas nyata. Guru profesional adalah praktisi yang senantiasa menempatkan dirinya sebagai pembelajar sepanjang hayat (lifelong learner) dan peneliti atas praktiknya sendiri di kelas demi perbaikan mutu pembelajaran yang tiada henti.",
     dokumentasi: [
-      "Naskah Proposal PTK / Seminar Refleksi Inovasi",
+      "Laporan Inovasi Pembelajaran Kompulogika SMPN 8",
       "Slide Presentasi Ujian Sidang Seminar",
       "Artikel Best Practice Pembelajaran Informatika"
     ],
@@ -424,7 +424,7 @@ export const pplData: PplData = {
   kepalaSekolahMandiri: "Drs. Sudjasmi Marginono, M.Si (SMPN 8 Surabaya)",
   guruPamongMandiri: "Pamuji Raharjo., S.Pd (SMPN 8 Surabaya)",
   dosenPembimbing: "Prof. Dr. Joko, M.Pd., M.T. (UNESA)",
-  deskripsi: "Praktik Pengalaman Lapangan (PPL) terbagi menjadi dua tahap pengabdian: PPL Terbimbing di SMAN 15 Surabaya (jenjang SMA) untuk mengamati kultur belajar dan asistensi mengajar, serta PPL Mandiri di SMP Negeri 8 Surabaya (jenjang SMP) untuk melaksanakan praktik mengajar mandiri 4 siklus, penanganan kelas, dan penyusunan portofolio UTS-UAS.",
+  deskripsi: "Praktik Pengalaman Lapangan (PPL) terbagi menjadi dua tahap pengabdian: PPL Terbimbing di SMAN 15 Surabaya (jenjang SMA) untuk mengamati kultur belajar dan asistensi mengajar, serta PPL Mandiri di SMP Negeri 8 Surabaya (jenjang SMP) untuk melaksanakan praktik mengajar mandiri, penerapan inovasi Kompulogika, dan penyusunan portofolio UTS-UAS.",
   tahapan: [
     {
       judul: "1. Observasi & Orientasi Sekolah Mitra",
@@ -440,15 +440,15 @@ export const pplData: PplData = {
       judul: "2. Perencanaan Pembelajaran (Modul Ajar & Media UbD)",
       deskripsi: "Menyusun modul ajar Informatika berbasis kerangka Understanding by Design (UbD) yang terstruktur dan bermakna.",
       poinPenting: [
-        "Penyusunan Modul Ajar Berpikir Komputasional dan Analisis Data",
+        "Penyusunan 4 Modul Ajar Berpikir Komputasional (Dekomposisi, Pola, Abstraksi, Algoritma)",
         "Pembuatan LKPD interaktif, presentasi visual, dan media pembelajaran alternatif (unplugged)",
         "Konsultasi dan validasi perangkat pembelajaran bersama guru pamong"
       ],
       dokumentasiPlaceholder: "Modul Ajar, PPT, dan LKPD lengkap tersedia di folder artefak"
     },
     {
-      judul: "3. Praktik Mengajar Terbimbing & Mandiri (4 Siklus)",
-      deskripsi: "Melaksanakan pembelajaran di kelas secara langsung: asistensi terbimbing di SMAN 15 Surabaya dan 4 siklus mandiri di SMPN 8 Surabaya.",
+      judul: "3. Praktik Mengajar Terbimbing & Mandiri (Inovasi Kompulogika)",
+      deskripsi: "Melaksanakan pembelajaran di kelas secara langsung: asistensi terbimbing di SMAN 15 Surabaya dan praktik mandiri berbasis inovasi Kompulogika di SMPN 8 Surabaya.",
       poinPenting: [
         "Penerapan model Problem Based Learning (PBL) dan Project Based Learning (PjBL)",
         "Pengelolaan kelas aktif, ramah anak, dan pendekatan empati (PSE)",
@@ -464,7 +464,7 @@ export const pplData: PplData = {
         "Refleksi efektivitas instrumen penilaian terhadap pemahaman mendalam siswa",
         "Tindak lanjut berupa pengayaan bagi siswa mahir dan bimbingan tambahan bagi yang membutuhkan"
       ],
-      dokumentasiPlaceholder: "Rekapitulasi asesmen dan analisis hasil belajar peserta didik"
+      dokumentasiPlaceholder: "Rekapitulasi asesmen dan analisis hasil belajar peserta didik kelas 9B & 9G"
     },
     {
       judul: "5. Refleksi Siklis & Produk Portofolio PPL",
@@ -472,14 +472,12 @@ export const pplData: PplData = {
       poinPenting: [
         "Diskusi reflektif berkala bersama guru pamong dan DPL",
         "Penyusunan Tugas 1 Analisis Komponen Praktik Mengajar Mandiri",
-        "Penyusunan produk terbaik UTS (Siklus 1) dan persiapan UAS (Siklus 2-4)"
+        "Penyusunan produk terbaik UTS (Siklus 1) dan persiapan UAS"
       ],
       dokumentasiPlaceholder: "Jurnal refleksi PPL, laporan UTS, dan laporan UAS"
     }
   ]
 };
-
-// ================= DATA LENGKAP INTEGRASI PPL =================
 
 export interface TimelineStep {
   no: number;
@@ -517,13 +515,13 @@ export interface SiklusInfo {
 export const siklusDataList: SiklusInfo[] = [
   {
     nomor: 1,
-    judul: "Siklus 1 - Praktik Mengajar Mandiri (Produk UTS)",
+    judul: "Pilar 1: Dekomposisi Masalah Komputasional (Produk UTS)",
     status: "selesai",
-    deskripsi: "Praktik mengajar mandiri pertama di SMPN 8 Surabaya yang menjadi dasar penyusunan E-Portfolio 1 (UTS). Fokus pada penerapan rancangan pembelajaran Berpikir Komputasional dan pendekatan emosional di kelas nyata.",
+    deskripsi: "Praktik mengajar mandiri pertama di SMPN 8 Surabaya yang menjadi dasar penyusunan E-Portfolio 1 (UTS). Fokus pada penerapan rancangan pembelajaran Dekomposisi Masalah dan pendekatan emosional di kelas nyata.",
     sekolah: "SMP Negeri 8 Surabaya",
     mataPelajaran: "Informatika / TIK",
-    kelas: "Kelas 9 SMP",
-    materi: "Berpikir Komputasional (Dekomposisi, Pengenalan Pola, Abstraksi, Algoritma)",
+    kelas: "Kelas 9 SMP (9B & 9G)",
+    materi: "Berpikir Komputasional: Dekomposisi Masalah Kompleks Menjadi Sub-Masalah",
     tanggal: "Agustus - September 2026",
     linkRancangan: "https://drive.google.com/file/d/1cFWbWKndGXuh0GPMY5uLn9fEI-20wUds/view?usp=sharing",
     linkVideo: "https://drive.google.com/file/d/1glRcMieoR8ET3MAD3mfFbim39NLl6FNX/view?usp=sharing",
@@ -531,42 +529,42 @@ export const siklusDataList: SiklusInfo[] = [
   },
   {
     nomor: 2,
-    judul: "Siklus 2 - Analisis Data & Logika Algoritma",
-    status: "berjalan",
-    deskripsi: "Praktik mengajar mandiri kedua di SMPN 8 Surabaya. Mengintegrasikan pembelajaran berbasis masalah (PBL) dan aktivitas interaktif di lab komputer serta penanganan kendala kelas secara mandiri.",
+    judul: "Pilar 2: Pengenalan Pola & Keteraturan Data",
+    status: "selesai",
+    deskripsi: "Praktik mengajar mandiri kedua di SMPN 8 Surabaya. Mengintegrasikan pembelajaran berbasis masalah (PBL) dan aktivitas interaktif mengenali keteraturan pola data komputasi dalam kehidupan sehari-hari.",
     sekolah: "SMP Negeri 8 Surabaya",
     mataPelajaran: "Informatika",
-    kelas: "Kelas 9 SMP",
-    materi: "Analisis Data dan Struktur Logika Algoritma",
-    tanggal: "Oktober 2026",
+    kelas: "Kelas 9 SMP (9B & 9G)",
+    materi: "Berpikir Komputasional: Pengenalan Pola (Pattern Recognition)",
+    tanggal: "September - Oktober 2026",
     linkRancangan: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID",
     linkVideo: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID",
     linkDokumentasi: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
     nomor: 3,
-    judul: "Siklus 3 - Pembelajaran Berdiferensiasi & Inklusif",
-    status: "disiapkan",
-    deskripsi: "Praktik mengajar mandiri ketiga di SMPN 8 Surabaya. Fokus pada penerapan diferensiasi konten dan proses serta akomodasi bagi peserta didik dengan beragam kecepatan belajar (TaRL).",
+    judul: "Pilar 3: Abstraksi & Pemodelan Informasi Esensial",
+    status: "berjalan",
+    deskripsi: "Praktik mengajar mandiri ketiga di SMPN 8 Surabaya. Membimbing peserta didik memilah informasi penting dan mengabaikan detail yang tidak relevan dalam merancang sistem data.",
     sekolah: "SMP Negeri 8 Surabaya",
     mataPelajaran: "Informatika",
-    kelas: "Kelas 9 SMP",
-    materi: "Literasi Digital, Etika Berinternet, & Keamanan Data Pribadi",
-    tanggal: "November 2026",
+    kelas: "Kelas 9 SMP (9B & 9G)",
+    materi: "Berpikir Komputasional: Abstraksi dan Pemodelan Data Sederhana",
+    tanggal: "Oktober 2026",
     linkRancangan: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID",
     linkVideo: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID",
     linkDokumentasi: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
     nomor: 4,
-    judul: "Siklus 4 - Evaluasi Akhir & Refleksi Komprehensif (UAS)",
-    status: "disiapkan",
-    deskripsi: "Siklus praktik penutup di SMPN 8 Surabaya dan penyusunan produk komprehensif E-Portfolio 2 (UAS) serta pameran hasil belajar karya siswa.",
+    judul: "Pilar 4: Algoritma & Bagan Alir Flowchart Logis",
+    status: "berjalan",
+    deskripsi: "Praktik mengajar mandiri keempat di SMPN 8 Surabaya. Mengonversi langkah-langkah logika pemecahan masalah ke dalam notasi bagan alir (flowchart) standar Kurikulum Merdeka.",
     sekolah: "SMP Negeri 8 Surabaya",
     mataPelajaran: "Informatika",
-    kelas: "Kelas 9 SMP",
-    materi: "Proyek Kolaboratif Pemecahan Masalah Komputasi Sederhana",
-    tanggal: "Desember 2026",
+    kelas: "Kelas 9 SMP (9B & 9G)",
+    materi: "Berpikir Komputasional: Algoritma & Notasi Standar Flowchart",
+    tanggal: "Oktober - November 2026",
     linkRancangan: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID",
     linkVideo: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID",
     linkDokumentasi: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
@@ -672,73 +670,314 @@ export interface PortfolioItem {
 }
 
 export const portfolioItems: PortfolioItem[] = [
+  // --- KELOMPOK 1: PERANGKAT PEMBELAJARAN & MODUL AJAR ---
   {
-    id: "port-1",
-    judul: "Modul Ajar Berpikir Komputasional Kelas 9 (SMPN 8 Surabaya)",
+    id: "port-01",
+    judul: "Modul Ajar Berpikir Komputasional: Dekomposisi (Kelas 9)",
     kategori: "Perangkat Pembelajaran",
-    tanggal: "September 2026",
-    mataKuliah: "PPL Mandiri / Bidang Studi Informatika",
-    deskripsi: "Modul ajar lengkap dengan pendekatan UbD untuk materi Berpikir Komputasional (Dekomposisi, Pengenalan Pola, Abstraksi, Algoritma).",
+    tanggal: "Agustus 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Modul ajar Kurikulum Merdeka berbasis kerangka UbD untuk materi Dekomposisi Masalah Kompleks menjadi sub-masalah sederhana menggunakan model Problem Based Learning.",
     fileTipe: "PDF",
     fileUrl: "https://drive.google.com/file/d/1cFWbWKndGXuh0GPMY5uLn9fEI-20wUds/view?usp=sharing"
   },
   {
-    id: "port-2",
-    judul: "Lembar Observasi Lingkungan Sekolah PPL (SMAN 15 Surabaya & SMPN 8)",
+    id: "port-02",
+    judul: "Modul Ajar Berpikir Komputasional: Pengenalan Pola (Kelas 9)",
     kategori: "Perangkat Pembelajaran",
-    tanggal: "Agustus 2026",
-    mataKuliah: "PPL I Terbimbing",
-    deskripsi: "Hasil observasi menyeluruh terhadap manajemen sekolah, kultur siswa, dan fasilitas laboratorium komputer di sekolah mitra PPL.",
-    fileTipe: "PDF",
-    fileUrl: "https://drive.google.com/file/d/1RIAyNt_nX_7yDfvzpnKwuSNqIxZDteLN/view?usp=sharing"
-  },
-  {
-    id: "port-3",
-    judul: "LKPD Dekomposisi dan Pengenalan Pola",
-    kategori: "LKPD",
     tanggal: "September 2026",
-    mataKuliah: "Pembelajaran Mendalam dan Asesmen Lanjutan (PMAL)",
-    deskripsi: "Lembar Kerja Peserta Didik interaktif berbasis studi kasus pemecahan masalah algoritma sederhana dalam kehidupan sehari-hari.",
-    fileTipe: "DOCX",
-    fileUrl: "https://docs.google.com/document/d/1Je1IkO3PPQc1PMhccJ_qfaC8JeT6eab2KAdJmZaX-QE/edit?usp=sharing"
-  },
-  {
-    id: "port-4",
-    judul: "Instrumen Asesmen Diagnostik Kognitif & Non-Kognitif",
-    kategori: "Asesmen",
-    tanggal: "Agustus 2026",
-    mataKuliah: "Pemahaman tentang Peserta Didik dan Pembelajaran (PPDP)",
-    deskripsi: "Kumpulan instrumen angket gaya belajar dan kuis diagnostik awal untuk memetakan kesiapan dan profil belajar murid sebelum pembelajaran dimulai.",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Modul ajar materi Pengenalan Pola (Pattern Recognition) untuk melatih siswa menemukan keteraturan data komputasi, jadwal harian, dan logika algoritma rekomendasi.",
     fileTipe: "PDF",
-    fileUrl: "https://drive.google.com/file/d/1BfZgk7IfssQPajdVnL1KBjpfe6WCY4tB/view?usp=sharing"
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
-    id: "port-5",
-    judul: "Media Slide Presentasi Visual Berpikir Komputasional",
+    id: "port-03",
+    judul: "Modul Ajar Berpikir Komputasional: Abstraksi (Kelas 9)",
+    kategori: "Perangkat Pembelajaran",
+    tanggal: "September 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Modul ajar materi Abstraksi untuk melatih siswa menyaring informasi penting dan mengabaikan detail tidak relevan dalam pemodelan data sederhana.",
+    fileTipe: "PDF",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-04",
+    judul: "Modul Ajar Berpikir Komputasional: Algoritma & Flowchart (Kelas 9)",
+    kategori: "Perangkat Pembelajaran",
+    tanggal: "Oktober 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Modul ajar penyusunan langkah terstruktur dan konversi algoritma ke dalam 4 simbol standar bagan alir (flowchart) dengan studi kasus sehari-hari.",
+    fileTipe: "PDF",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-05",
+    judul: "Modul Ajar Analisis Data & Spreadsheet Microsoft Excel (Kelas 8)",
+    kategori: "Perangkat Pembelajaran",
+    tanggal: "Oktober 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Modul ajar pengenalan lingkungan spreadsheet, rumus statistik dasar (SUM, AVERAGE, MAX, MIN, COUNT, IF), dan pembuatan grafik batang/pie di lab komputer.",
+    fileTipe: "PDF",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-06",
+    judul: "RPP Berdiferensiasi Informatika - Pendidikan Inklusi (Topik 3)",
+    kategori: "Perangkat Pembelajaran",
+    tanggal: "September 2026",
+    mataKuliah: "Pendidikan Inklusi",
+    deskripsi: "Rencana pelaksanaan pembelajaran berdiferensiasi konten, proses, dan produk yang mengakomodasi keberagaman profil belajar peserta didik (prinsip UDL).",
+    fileTipe: "DOCX",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+
+  // --- KELOMPOK 2: MEDIA AJAR & SLIDE PRESENTASI (PPT) ---
+  {
+    id: "port-07",
+    judul: "Slide Presentasi Visual: Dekomposisi Masalah (Kelas 9)",
     kategori: "PPT",
     tanggal: "Agustus 2026",
-    mataKuliah: "PPL Mandiri",
-    deskripsi: "Slide presentasi visual yang komunikatif dan menarik tentang konsep dekomposisi masalah rumit.",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Slide presentasi visual yang komunikatif dan menarik tentang konsep memecah masalah besar (contoh class meeting dan aplikasi toko online).",
     fileTipe: "PPTX",
     fileUrl: "https://docs.google.com/presentation/d/1nkGTFyvgGAWASmUOVUI1trOxPQG2UM_untJmbn-q-D0/edit?usp=sharing"
   },
   {
-    id: "port-6",
-    judul: "Video Praktik Mengajar dengan Pendekatan Sosial Emosional",
+    id: "port-08",
+    judul: "Slide Presentasi Visual: Pengenalan Pola Komputasi (Kelas 9)",
+    kategori: "PPT",
+    tanggal: "September 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Slide presentasi interaktif tentang menemukan keteraturan pola data, rutinitas harian, deret angka, dan penerapannya pada teknologi modern.",
+    fileTipe: "PPTX",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-09",
+    judul: "Slide Presentasi Visual: Abstraksi Data (Kelas 9)",
+    kategori: "PPT",
+    tanggal: "September 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Slide pembelajaran konsep abstraksi dengan analogi visual peta jalur transportasi dan penyaringan informasi atribut profil siswa.",
+    fileTipe: "PPTX",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-10",
+    judul: "Slide Presentasi Visual: Algoritma & Flowchart (Revisi Final)",
+    kategori: "PPT",
+    tanggal: "Oktober 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Slide panduan pembuatan bagan alir menggunakan 4 simbol baku (Terminator, Input/Output, Proses, Decision) dengan studi kasus nyata.",
+    fileTipe: "PPTX",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-11",
+    judul: "Slide Presentasi Visual: Pengantar Microsoft Excel (Kelas 8)",
+    kategori: "PPT",
+    tanggal: "Oktober 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Slide visual panduan pengenalan spreadsheet: Cell, Baris, Kolom, Formula Bar, Rumus Statistik, dan visualisasi grafik data.",
+    fileTipe: "PPTX",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-12",
+    judul: "Slide Presentasi Visual: Himpunan dalam Informatika (Kelas 8)",
+    kategori: "PPT",
+    tanggal: "Oktober 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Slide materi representasi himpunan dan diagram Venn dalam mengorganisasi data komputasi peserta didik jenjang SMP.",
+    fileTipe: "PPTX",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+
+  // --- KELOMPOK 3: LEMBAR KERJA PESERTA DIDIK (LKPD) ---
+  {
+    id: "port-13",
+    judul: "LKPD Gabungan Dekomposisi & Pengenalan Pola 9B/9G (Buku Guru)",
+    kategori: "LKPD",
+    tanggal: "September 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Lembar Kerja Peserta Didik panduan guru lengkap dengan rubrik penilaian, kunci jawaban analisis kasus, dan pedoman penskoran.",
+    fileTipe: "DOCX",
+    fileUrl: "https://docs.google.com/document/d/1Je1IkO3PPQc1PMhccJ_qfaC8JeT6eab2KAdJmZaX-QE/edit?usp=sharing"
+  },
+  {
+    id: "port-14",
+    judul: "LKPD Gabungan Dekomposisi & Pengenalan Pola 9B/9G (Lembar Siswa)",
+    kategori: "LKPD",
+    tanggal: "September 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Lembar kerja peserta didik interaktif untuk aktivitas diskusi kelompok pemecahan masalah kepanitiaan acara dan pengenalan pola data.",
+    fileTipe: "DOCX",
+    fileUrl: "https://docs.google.com/document/d/1Je1IkO3PPQc1PMhccJ_qfaC8JeT6eab2KAdJmZaX-QE/edit?usp=sharing"
+  },
+  {
+    id: "port-15",
+    judul: "LKPD Algoritma & Notasi Standar Bagan Alir (Flowchart)",
+    kategori: "LKPD",
+    tanggal: "Oktober 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Lembar kerja unjuk karya siswa dalam merancang langkah terurut algoritma dan menggambar bagan alir flowchart studi kasus nyata.",
+    fileTipe: "DOCX",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-16",
+    judul: "LKPD Praktik Analisis Data & Rumus Microsoft Excel (Kelas 8)",
+    kategori: "LKPD",
+    tanggal: "Oktober 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Lembar panduan latihan mandiri di laboratorium komputer: pembuatan tabel rekap nilai, penerapan fungsi SUM/AVERAGE/MAX/MIN, dan grafik batang.",
+    fileTipe: "DOCX",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+
+  // --- KELOMPOK 4: ASESMEN & EVALUASI HASIL BELAJAR ---
+  {
+    id: "port-17",
+    judul: "Instrumen Asesmen Diagnostik Kognitif & Non-Kognitif",
+    kategori: "Asesmen",
+    tanggal: "Agustus 2026",
+    mataKuliah: "Pemahaman tentang Peserta Didik (PPDP)",
+    deskripsi: "Kumpulan instrumen angket gaya belajar, kuis diagnostik awal pemetaan kesiapan siswa sebelum pembelajaran Berpikir Komputasional dimulai.",
+    fileTipe: "PDF",
+    fileUrl: "https://drive.google.com/file/d/1BfZgk7IfssQPajdVnL1KBjpfe6WCY4tB/view?usp=sharing"
+  },
+  {
+    id: "port-18",
+    judul: "Rubrik Penilaian Presentasi & Unjuk Kerja Kelompok (Kelas 9B/9G)",
+    kategori: "Asesmen",
+    tanggal: "September 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Rubrik analitik penilaian pemaparan tugas kelompok: indikator kelengkapan dekomposisi, kejelasan penyampaian, dan kerja sama tim.",
+    fileTipe: "DOCX",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-19",
+    judul: "Naskah Soal Ulangan Harian Berpikir Komputasional",
+    kategori: "Asesmen",
+    tanggal: "Oktober 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Paket soal evaluasi sumatif materi Berpikir Komputasional (Pilihan Ganda & Uraian Studi Kasus) lengkap dengan kisi-kisi dan kunci jawaban.",
+    fileTipe: "PDF",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-20",
+    judul: "Rekapitulasi Nilai & Sistem Penilaian Prestasi Siswa 9B & 9G",
+    kategori: "Asesmen",
+    tanggal: "Oktober 2026",
+    mataKuliah: "PPL Mandiri (SMPN 8 Surabaya)",
+    deskripsi: "Berkas spreadsheet rekapitulasi data nilai tugas, presentasi, kuis, dan ulangan harian siswa kelas 9B dan 9G di SMPN 8 Surabaya.",
+    fileTipe: "Link",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+
+  // --- KELOMPOK 5: KARYA INOVASI & LAPORAN PENELITIAN ---
+  {
+    id: "port-21",
+    judul: "Laporan Inovasi Pembelajaran 'Kompulogika' di SMPN 8 Surabaya",
+    kategori: "Proyek",
+    tanggal: "Oktober 2026",
+    mataKuliah: "Seminar PPG / PPL Mandiri",
+    deskripsi: "Laporan komprehensif implementasi inovasi media pembelajaran Kompulogika untuk meningkatkan nalar berpikir komputasional siswa secara aktif dan bermakna.",
+    fileTipe: "DOCX",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-22",
+    judul: "Laporan Seminar Inovasi Pembelajaran Kompulogika",
+    kategori: "Proyek",
+    tanggal: "Oktober 2026",
+    mataKuliah: "Seminar PPG",
+    deskripsi: "Dokumen diseminasi hasil implementasi inovasi Kompulogika di seluruh kelas sasaran SMPN 8 Surabaya beserta evaluasi dampaknya.",
+    fileTipe: "DOCX",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-23",
+    judul: "Laporan UTS PMAL: Desain Asesmen Autentik HOTS Dekomposisi",
+    kategori: "Tugas PPG",
+    tanggal: "September 2026",
+    mataKuliah: "Pembelajaran Mendalam & Asesmen Lanjutan (PMAL)",
+    deskripsi: "Laporan UTS PMAL mengenai rancangan asesmen autentik tingkat tinggi (HOTS) dan rubrik analitik untuk materi Dekomposisi & Pengenalan Pola.",
+    fileTipe: "DOCX",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-24",
+    judul: "Modul Ajar Terintegrasi PSE Kerangka CASEL & Refleksi 1A-1E",
+    kategori: "Tugas PPG",
+    tanggal: "September 2026",
+    mataKuliah: "Pembelajaran Sosial Emosional (PSE)",
+    deskripsi: "Rancangan modul ajar terintegrasi 5 Kompetensi Sosial Emosional (CASEL) dan dokumentasi refleksi kegiatan mindfulness siswa kelas 9.",
+    fileTipe: "DOCX",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-25",
+    judul: "Studi Kasus Profil Siswa Inklusif Alya & Rekomendasi UDL",
+    kategori: "Tugas PPG",
+    tanggal: "September 2026",
+    mataKuliah: "Pendidikan Inklusi",
+    deskripsi: "Dokumen identifikasi hambatan belajar peserta didik berkebutuhan khusus dan rekomendasi akomodasi yang layak berbasis prinsip UDL.",
+    fileTipe: "DOCX",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-26",
+    judul: "Proposal Prakarsa Perubahan Projek Kepemimpinan (UTS PK)",
+    kategori: "Proyek",
+    tanggal: "September 2026",
+    mataKuliah: "Projek Kepemimpinan",
+    deskripsi: "Proposal program penguatan literasi digital dan media pembelajaran interaktif berbasis Service Learning bersama komunitas sasaran.",
+    fileTipe: "PDF",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "port-27",
+    judul: "Proposal PTK & STAR Best Practice Inovasi Pembelajaran",
+    kategori: "Tugas PPG",
+    tanggal: "Oktober 2026",
+    mataKuliah: "Seminar Proposal / Riset Tindakan",
+    deskripsi: "Naskah proposal Penelitian Tindakan Kelas (PTK) siklis dan artikel refleksi praktik baik (Best Practice) pembelajaran Informatika di sekolah mitra.",
+    fileTipe: "PDF",
+    fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+
+  // --- KELOMPOK 6: VIDEO PEMBELAJARAN & DOKUMENTASI PPL ---
+  {
+    id: "port-28",
+    judul: "Video Praktik Mengajar Mandiri Berpendekatan Sosial Emosional (Siklus 1)",
     kategori: "Dokumentasi PPL",
     tanggal: "Agustus 2026",
-    mataKuliah: "Praktik Pengalaman Lapangan",
-    deskripsi: "Rekaman video pelaksanaan pembelajaran Informatika dengan fokus pendekatan sosial emosional (PSE) dan interaksi aktif bersama siswa.",
+    mataKuliah: "Praktik Pengalaman Lapangan (PPL)",
+    deskripsi: "Rekaman video pelaksanaan pembelajaran mandiri di kelas dengan fokus pada interaksi positif, kesadaran emosional (PSE), dan bimbingan aktif.",
     fileTipe: "Video",
     fileUrl: "https://drive.google.com/file/d/1glRcMieoR8ET3MAD3mfFbim39NLl6FNX/view?usp=sharing"
   },
   {
-    id: "port-7",
-    judul: "Arsip Lengkap Google Drive Artefak PPG & Dokumentasi",
+    id: "port-29",
+    judul: "Laporan Observasi Lingkungan Sekolah SMAN 15 Surabaya",
+    kategori: "Dokumentasi PPL",
+    tanggal: "Agustus 2026",
+    mataKuliah: "PPL I Terbimbing (SMAN 15 Surabaya)",
+    deskripsi: "Laporan observasi menyeluruh terhadap manajemen sekolah, kultur belajar jenjang SMA, dan sarana prasarana laboratorium komputer.",
+    fileTipe: "PDF",
+    fileUrl: "https://drive.google.com/file/d/1RIAyNt_nX_7yDfvzpnKwuSNqIxZDteLN/view?usp=sharing"
+  },
+  {
+    id: "port-30",
+    judul: "Folder Terpadu Google Drive: ARTEFAK PPG & Dokumentasi Lengkap",
     kategori: "Dokumentasi PPL",
     tanggal: "Oktober 2026",
     mataKuliah: "Semua Mata Kuliah PPG & PPL",
-    deskripsi: "Folder terpadu Google Drive yang memuat seluruh arsip artefak tugas, dokumen modul ajar, foto kegiatan PPL terbaru, dan rekaman video.",
+    deskripsi: "Folder terpadu Google Drive yang memuat seluruh arsip dokumen asli, foto dokumentasi PPL terbaru, video praktik, dan slide presentasi.",
     fileTipe: "Link",
     fileUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   }
@@ -808,58 +1047,66 @@ export interface GalleryItem {
 export const galleryItems: GalleryItem[] = [
   {
     id: "gal-1",
-    judul: "Praktik Mengajar Informatika di Lab Komputer (SMPN 8 Surabaya)",
-    kategori: "Mengajar",
-    deskripsi: "Suasana interaktif saat mendampingi peserta didik praktik algoritma dasar dan berpikir komputasional di lab komputer SMPN 8 Surabaya.",
-    imageUrl: "/manus-storage/hero-journey_8cb0c991.jpg",
+    judul: "Penerimaan & Koordinasi Awal Mahasiswa PPL",
+    kategori: "PPL",
+    deskripsi: "Sesi penerimaan resmi dan penyerahan mahasiswa PPL oleh Dosen Pembimbing Lapangan Prof. Dr. Joko, M.Pd., M.T. bersama jajaran pimpinan sekolah mitra.",
+    imageUrl: "images/galeri/penerimaan-ppl.jpg",
     linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
     id: "gal-2",
-    judul: "Diskusi Kelompok & Kolaborasi Rekan PPG UNESA",
-    kategori: "Kegiatan PPG",
-    deskripsi: "Sesi kolaborasi penyusunan perangkat pembelajaran UbD bersama rekan sejawat mahasiswa PPG bidang studi Informatika.",
-    imageUrl: "/manus-storage/gallery-collaboration_399b3736.jpg",
+    judul: "Partisipasi Upacara Bendera & Pembiasaan Apel Pagi",
+    kategori: "Kegiatan Sekolah",
+    deskripsi: "Mengikuti upacara bendera hari Senin dan pembiasaan budaya positif 5S (Senyum, Salam, Sapa, Sopan, Santun) menyambut peserta didik di gerbang sekolah.",
+    imageUrl: "images/galeri/upacara-apel-pagi.jpg",
     linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
     id: "gal-3",
-    judul: "Presentasi Hasil Projek Kepemimpinan",
-    kategori: "Presentasi",
-    deskripsi: "Memaparkan hasil rancangan aksi nyata literasi digital dan inovasi pembelajaran di depan dosen pembimbing dan guru pamong.",
-    imageUrl: "/manus-storage/gallery-classroom_f53387eb.jpg",
+    judul: "Koordinasi Perangkat Ajar Bersama Guru Pamong",
+    kategori: "Diskusi",
+    deskripsi: "Konsultasi dan validasi modul ajar Informatika serta lembar kerja peserta didik (LKPD) bersama Guru Pamong Pamuji Raharjo, S.Pd.",
+    imageUrl: "images/galeri/koordinasi-pamong.jpg",
     linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
     id: "gal-4",
-    judul: "Observasi Lingkungan Sekolah & Koordinasi Pamong (SMAN 15 Surabaya & SMPN 8)",
-    kategori: "PPL",
-    deskripsi: "Kegiatan pengenalan budaya sekolah di SMAN 15 Surabaya dan koordinasi intensif bersama Guru Pamong Pamuji Raharjo, S.Pd di SMPN 8 Surabaya.",
-    imageUrl: "/manus-storage/gallery-classroom_f53387eb.jpg",
+    judul: "Praktik Mengajar Aktif di Laboratorium Komputer",
+    kategori: "Mengajar",
+    deskripsi: "Suasana pembelajaran aktif materi Berpikir Komputasional dan pengolahan data menggunakan model Problem Based Learning di laboratorium komputer.",
+    imageUrl: "images/galeri/praktik-mengajar-lab.jpg",
     linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
     id: "gal-5",
-    judul: "Workshop Pembelajaran Inklusif & Diferensiasi",
-    kategori: "Kegiatan Sekolah",
-    deskripsi: "Mengikuti seminar dan pelatihan penanganan peserta didik berkebutuhan khusus dan diferensiasi kelas.",
-    imageUrl: "/manus-storage/gallery-reflection_02e654d9.jpg",
+    judul: "Pendampingan Individual & Scaffolding Peserta Didik",
+    kategori: "Mengajar",
+    deskripsi: "Bimbingan langsung satu per satu kepada peserta didik yang mengalami kendala logika komputasi untuk menumbuhkan rasa percaya diri dan kemandirian.",
+    imageUrl: "images/galeri/bimbingan-siswa.jpg",
     linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
     id: "gal-6",
-    judul: "Dokumentasi Perangkat Modul Ajar & Artefak Digital",
-    kategori: "Dokumentasi Tugas",
-    deskripsi: "Penyusunan portofolio digital terpadu dan pencatatan berkas artefak pembelajaran PPG Prajabatan Informatika.",
-    imageUrl: "/manus-storage/gallery-reflection_02e654d9.jpg",
+    judul: "Presentasi Kelompok & Unjuk Pemecahan Masalah Logika",
+    kategori: "Presentasi",
+    deskripsi: "Peserta didik mempresentasikan hasil dekomposisi masalah dan bagan alir (flowchart) di depan kelas dengan antusias dan kerja sama yang solid.",
+    imageUrl: "images/galeri/presentasi-kelompok.jpg",
     linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   },
   {
     id: "gal-7",
-    judul: "Dokumentasi Foto Terbaru PPL di Google Drive",
+    judul: "Penerapan Pembelajaran Sosial Emosional (PSE) & Ice Breaking",
     kategori: "PPL",
-    deskripsi: "Galeri foto kegiatan terbaru pelaksanaan PPL di SMAN 15 Surabaya & SMPN 8 Surabaya yang tersimpan di Google Drive.",
-    imageUrl: "/manus-storage/hero-journey_8cb0c991.jpg",
+    deskripsi: "Sesi peregangan dinamis dan teknik kesadaran penuh (mindfulness STOP) sebelum kuis untuk menciptakan suasana kelas yang relaks dan menyenangkan.",
+    imageUrl: "images/galeri/icebreaking-pse.jpg",
+    linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+  },
+  {
+    id: "gal-8",
+    judul: "Pemanfaatan LMS & Media Interaktif Kompulogika SMPN 8",
+    kategori: "Dokumentasi Tugas",
+    deskripsi: "Dokumentasi antarmuka pembelajaran digital, kuis interaktif, dan pemantauan capaian nilai siswa melalui platform LMS sekolah mitra.",
+    imageUrl: "images/galeri/lms-smpn8.jpg",
     linkDrive: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
   }
 ];
