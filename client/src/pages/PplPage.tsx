@@ -12,6 +12,8 @@ import {
 import {
   School,
   CheckCircle2,
+  Sparkles,
+  AlertCircle,
   ExternalLink,
   Video,
   FileText,
@@ -286,6 +288,99 @@ export default function PplPage() {
                   ))}
                 </div>
               </div>
+
+              {/* SEKSI INOVASI PEMBELAJARAN: PLATFORM KOMPULOGIKA */}
+              <div className="bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white rounded-3xl p-7 sm:p-10 shadow-xl border border-cyan-500/30 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"></div>
+
+                <div className="relative z-10">
+                  <div className="flex flex-wrap items-center gap-2 mb-3">
+                    <span className="px-3 py-1 rounded-full text-[11px] font-mono font-bold bg-cyan-400/20 text-cyan-300 border border-cyan-400/30 uppercase tracking-wider inline-flex items-center gap-1.5">
+                      <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+                      KARYA INOVASI PEMBELAJARAN PPL MANDIRI • SMPN 8 SURABAYA
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-[11px] font-mono font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                      Teruji Nyata pada 83 Peserta Didik
+                    </span>
+                  </div>
+
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight mb-2">
+                    Media Pembelajaran Digital Interaktif &ldquo;Kompulogika&rdquo;
+                  </h2>
+                  <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-3xl mb-8">
+                    Rekayasa media inovatif berbasis web untuk mentransformasi pengajaran materi <strong>Berpikir Komputasional</strong> dan <strong>Diagram Alir (Flowchart)</strong> menjadi pengalaman belajar yang visual, berbasis gamifikasi, dan bermakna bagi peserta didik Fase D di SMP Negeri 8 Surabaya.
+                  </p>
+
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
+                    {/* Kolom 1: Tantangan di SMPN 8 */}
+                    <div className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-amber-400/40 transition-colors">
+                      <div className="w-9 h-9 rounded-xl bg-amber-500/20 text-amber-300 flex items-center justify-center mb-3">
+                        <AlertCircle className="w-5 h-5 text-amber-400" />
+                      </div>
+                      <h4 className="font-bold text-white text-sm mb-1.5">
+                        Tantangan di SMPN 8
+                      </h4>
+                      <p className="text-xs text-slate-300 leading-relaxed">
+                        Berdasarkan asesmen diagnostik di kelas 9B &amp; 9G, materi logika komputasional dan notasi diagram alir sering dianggap abstrak dan membosankan jika diajarkan hanya lewat ceramah dan teks buku konvensional.
+                      </p>
+                    </div>
+
+                    {/* Kolom 2: Solusi Kompulogika */}
+                    <div className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-cyan-400/40 transition-colors">
+                      <div className="w-9 h-9 rounded-xl bg-cyan-500/20 text-cyan-300 flex items-center justify-center mb-3">
+                        <Sparkles className="w-5 h-5 text-cyan-400" />
+                      </div>
+                      <h4 className="font-bold text-white text-sm mb-1.5">
+                        Arsitektur Sistem Inovasi
+                      </h4>
+                      <p className="text-xs text-slate-300 leading-relaxed">
+                        Mengintegrasikan gamifikasi 4 pilar (Dekomposisi, Pola, Abstraksi, Algoritma), simulator diagram alir berstandar ANSI/ISO dengan penilai otomatis cerdas, serta sistem evaluasi CBT anti-curang.
+                      </p>
+                    </div>
+
+                    {/* Kolom 3: Dampak Nyata */}
+                    <div className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-emerald-400/40 transition-colors">
+                      <div className="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center mb-3">
+                        <CheckCircle2 className="w-5 h-5 text-emerald-400" />
+                      </div>
+                      <h4 className="font-bold text-white text-sm mb-1.5">
+                        Dampak Nyata pada Murid
+                      </h4>
+                      <p className="text-xs text-slate-300 leading-relaxed">
+                        Sebanyak 83 siswa terdaftar aktif mencoba simulasi alur logika tanpa takut salah. Keterlibatan diskusi kelompok meningkat, pemahaman nalar terukur transparan, dan suasana lab menjadi sangat dinamis.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Badges / Metrics Row */}
+                  <div className="flex flex-wrap items-center justify-between gap-4 pt-6 border-t border-white/10">
+                    <div className="flex flex-wrap gap-2 text-xs text-slate-300">
+                      <span className="bg-white/5 px-3 py-1 rounded-lg border border-white/10 font-mono">
+                        Populasi: 83 Siswa (9B &amp; 9G)
+                      </span>
+                      <span className="bg-white/5 px-3 py-1 rounded-lg border border-white/10 font-mono">
+                        CBT Room: 728953
+                      </span>
+                      <span className="bg-white/5 px-3 py-1 rounded-lg border border-white/10 font-mono">
+                        Diseminasi: Seminar PPG
+                      </span>
+                    </div>
+
+                    <div className="flex flex-wrap gap-3">
+                      <a
+                        href="https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-5 py-2.5 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-bold text-xs transition-all shadow-md flex items-center gap-1.5"
+                      >
+                        <FolderOpen className="w-4 h-4" />
+                        Buka Laporan Inovasi di Drive
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           )}
 
