@@ -4,6 +4,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { useEffect } from "react";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -18,6 +19,15 @@ import ContactPage from "./pages/ContactPage";
 function Router() {
   const [location, setLocation] = useLocation();
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const redirect = params.get("redirect");
+    if (redirect) {
+      window.history.replaceState(null, "", window.location.pathname);
+      setLocation(redirect);
+    }
+  }, [setLocation]);
+
   const base = "/eportfolio-ppg-irvan";
 
   if (location === base) {
@@ -25,27 +35,27 @@ function Router() {
   }
 
   return (
-     <WouterRouter base="/eportfolio-ppg-irvan">
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/tentang" component={About} />
-      <Route path="/perjalanan" component={TimelinePage} />
-      <Route path="/semester-1">
-        <SemesterPage semesterNum={1} />
-      </Route>
-      <Route path="/semester-2">
-        <SemesterPage semesterNum={2} />
-      </Route>
-      <Route path="/ppl" component={PplPage} />
-      <Route path="/portofolio" component={PortfolioPage} />
-      <Route path="/refleksi" component={ReflectionsPage} />
-      <Route path="/galeri" component={GalleryPage} />
-      <Route path="/kontak" component={ContactPage} />
-      <Route path="/404" component={NotFound} />
-      <Route component={NotFound} />
-    </Switch>
-  </WouterRouter>
-      );
+    <WouterRouter base="/eportfolio-ppg-irvan">
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/tentang" component={About} />
+        <Route path="/perjalanan" component={TimelinePage} />
+        <Route path="/semester-1">
+          <SemesterPage semesterNum={1} />
+        </Route>
+        <Route path="/semester-2">
+          <SemesterPage semesterNum={2} />
+        </Route>
+        <Route path="/ppl" component={PplPage} />
+        <Route path="/portofolio" component={PortfolioPage} />
+        <Route path="/refleksi" component={ReflectionsPage} />
+        <Route path="/galeri" component={GalleryPage} />
+        <Route path="/kontak" component={ContactPage} />
+        <Route path="/404" component={NotFound} />
+        <Route component={NotFound} />
+      </Switch>
+    </WouterRouter>
+  );
 }
 
 function App() {
