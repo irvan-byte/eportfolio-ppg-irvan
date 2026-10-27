@@ -279,22 +279,58 @@ export default function SemesterPage({ semesterNum }: SemesterPageProps) {
                               </div>
                             </div>
 
-                            <div className="space-y-3.5 pt-2">
+                            <div className="space-y-4 pt-2">
                               <div>
-                                <div className="text-xs font-bold text-slate-700 mb-2">
-                                  Artefak Pembelajaran Terpilih:
+                                <div className="text-xs font-bold text-slate-700 mb-2.5 flex items-center justify-between">
+                                  <span>Dokumen & Artefak Bukti Belajar Asli:</span>
+                                  <span className="text-[11px] font-normal text-slate-500">
+                                    Klik kartu untuk membuka / mengunduh berkas PDF asli
+                                  </span>
                                 </div>
-                                <div className="flex flex-wrap gap-2">
-                                  {course.analisisArtefak.artefakTerpilih.map((art, idx) => (
-                                    <span
-                                      key={idx}
-                                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-800 text-xs font-medium shadow-2xs"
-                                    >
-                                      <FolderCheck className="w-3.5 h-3.5 text-blue-600 shrink-0" />
-                                      {art}
-                                    </span>
-                                  ))}
-                                </div>
+
+                                {course.analisisArtefak.artefakDetail && course.analisisArtefak.artefakDetail.length > 0 ? (
+                                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                                    {course.analisisArtefak.artefakDetail.map((art, idx) => (
+                                      <a
+                                        key={idx}
+                                        href={art.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group p-3 rounded-xl bg-white border border-slate-200 hover:border-cyan-500 hover:shadow-xs transition-all flex items-start gap-3"
+                                      >
+                                        <div className="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center shrink-0 border border-red-100 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                                          <FileText className="w-4 h-4" />
+                                        </div>
+                                        <div className="min-w-0 flex-1">
+                                          <div className="text-xs font-bold text-slate-900 group-hover:text-cyan-700 transition-colors truncate">
+                                            {art.nama}
+                                          </div>
+                                          {art.deskripsi && (
+                                            <p className="text-[11px] text-slate-500 leading-snug mt-0.5 line-clamp-2">
+                                              {art.deskripsi}
+                                            </p>
+                                          )}
+                                          <div className="inline-flex items-center gap-1 text-[10px] font-semibold text-cyan-700 group-hover:text-cyan-800 mt-1.5">
+                                            <span>Buka / Unduh Berkas Asli</span>
+                                            <ExternalLink className="w-3 h-3" />
+                                          </div>
+                                        </div>
+                                      </a>
+                                    ))}
+                                  </div>
+                                ) : (
+                                  <div className="flex flex-wrap gap-2">
+                                    {course.analisisArtefak.artefakTerpilih.map((art, idx) => (
+                                      <span
+                                        key={idx}
+                                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-800 text-xs font-medium shadow-2xs"
+                                      >
+                                        <FolderCheck className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                                        {art}
+                                      </span>
+                                    ))}
+                                  </div>
+                                )}
                               </div>
 
                               <div className="bg-white rounded-lg p-4 border border-slate-200">
