@@ -111,6 +111,23 @@ export const timelineData: TimelineItem[] = [
   }
 ];
 
+export interface Refleksi4C {
+  connection: string;
+  challenge: string;
+  concept: string;
+  change: string;
+}
+
+export interface AnalisisArtefak {
+  artefakTerpilih: string[];
+  alasanPemilihan: string;
+}
+
+export interface KaitanPraktis {
+  konsepUtama: string;
+  perubahanMasaDepan: string;
+}
+
 export interface CourseItem {
   id: string;
   nama: string;
@@ -121,6 +138,9 @@ export interface CourseItem {
   refleksi: string;
   dokumentasi: string[];
   arsipUrl?: string;
+  refleksi4C?: Refleksi4C;
+  analisisArtefak?: AnalisisArtefak;
+  kaitanPraktis?: KaitanPraktis;
 }
 
 export const coursesData: CourseItem[] = [
@@ -129,25 +149,47 @@ export const coursesData: CourseItem[] = [
     id: "gm-1",
     nama: "Growth Mindset",
     semester: 1,
-    deskripsi: "Mata kuliah yang menjadi titik balik pola pikir saya pada awal menempuh studi PPG. Sebagai mahasiswa berlatar belakang teknologi, awalnya saya sempat cemas apakah saya dapat menjadi pendidik yang sabar dalam membimbing siswa. Melalui mata kuliah ini, saya menyadari bahwa kecerdasan dan kemampuan bukanlah takdir tetap, melainkan dapat terus bertumbuh melalui ikhtiar, strategi tepat, dan proses belajar dari kegagalan. Hal ini sangat krusial bagi siswa Informatika yang kerap putus asa saat menjumpai galat (error) logika komputasi.",
+    deskripsi: "Mata kuliah yang menjadi titik balik pola pikir saya pada awal menempuh studi PPG Prajabatan. Sebagai sarjana berlatar belakang teknologi informasi, awalnya saya sempat cemas apakah saya memiliki kesabaran dan kepekaan pedagogis untuk membimbing murid yang sangat majemuk. Melalui mata kuliah ini, saya menyadari bahwa kecerdasan, kapasitas intelektual, dan keterampilan pedagogik bukanlah sesuatu yang bersifat tetap (fixed), melainkan kapasitas dinamis yang dapat terus bertumbuh melalui ikhtiar, strategi tepat, dan proses belajar bermakna dari kegagalan. Hal ini sangat krusial bagi siswa Informatika yang kerap putus asa saat menjumpai galat (error) logika komputasi.",
     halDipelajari: [
-      "Konsep dan karakteristik Growth Mindset vs Fixed Mindset menurut Carol Dweck",
-      "Neuroplastisitas otak: bagaimana tantangan baru membentuk koneksi sinapsis baru",
-      "Pemberian pujian berorientasi proses (process praise) alih-alih bakat bawaan",
-      "Mengubah kesalahan dan pesan eror komputasi sebagai batu loncatan belajar yang konstruktif"
+      "Konsep dan distingsi mendasar Growth Mindset vs Fixed Mindset menurut Carol Dweck",
+      "Neuroplastisitas otak: bagaimana tantangan baru memperkuat pembentukan koneksi sinapsis saraf baru",
+      "Strategi pemberian umpan balik berorientasi proses (process praise) alih-alih bakat bawaan",
+      "Membiasakan reframing kata 'Saya tidak bisa' menjadi 'Saya belum bisa, namun sedang berproses' (The Power of Yet)",
+      "Mengubah pesan eror komputasi sebagai batu loncatan belajar yang konstruktif (debugging as learning)"
     ],
     tugas: [
-      "Analisis diri dan refleksi kritis terhadap pola pikir berkembang vs pola pikir tetap",
-      "Studi kasus pendampingan siswa yang mengalami kecemasan belajar komputer",
-      "Penyusunan strategi penerapan Growth Mindset dalam modul ajar Informatika"
+      "Analisis diri dan refleksi kritis terhadap pola pikir berkembang vs pola pikir tetap (LK 1.1)",
+      "Studi kasus pendampingan siswa yang mengalami kecemasan belajar komputer (LK 2.4)",
+      "Penyusunan modul skenario penerapan Growth Mindset dalam pembelajaran Berpikir Komputasional (LK 4.1)",
+      "Projek kolaboratif perancangan budaya kelas bertumbuh (LK 4.3)"
     ],
     refleksi: "Saya belajar bahwa kapasitas seseorang tidak bersifat mutlak. Ketika menghadapi kendala mengajar atau logika pemrograman yang rumit, saya membiasakan diri dan siswa untuk berkata: 'Bukan tidak bisa, melainkan belum bisa'. Di kelas PPL, saat murid frustrasi karena programnya tidak berjalan, saya mendampingi mereka membaca eror dengan tenang sebagai sebuah teka-teki logika yang mengasyikkan untuk dipecahkan bersama.",
     dokumentasi: [
-      "Lembar Refleksi Diri Growth Mindset",
-      "Rancangan Penerapan Mindset dalam Pembelajaran",
-      "Dokumentasi Diskusi Perkuliahan"
+      "LK 1.1 Cara Pikirmu Cermin Dirimu",
+      "LK 2.4 Dari 'Aduh, Gagal' ke 'Aha, Peluang Belajar!'",
+      "LK 4.1 Guru yang Menumbuhkan Growth Mindset",
+      "LK 4.3 Jawaban Tugas Project-Based Mindset"
     ],
-    arsipUrl: "https://drive.google.com/drive/folders/19g4VYGIyOGqVNAPEKPtKo2pRJkYDphg8?usp=sharing"
+    arsipUrl: "https://drive.google.com/drive/folders/19g4VYGIyOGqVNAPEKPtKo2pRJkYDphg8?usp=sharing",
+    refleksi4C: {
+      connection: "Sebelum menempuh mata kuliah Growth Mindset, latar belakang saya di bidang teknologi kerap membuat saya memandang keahlian logika pemrograman sebagai bakat bawaan ('bakat komputer'). Di awal PPG, saya juga sempat ragu akan kemampuan diri saya dalam mengelola kelas yang heterogen. Konsep Growth Mindset menjembatani pemikiran tersebut: kapasitas intelektual dan keterampilan pedagogik bukanlah sifat tetap (fixed), melainkan dapat terus bertumbuh melalui latihan terarah, strategi tepat, dan ketekunan belajar dari kegagalan (productive struggle).",
+      challenge: "Tantangan terbesar yang saya hadapi adalah mendekonstruksi respon otomatis ketika menghadapi kesulitan belajar atau kegagalan program. Di kelas laboratorium komputer, tantangan nyata muncul ketika menghadapi peserta didik yang mengalami computer anxiety dan cepat menyerah dengan ucapan 'Saya memang tidak berbakat di komputer'. Mengubah kebiasaan memberi pujian pada hasil akhir/bakat menjadi pujian pada proses, ikhtiar, dan eksplorasi (process praise) memerlukan pembiasaan sadar dan kesabaran yang konsisten.",
+      concept: "Konsep kunci yang saya pelajari meliputi: (1) Perbedaan fundamental Fixed Mindset dan Growth Mindset; (2) Neuroplastisitas otak—bagaimana sinapsis saraf menguat dan membentuk jalur baru saat menghadapi tantangan; (3) Konsep 'The Power of Yet' (Kekuatan Kata 'Belum') untuk mereframing kalimat 'Saya tidak bisa' menjadi 'Saya belum bisa, namun sedang berproses'; (4) Menempatkan eror sintaksis dan pesan galat logika komputasi bukan sebagai aib kegagalan, melainkan data umpan balik paling konstruktif dalam siklus belajar.",
+      change: "Perubahan mendasar pada diri saya adalah pergeseran cara merespons kesulitan dan eror. Sebagai calon pendidik, saya tidak lagi cepat merasa frustrasi saat instruksi belum dipahami murid. Di laboratorium komputer, saya membudayakan respon kelas yang menyambut eror secara positif: pesan galat kami bedah bersama sebagai teka-teki nalar (debugging as learning). Saya bertransisi dari penuntut kesempurnaan teknis menjadi penuntun pertumbuhan proses berpikir siswa."
+    },
+    analisisArtefak: {
+      artefakTerpilih: [
+        "LK 1.1 Cara Pikirmu Cermin Dirimu",
+        "LK 2.4 Dari 'Aduh, Gagal' ke 'Aha, Peluang Belajar!'",
+        "LK 4.1 Guru yang Menumbuhkan Growth Mindset",
+        "LK 4.3 Jawaban Tugas Project-Based Mindset"
+      ],
+      alasanPemilihan: "Artefak LK 1.1, LK 2.4, dan LK 4.1 dipilih karena secara komprehensif merefleksikan lintasan transformasi pola pikir saya, mulai dari pemetaan awal mindset diri hingga perancangan skenario intervensi pedagogis di kelas Informatika. Melalui LK 2.4, saya mendokumentasikan analisis konkret mengenai bagaimana membimbing siswa mengurai kecemasan saat program komputer mereka mengalami galat, membuktikan bahwa konsep neuroplastisitas dapat dioperasionalkan secara nyata dalam pembelajaran Berpikir Komputasional."
+    },
+    kaitanPraktis: {
+      konsepUtama: "Menerapkan prinsip 'The Power of Yet' dan pemberian umpan balik berbasis proses (process praise) dalam pembelajaran Informatika, khususnya saat membimbing siswa menelusuri logika algoritma dan pemrograman di laboratorium komputer.",
+      perubahanMasaDepan: "Di masa depan, saya berkomitmen merancang rubrik penilaian yang tidak hanya menilai hasil akhir produk digital siswa, melainkan mengapresiasi keuletan proses penelusuran eror (debugging journal). Saya juga akan konsisten menciptakan lingkungan kelas yang aman secara psikologis, di mana setiap murid merasa aman untuk bereksperimen dan berinovasi tanpa rasa takut dihakimi ketika berbuat kesalahan."
+    }
   },
   {
     id: "filosofi-1",
@@ -155,23 +197,45 @@ export const coursesData: CourseItem[] = [
     semester: 1,
     deskripsi: "Mata kuliah yang membongkar pemahaman lama saya mengenai esensi mendidik. Menyelami pemikiran Ki Hadjar Dewantara (KHD) menyadarkan saya bahwa guru bukanlah sosok yang mencetak anak sesuai kehendaknya, melainkan seorang pamong yang menuntun kodrat yang telah ada pada anak. Bagi guru Informatika, menuntun 'Kodrat Zaman' di era digital adalah amanah besar agar generasi muda cakap, kritis, dan beretika dalam menggunakan teknologi.",
     halDipelajari: [
-      "Asas Trikon (Kontinuitas, Konvergensi, Konsentris) dan Sistem Among: Ing Ngarsa Sung Tuladha, Ing Madya Mangun Karsa, Tut Wuri Handayani",
-      "Pendidikan yang memerdekakan dan berpihak sepenuhnya pada peserta didik",
-      "Konsep Kodrat Alam (kultur lokal) dan Kodrat Zaman (era kecerdasan buatan & transformasi digital)",
-      "Refleksi kritis perjalanan pendidikan nasional dari masa kolonial hingga Kurikulum Merdeka"
+      "Sistem Among: Ing Ngarsa Sung Tuladha, Ing Madya Mangun Karsa, Tut Wuri Handayani",
+      "Filosofi Pendidikan yang Menuntun: memerdekakan dan berpihak sepenuhnya pada peserta didik",
+      "Konsep Kodrat Alam (konteks sosiokultural lokal) dan Kodrat Zaman (era kecerdasan buatan & transformasi digital)",
+      "Asas Trikon (Kontinuitas, Konvergensi, Konsentris) dalam menyerap kemajuan teknologi global",
+      "Refleksi kritis perjalanan pendidikan nasional dari era kolonial hingga Kurikulum Merdeka"
     ],
     tugas: [
-      "Esai Reflektif: Kritik dan Refleksi Kritis Pendidikan Nasional",
-      "Karya Visual Infografis: Intisari Pemikiran Ki Hadjar Dewantara dalam Pembelajaran Informatika",
-      "Aksi Nyata Kontekstualisasi Filosofi KHD di Sekolah PPL"
+      "Esai Reflektif Kritis Pendidikan Nasional: Transformasi Pembelajaran Informatika Menuju Kurikulum Merdeka",
+      "Infografis Pemikiran Ki Hadjar Dewantara dalam Literasi Digital Abad ke-21",
+      "Aksi Nyata Kontekstualisasi Filosofi KHD di Sekolah Mitra PPL (T2.7 & T3.7)",
+      "Laporan UAS Kajian Filosofi Pendidikan Indonesia"
     ],
     refleksi: "Guru sejati adalah pamong yang menuntun kodrat anak, bukan menuntut anak memenuhi ekspektasi sepihak guru. Di laboratorium komputer, saya tidak ingin menjadi guru yang serba instruksional kaku. Saya ingin menjadi fasilitator yang memberi ruang kemerdekaan berpikir, mendorong anak bereksplorasi, dan memastikan teknologi menjadi sarana memanusiakan manusia.",
     dokumentasi: [
       "Esai Filosofi Pendidikan Indonesia",
       "Artefak Infografis Pemikiran KHD",
-      "Dokumentasi Aksi Nyata Modul KHD"
+      "Dokumentasi Aksi Nyata Modul KHD",
+      "Naskah Refleksi UAS Filosofi"
     ],
-    arsipUrl: "https://drive.google.com/drive/folders/1f8FVLS1DvW3sJTPx7E-AIDGBj_Vc0Rvy?usp=sharing"
+    arsipUrl: "https://drive.google.com/drive/folders/1f8FVLS1DvW3sJTPx7E-AIDGBj_Vc0Rvy?usp=sharing",
+    refleksi4C: {
+      connection: "Sebagai sarjana teknologi informasi yang terbiasa dengan sistem terstruktur dan biner, pemikiran Ki Hadjar Dewantara (KHD) menjadi jangkar humanistik yang menyeimbangkan cara pandang profesional saya. Mata kuliah ini mengaitkan hakikat pendidik dengan panggilan jiwa sebagai 'pamong'. Dalam konteks abad ke-21, tugas guru Informatika bukan sekadar melatih ketangkasan operasional software, melainkan menuntun kodrat zaman murid agar bijak, bernalar kritis, dan berakhlak mulia di tengah banjir informasi digital.",
+      challenge: "Tantangan utama adalah melepaskan kebiasaan mengajar yang berpusat pada guru (teacher-centered) yang menganggap murid seperti kertas kosong (tabularasa). Di kelas nyata, tantangan besar yang saya temukan adalah bagaimana mempraktikkan pembelajaran yang memerdekakan murid saat menghadapi keterbatasan fasilitas laboratorium komputer dan adanya jurang ketimpangan kemampuan digital antar peserta didik.",
+      concept: "Konsep esensial yang dipelajari mencakup: (1) Sistem Among dengan trilogi kepemimpinan: Ing Ngarsa Sung Tuladha (teladan etika berteknologi), Ing Madya Mangun Karsa (membangun prakarsa kreatif), Tut Wuri Handayani (mendorong kemandirian); (2) Konsep Kodrat Alam dan Kodrat Zaman; (3) Pendidikan yang Menuntun: memfasilitasi kekuatan kodrat anak agar mencapai keselamatan dan kebahagiaan setinggi-tingginya; (4) Penanaman nilai luhur Profil Pelajar Pancasila.",
+      change: "Saya bertransformasi dari seorang pengajar materi yang kaku menjadi pamong yang menuntun dan berpihak penuh pada murid. Saya menyadari bahwa setiap murid memiliki kodrat dan keunikan yang wajib dihargai. Saya tidak lagi memaksakan seluruh anak menguasai materi dengan tempo yang sama, melainkan menyediakan ruang kreasi yang demokratis dan menempatkan etika digital (digital citizenship) setara dengan kecakapan teknis komputasi."
+    },
+    analisisArtefak: {
+      artefakTerpilih: [
+        "Esai Reflektif Kritis Pendidikan Nasional: Transformasi Pembelajaran Informatika",
+        "Infografis Pokok Pikiran KHD dalam Literasi Digital Abad 21",
+        "T2.7 & T3.7 Aksi Nyata Filosofi Pendidikan Indonesia",
+        "Naskah Evaluasi UAS Filosofi Pendidikan Irvan Hadi Abiyoga"
+      ],
+      alasanPemilihan: "Esai reflektif kritis dan infografis KHD dipilih karena menjadi bukti autentik sintesis pemikiran saya dalam mengontekstualisasikan filosofi Ki Hadjar Dewantara ke dalam pembelajaran Informatika era modern. Karya ini membuktikan pergeseran filosofis saya bahwa teknologi di ruang kelas harus menjadi instrumen pemuliaan harkat kemanusiaan murid, bukan sarana penyeragaman kognitif."
+    },
+    kaitanPraktis: {
+      konsepUtama: "Mewujudkan Sistem Among di laboratorium komputer dengan memberikan keteladanan literasi digital yang santun, memantik kreativitas pemecahan masalah algoritma, serta memfasilitasi kemerdekaan belajar murid sesuai minat mereka.",
+      perubahanMasaDepan: "Saya berkomitmen mengintegrasikan nilai-nilai kearifan lokal dan penguatan karakter Profil Pelajar Pancasila di setiap modul ajar Informatika yang saya susun, serta memastikan iklim kelas yang inklusif dan bebas dari diskriminasi kesiapan teknologi."
+    }
   },
   {
     id: "kbg-1",
@@ -182,20 +246,42 @@ export const coursesData: CourseItem[] = [
       "Komponen dasar kebugaran jasmani (daya tahan kardiovaskular, kekuatan, kelenturan, dan komposisi tubuh)",
       "Ergonomi kerja pendidik dan postur tubuh yang tepat saat beraktivitas di laboratorium komputer",
       "Korelasi langsung antara kebugaran fisik, pasokan oksigen ke otak, dan daya konsentrasi mengajar",
-      "Manajemen stres fisik dan variasi peregangan dinamis di sela-sela jam pelajaran"
+      "Manajemen stres fisik dan variasi peregangan dinamis di sela-sela jam pelajaran",
+      "Penerapan Tes Kebugaran Jasmani Indonesia (TKJI) untuk pemantauan mandiri"
     ],
     tugas: [
       "Tes Kebugaran Jasmani Mandiri (TKJI) dan analisis derajat kebugaran fisik",
-      "Penyusunan logbook aktivitas fisik harian calon guru",
-      "Rancangan variasi ice breaking gerak tubuh (brain gym) untuk mencairkan kejenuhan di laboratorium komputer"
+      "Penyusunan logbook aktivitas fisik harian calon guru (Jawaban Logbook Program Kardio & Manajemen Stres)",
+      "Rancangan variasi ice breaking gerak tubuh (brain gym) untuk mencairkan kejenuhan di laboratorium komputer",
+      "Refleksi dan tindak lanjut kebugaran jasmani pendidik (Jawaban 1.E & 2.E)"
     ],
     refleksi: "Mengajar beberapa jam pelajaran di laboratorium komputer membutuhkan stamina prima untuk berkeliling memantau layar siswa. Ketika kondisi fisik saya prima, saya dapat menyapa siswa dengan senyum hangat dan tidak mudah terpancing emosi ketika terjadi kendala teknis. Kebugaran fisik adalah bentuk dedikasi saya dalam melayani peserta didik dengan performa terbaik.",
     dokumentasi: [
+      "Jawaban Logbook Program Kardio & Manajemen Stres Irvan.pdf",
       "Laporan Tes Kebugaran Jasmani Mandiri (TKJI)",
-      "Logbook Aktivitas Fisik & Ergonomi Pendidik",
-      "Panduan Ice Breaking Gerak & Relaksasi Siswa"
+      "Jawaban 1.D Mengintegrasikan Pemahaman Menjadi Solusi.pdf",
+      "Jawaban 2.E Refleksi dan Tindak Lanjut Kebugaran Irvan.pdf"
     ],
-    arsipUrl: "https://drive.google.com/drive/folders/1vZ_J1_EHEatm-yYeE8XRMPeKz809OLxy?usp=drive_link"
+    arsipUrl: "https://drive.google.com/drive/folders/1vZ_J1_EHEatm-yYeE8XRMPeKz809OLxy?usp=drive_link",
+    refleksi4C: {
+      connection: "Awalnya saya sempat mempertanyakan korelasi mata kuliah Kebugaran Jasmani dengan bidang keilmuan Informatika. Namun setelah menjalani ritme asistensi mengajar di sekolah mitra dan penugasan PPG yang padat, relevansi mata kuliah ini terasa sangat vital. Pendidik Informatika rentan mengalami gaya hidup sedenter (banyak duduk di depan monitor) yang memicu gangguan ergonomis muskuloskeletal dan kejenuhan mental. Kebugaran fisik terbukti menjadi modalitas utama yang menopang ketahanan mental dan antusiasme mengajar di kelas.",
+      challenge: "Tantangan yang saya hadapi adalah membangun konsistensi jadwal berolahraga di tengah padatnya beban akademik dan tugas lapangan. Selain itu, mempertahankan postur tubuh ergonomis saat berkeliling mendampingi murid selama jam-jam praktikum komputer memerlukan disiplin kesadaran ragawi (body awareness) yang terus-menerus.",
+      concept: "Konsep kunci yang dipelajari: (1) Komponen kebugaran jasmani terkait kesehatan (kardiorespirasi, kelenturan, kekuatan, dan daya tahan otot); (2) Parameter pengukuran derajat kebugaran berbasis instrumen TKJI; (3) Prinsip ergonomi kerja pendidik di laboratorium komputer (posisi duduk netral, penataan sudut pandang layar, aturan istirahat mata 20-20-20); (4) Korelasi fisiologis antara aktivitas fisik teratur dengan optimalisasi suplai oksigen ke otak dan regulasi kestabilan emosi guru.",
+      change: "Terjadi perubahan gaya hidup dan kesadaran ergonomis yang nyata pada diri saya. Saya yang sebelumnya abai terhadap postur duduk kini disiplin menjaga sikap tubuh yang benar dan rutin melakukan peregangan dinamis. Kondisi fisik yang bugar membuat saya memiliki stamina prima untuk aktif berkeliling (mobile facilitation) mendampingi setiap siswa di laboratorium komputer tanpa rasa lelah berlebih."
+    },
+    analisisArtefak: {
+      artefakTerpilih: [
+        "Jawaban Logbook Program Kardio & Manajemen Stres Irvan.pdf",
+        "Laporan Pengukuran Mandiri Tes Kebugaran Jasmani Indonesia (TKJI)",
+        "Jawaban 1.D Mengintegrasikan Pemahaman Menjadi Solusi.pdf",
+        "Jawaban 2.E Refleksi dan Tindak Lanjut Kebugaran Irvan.pdf"
+      ],
+      alasanPemilihan: "Logbook Program Kardio dan Laporan TKJI dipilih sebagai artefak bukti dukung terbaik karena menyajikan data pemantauan aktivitas fisik dan manajemen stres saya secara terukur dan berkelanjutan. Dokumen ini menjadi bukti pertanggungjawaban profesional bahwa saya secara sadar menjaga kebugaran jasmani sebagai prasyarat utama pelayanan pendidikan yang optimal bagi murid."
+    },
+    kaitanPraktis: {
+      konsepUtama: "Menerapkan prinsip ergonomi di ruang laboratorium komputer sekolah dan membiasakan sesi peregangan fisik ringan (ice breaking dinamis 2 menit) di sela-sela jam praktikum untuk memulihkan kesegaran fisik dan konsentrasi belajar murid.",
+      perubahanMasaDepan: "Saya berkomitmen untuk terus menjaga rutinitas olahraga kardio mingguan guna menjaga stamina mengajar sepanjang karier saya, serta secara berkala memberikan edukasi ergonomi digital kepada murid agar mereka terhindar dari cedera postur akibat gawai digital."
+    }
   },
   {
     id: "PPP-1",
@@ -206,20 +292,42 @@ export const coursesData: CourseItem[] = [
       "Teori perkembangan kognitif Piaget dan teori sosiokultural Vygotsky (ZPD & Scaffolding)",
       "Pendekatan Teaching at the Right Level (TaRL): mengajar berbasis tingkat kesiapan nyata peserta didik",
       "Pelaksanaan Asesmen Diagnostik (Awal) kognitif dan non-kognitif",
-      "Prinsip diferensiasi konten, proses, dan produk dalam pembelajaran Kurikulum Merdeka"
+      "Prinsip diferensiasi konten, proses, dan produk dalam pembelajaran Kurikulum Merdeka",
+      "Penyusunan profiling karakteristik, gaya belajar, dan modalitas peserta didik"
     ],
     tugas: [
       "Studi kasus analisis profil dan karakteristik peserta didik di sekolah mitra PPL",
       "Penyusunan instrumen Asesmen Diagnostik Awal materi Berpikir Komputasional",
-      "Rancangan Modul Ajar berdiferensiasi berdasarkan hasil pemetaan profil belajar"
+      "Rancangan Modul Ajar berdiferensiasi berdasarkan hasil pemetaan profil belajar",
+      "Lembar Kerja Aktivitas Refleksi 1E dan Rencana Tindak Lanjut (RTL)"
     ],
     refleksi: "Sebelum menentukan cara mengajar, saya perlu memahami secara mendalam siapa yang saya ajar. Menyeragamkan instruksi bagi siswa yang sudah mahir dan yang masih pemula adalah bentuk ketidakadilan pedagogis. Melalui asesmen diagnostik, saya dapat menyusun pembelajaran bertingkat dan mengoptimalkan tutor sebaya, sehingga setiap anak merasa dihargai dan bertumbuh sesuai potensinya.",
     dokumentasi: [
       "Instrumen Asesmen Diagnostik Lengkap",
       "Laporan Hasil Pemetaan Karakteristik Siswa",
-      "Modul Ajar Berdiferensiasi"
+      "Lembar Kerja Aktivitas Refleksi 1E Irvan Hadi Abiyoga.pdf",
+      "Modul Ajar Berdiferensiasi Berpikir Komputasional"
     ],
-    arsipUrl: "https://drive.google.com/drive/folders/1j0LHhEHLC5P5-CryMHV66hrGBwzUWLuR?usp=drive_link"
+    arsipUrl: "https://drive.google.com/drive/folders/1j0LHhEHLC5P5-CryMHV66hrGBwzUWLuR?usp=drive_link",
+    refleksi4C: {
+      connection: "Sebelum mendalami PPDP, kecenderungan saya adalah merancang skenario ajar dengan asumsi bahwa semua murid di kelas memiliki kecepatan nalar komputasi yang seragam. Namun ketika mengamati kelas nyata di SMPN 8 Surabaya dan SMAN 15 Surabaya, saya menjumpai disparitas profil belajar yang sangat lebar: terdapat siswa yang sangat cepat menyelesaikan algoritma, sementara siswa lainnya masih memerlukan bimbingan dasar pengoperasian piranti. PPDP menghubungkan teori psikologi perkembangan dengan realitas heterogenitas kelas yang saya hadapi.",
+      challenge: "Tantangan terbesar adalah merancang instrumen asesmen diagnostik awal yang ringkas namun akurat dalam memetakan kesiapan kognitif dan non-kognitif murid, lalu menerjemahkan hasilnya ke dalam pembelajaran berdiferensiasi (konten, proses, produk). Menyiapkan materi berjenjang di laboratorium tanpa membuat murid berkemampuan awal rendah merasa rendah diri atau murid yang cepat merasa bosan menuntut kepekaan pedagogis yang tinggi.",
+      concept: "Konsep-konsep esensial yang dipelajari: (1) Teori perkembangan kognitif Piaget dan teori perkembangan sosiokultural Lev Vygotsky, khususnya konsep Zone of Proximal Development (ZPD) dan Scaffolding (dukungan bertahap); (2) Pendekatan Teaching at the Right Level (TaRL): menyelaraskan pembelajaran dengan kesiapan riil murid; (3) Desain Asesmen Diagnostik Awal; (4) Tiga strategi diferensiasi: diferensiasi konten, proses (bimbingan berjenjang dan tutor sebaya), dan produk unjuk kerja.",
+      change: "Saya bertransformasi dari guru yang 'mengajar materi kurikulum' menjadi pendidik yang 'mengajar murid'. Saya tidak lagi memandang keberagaman murid sebagai kendala, melainkan sebagai aset kekayaan kelas. Saya membiasakan diri melakukan asesmen awal sebelum menyusun rancangan ajar, lebih sabar menyediakan tangga bantuan belajar (scaffolding), dan memberdayakan murid yang telah mahir sebagai tutor sebaya di laboratorium komputer."
+    },
+    analisisArtefak: {
+      artefakTerpilih: [
+        "Instrumen Asesmen Diagnostik Kognitif & Non-Kognitif Berpikir Komputasional",
+        "Laporan Hasil Pemetaan Profil dan Karakteristik Siswa",
+        "Lembar Kerja Aktivitas Refleksi 1E Irvan Hadi Abiyoga.pdf",
+        "Peta Konsep & RTL Topik 1 Pemahaman Peserta Didik"
+      ],
+      alasanPemilihan: "Instrumen asesmen diagnostik dan laporan pemetaan profil peserta didik dipilih karena menjadi bukti empiris kemampuan saya dalam memetakan modalitas belajar, minat, dan tingkat kesiapan siswa di sekolah mitra. Dokumen ini menjadi fondasi ilmiah dalam merancang intervensi pembelajaran berdiferensiasi yang adil dan berpusat pada murid."
+    },
+    kaitanPraktis: {
+      konsepUtama: "Melakukan asesmen diagnostik awal di setiap awal bab pembelajaran Informatika dan menyediakan lembar kerja peserta didik berjenjang (scaffolded worksheet) yang memfasilitasi murid bertumbuh sesuai kesiapan belajarnya.",
+      perubahanMasaDepan: "Saya berkomitmen untuk secara rutin memperbarui data profil belajar siswa di setiap awal semester, mengoptimalkan dinamika kelompok dengan sistem tutor sebaya di laboratorium komputer, dan memastikan setiap instruksi belajar disajikan melalui berbagai representasi modalitas (visual, tekstual, demonstrasi langsung)."
+    }
   },
   {
     id: "PMAD-1",
@@ -230,20 +338,42 @@ export const coursesData: CourseItem[] = [
       "Framework Understanding by Design (UbD): Hasil yang Diinginkan -> Bukti Asesmen -> Rencana Pembelajaran",
       "Enam aspek pemahaman: Menjelaskan, menginterpretasikan, mengaplikasikan, memiliki perspektif, berempati, dan mengenal diri",
       "Perbedaan esensial antara Surface Learning (hafalan teknis) dan Deep Learning (pemecahan masalah bermakna)",
-      "Penyusunan rubrik asesmen unjuk kerja dan tugas autentik berbasis masalah nyata (PBL)"
+      "Penyusunan rubrik asesmen unjuk kerja dan tugas autentik berbasis masalah nyata (PBL)",
+      "Perancangan alur aktivitas instruksional berbasis WHERETO"
     ],
     tugas: [
+      "2.D.1 Lembar Kerja 2.2 Merancang Perencanaan Pembelajaran UbD Informatika.docx",
+      "2.E Menyusun Langkah Perbaikan Berkelanjutan.pdf",
       "Perancangan Modul Ajar Informatika berbasis kerangka UbD lengkap dengan alur WHERETO",
-      "Pembuatan rubrik penilaian autentik untuk karya pemecahan masalah algoritma",
-      "Penyusunan Lembar Kerja Peserta Didik (LKPD) berbasis pemecahan masalah kontekstual"
+      "Pembuatan rubrik penilaian autentik untuk karya pemecahan masalah algoritma"
     ],
     refleksi: "Menyusun perangkat ajar dengan alur UbD menuntut ketelitian tinggi dalam memastikan keselarasan antara tujuan dan bukti asesmen. Namun ketika diimplementasikan, pembelajaran menjadi sangat bermakna. Siswa Informatika tidak sekadar menghafal istilah perangkat keras atau software, melainkan benar-benar memahami nalar pemecahan masalah yang dapat diterapkan dalam kehidupan sehari-hari.",
     dokumentasi: [
+      "2.D.1 Lembar Kerja 2.2 Merancang Perencanaan Pembelajaran.docx",
+      "2.E Menyusun Langkah Perbaikan Berkelanjutan.pdf",
       "Modul Ajar Berpikir Komputasional berbasis UbD",
-      "Rubrik Asesmen Autentik Pemecahan Masalah",
-      "LKPD Analisis Dekomposisi & Pola"
+      "Rubrik Asesmen Autentik Pemecahan Masalah"
     ],
-    arsipUrl: "https://drive.google.com/drive/folders/1WS1svN-awoqU_UM_1VChGPjBaW3oQPKZ?usp=drive_link"
+    arsipUrl: "https://drive.google.com/drive/folders/1WS1svN-awoqU_UM_1VChGPjBaW3oQPKZ?usp=drive_link",
+    refleksi4C: {
+      connection: "Dalam pendidikan Informatika, godaan terbesar guru adalah terjebak pada pengajaran permukaan (surface learning)—murid hanya sekadar menghafal instruksi menu software atau menyalin sintaksis kode tanpa memahami logika komputasional yang mendasarinya. Mata kuliah PMAD memperkenalkan kerangka Understanding by Design (UbD) atau backward design dari Wiggins & McTighe, yang mengaitkan esensi perencanaan ajar dengan pencapaian pemahaman mendalam yang bertahan lama (enduring understanding).",
+      challenge: "Tantangan terbesar adalah membalik kebiasaan lama dalam mendesain pembelajaran. Pola lama kerap merancang aktivitas menarik terlebih dahulu sebelum memikirkan bagaimana cara mengevaluasinya. UbD menuntut perumusan hasil akhir yang diinginkan terlebih dahulu, menentukan bukti asesmen autentik yang terukur, lalu merancang rangkaian aktivitas instruksional (WHERETO). Menentukan rubrik unjuk kerja yang mampu mengukur nalar abstraksi dan dekomposisi data menuntut ketelitian metodologis yang tinggi.",
+      concept: "Konsep-konsep esensial meliputi: (1) Alur Tiga Tahap UbD: Menentukan Hasil yang Diinginkan -> Menentukan Bukti Asesmen -> Merencanakan Pengalaman Belajar; (2) Enam Faset Pemahaman Mendalam (Mampu Menjelaskan, Menginterpretasikan, Menerapkan, Memiliki Perspektif, Berempati, dan Mengenal Diri Sendiri); (3) Perumusan Pertanyaan Pemantik (Essential Questions) yang memantik rasa ingin tahu komputasional siswa; (4) Desain asesmen autentik berbasis masalah dunia nyata (Problem-Based Learning).",
+      change: "Perencanaan pembelajaran saya berubah total menjadi lebih terstruktur, fokus, dan bermakna. Saya tidak lagi menyusun modul ajar berbasis tumpukan materi teoritis yang kering, melainkan berbasis tantangan pemecahan masalah kontekstual. Di kelas, saya membimbing murid menghubungkan konsep dekomposisi dan algoritma dengan persoalan kehidupan nyata, sehingga mereka merasakan relevansi dan kebermaknaan ilmu Informatika."
+    },
+    analisisArtefak: {
+      artefakTerpilih: [
+        "2.D.1 Lembar Kerja 2.2 Merancang Perencanaan Pembelajaran UbD Informatika.docx",
+        "2.E Menyusun Langkah Perbaikan Berkelanjutan.pdf",
+        "Modul Ajar Berpikir Komputasional Berbasis Alur Mundur (UbD)",
+        "Lembar Kerja Peserta Didik (LKPD) Analisis Dekomposisi & Pola"
+      ],
+      alasanPemilihan: "Lembar Kerja 2.2 dan Modul Ajar UbD dipilih karena secara komprehensif mendemonstrasikan penguasaan saya terhadap metodologi alur mundur (backward design). Di dalam artefak ini tercermin perumusan pertanyaan pemantik yang tajam, rubrik analitik pemecahan masalah komputasi, dan rangkaian aktivitas belajar terpadu yang menjamin ketercapaian pemahaman mendalam pada peserta didik."
+    },
+    kaitanPraktis: {
+      konsepUtama: "Menerapkan alur Understanding by Design (UbD) pada setiap unit topik Informatika dengan merumuskan pertanyaan pemantik kontekstual dan menugaskan proyek autentik unjuk kinerja sebagai bukti capaian belajar murid.",
+      perubahanMasaDepan: "Saya berkomitmen untuk secara konsisten menerapkan prinsip backward design dalam menyusun perangkat pembelajaran di satuan pendidikan tempat saya mengabdi, serta terus melakukan refleksi siklus perbaikan berkelanjutan berbasis data asesmen autentik siswa."
+    }
   },
   {
     id: "ppl-1",
@@ -254,20 +384,42 @@ export const coursesData: CourseItem[] = [
       "Observasi kultur sekolah jenjang SMA, tata kelola laboratorium komputer, dan karakteristik siswa remaja di SMAN 15 Surabaya",
       "Penyusunan modul ajar terbimbing dan konsultasi intensif bersama guru pamong SMA",
       "Simulasi praktik mengajar terbimbing di kelas nyata SMA",
-      "Refleksi harian siklus mengajar dan evaluasi umpan balik konstruktif"
+      "Refleksi harian siklus mengajar dan evaluasi umpan balik konstruktif",
+      "Penanganan kendala teknis perangkat dan manajemen kelas laboratorium komputer"
     ],
     tugas: [
       "Laporan Observasi Lingkungan Sekolah dan Laboratorium Komputer SMAN 15 Surabaya",
       "Perangkat Pembelajaran Praktik Mengajar Terbimbing Siklus 1 & 2 di SMAN 15 Surabaya",
-      "Jurnal Refleksi Harian dan Video Dokumentasi Praktik Terbimbing"
+      "Jurnal Refleksi Harian dan Video Dokumentasi Praktik Terbimbing",
+      "Penyusunan Naskah Artikel Ilmiah Refleksi PPL Terbimbing (Artikel PPL 15)"
     ],
     refleksi: "PPL Terbimbing di SMAN 15 Surabaya memberikan gambaran nyata mengenai karakter siswa SMA yang kritis dan membutuhkan materi yang lebih aplikatif. Saat mengajar terbimbing, saya belajar pentingnya pengelolaan waktu, mobilitas mendekati siswa, dan kesiapan strategi cadangan (seperti aktivitas komputasi tanpa komputer / unplugged) apabila terjadi kendala teknis. Bimbingan guru pamong menjadi bekal pedagogis yang sangat bernilai bagi saya.",
     dokumentasi: [
       "Laporan Hasil Observasi Sekolah SMAN 15 Surabaya",
       "Modul Ajar Siklus Terbimbing SMA",
-      "Video Praktik Mengajar & Jurnal Refleksi Harian"
+      "LKPD Informatika Kelas X.pdf",
+      "Artikel Ilmiah Refleksi PPL SMAN 15 (INI ADALAH SALINAN ARTIKEL PPL 15.pdf)"
     ],
-    arsipUrl: "https://drive.google.com/file/d/1RIAyNt_nX_7yDfvzpnKwuSNqIxZDteLN/view?usp=sharing"
+    arsipUrl: "https://drive.google.com/file/d/1RIAyNt_nX_7yDfvzpnKwuSNqIxZDteLN/view?usp=sharing",
+    refleksi4C: {
+      connection: "PPL I di SMAN 15 Surabaya merupakan jembatan emas yang menghubungkan seluruh teori pedagogik yang saya pelajari di bangku kuliah (Filosofi Pendidikan, Growth Mindset, Kebugaran Jasmani, PPDP, dan PMAD) dengan realitas empiris sekolah. Menghadapi siswa jenjang SMA yang memiliki tingkat kekritisan tinggi dan keakraban intensif dengan perangkat teknologi mengonfirmasi bahwa peran guru profesional adalah sebagai pamong yang adaptif, komunikatif, dan berdaya lenting tinggi.",
+      challenge: "Tantangan yang saya hadapi meliputi: penyesuaian diri dengan ritme akademik di SMAN 15 Surabaya, pengelolaan proporsi alokasi waktu antara ceramah guru dan praktik mandiri murid di lab, serta menghadapi insiden teknis tak terduga (seperti fluktuasi koneksi internet atau galat sistem komputer) saat praktik mengajar terbimbing berlangsung.",
+      concept: "Konsep kunci yang dipraktikkan: (1) Prosedur observasi komprehensif lingkungan belajar, tata kelola laboratorium komputer, dan kultur sekolah di SMA; (2) Asistensi mengajar dan kemitraan kolaboratif dengan Guru Pamong; (3) Siklus pembelajaran terbimbing: perencanaan bersama, simulasi mengajar, observasi kelas, dan sesi refleksi pasca-pembelajaran (debriefing); (4) Keterampilan manajemen kelas di ruang laboratorium komputer dan penanganan kendala teknis secara pedagogis.",
+      change: "Saya mengalami pertumbuhan kematangan pedagogis, ketenangan mental, dan rasa percaya diri yang nyata di depan kelas. Dari yang awalnya gugup dan berbicara terlalu cepat, saya belajar mengatur tempo pemaparan, membatasi durasi penjelasan teori maksimal 15 menit, dan aktif bergerak mendampingi murid (active roaming). Bimbingan dan masukan Guru Pamong mendidik saya untuk selalu terbuka terhadap kritik membangun demi perbaikan diri."
+    },
+    analisisArtefak: {
+      artefakTerpilih: [
+        "Laporan Hasil Observasi Sekolah dan Lab SMAN 15 Surabaya",
+        "Modul Ajar Praktik Terbimbing Siklus 1 & 2 Jenjang SMA",
+        "LKPD Informatika Kelas X.pdf",
+        "Artikel Ilmiah Refleksi PPL SMAN 15 (INI ADALAH SALINAN ARTIKEL PPL 15.pdf)"
+      ],
+      alasanPemilihan: "Laporan observasi sekolah, modul ajar terbimbing, dan naskah artikel ilmiah refleksi PPL SMAN 15 dipilih karena mendokumentasikan secara utuh tahapan pengabdian saya di sekolah mitra: mulai dari fase diagnosis awal kultur sekolah, implementasi modul ajar yang divalidasi guru pamong, hingga publikasi artikel ilmiah reflektif yang merekam dinamika belajar siswa di kelas Informatika."
+    },
+    kaitanPraktis: {
+      konsepUtama: "Menerapkan manajemen alokasi waktu yang proporsional di laboratorium komputer (penjelasan ringkas, eksplorasi luas) dan membiasakan sesi evaluasi reflektif harian pasca-pembelajaran bersama guru pamong untuk perbaikan siklus berikutnya.",
+      perubahanMasaDepan: "Saya berkomitmen untuk senantiasa menyiapkan skenario cadangan (contingency plan, seperti skenario unplugged computing) saat merencanakan pembelajaran di lab komputer, serta terus memelihara sikap rendah hati untuk belajar dari supervisi klinis rekan sejawat dan guru senior."
+    }
   },
 
   // ================= SEMESTER 2 =================
@@ -285,15 +437,36 @@ export const coursesData: CourseItem[] = [
     tugas: [
       "Pengembangan Paket Asesmen Autentik Terpadu pada Materi Analisis Data dan Algoritma Tingkat Lanjut",
       "Penyusunan Rubrik Penilaian Proyek Digital Kolaboratif berbasis kriteria HOTS",
-      "Laporan Analisis Evaluasi Hasil Asesmen Peserta Didik dan Rancangan Umpan Balik Deskriptif"
+      "Laporan Analisis Evaluasi Hasil Asesmen Peserta Didik dan Rancangan Umpan Balik Deskriptif",
+      "Laporan UTS PMAL: DUP Dekomposisi & Pengenalan Pola"
     ],
     refleksi: "Melalui mata kuliah PMAL, saya memahami bahwa asesmen lanjutan bukanlah instrumen penghakiman nilai akhir semata, melainkan sarana diagnosis yang sangat berharga bagi guru untuk memetakan kekuatan dan kebutuhan belajar setiap murid. Menyusun rubrik analitik yang jelas membantu peserta didik memahami ekspektasi kualitas kerja mereka serta menumbuhkan keterampilan refleksi mandiri (self-assessment).",
     dokumentasi: [
       "Laporan UTS PMAL: DUP Dekomposisi & Pengenalan Pola",
       "Paket Instrumen Asesmen Autentik HOTS",
-      "Rubrik Penilaian Unjuk Kinerja Analitik"
+      "Rubrik Penilaian Unjuk Kinerja Analitik",
+      "Laporan Analisis Hasil Evaluasi Belajar Siswa"
     ],
-    arsipUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+    arsipUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID",
+    refleksi4C: {
+      connection: "Sebagai eskalasi lanjutan dari PMAD Semester 1, PMAL menghubungkan kemampuan desain instruksional saya dengan keahlian menyusun sistem evaluasi tingkat tinggi. Di bidang Informatika, kemampuan murid memecahkan masalah tidak dapat dinilai secara akurat melalui tes pilihan ganda semata. PMAL memperdalam kemampuan saya merancang asesmen autentik HOTS, penilaian kinerja (performance task), serta rubrik evaluasi yang transparan dan berkeadilan.",
+      challenge: "Tantangan yang saya hadapi adalah menghindari bias subjektivitas dalam menilai proyek karya komputasi siswa, serta merumuskan deskriptor indikator capaian yang operasional dan presisi untuk mengukur nalar algoritma, keorisinalan solusi, dan efisiensi logika program siswa.",
+      concept: "Konsep esensial yang dipelajari: (1) Asesmen formatif berkelanjutan (Assessment as Learning & Assessment for Learning); (2) Desain asesmen unjuk kerja autentik berbasis Higher-Order Thinking Skills (HOTS); (3) Penyusunan rubrik analitik bertingkat yang membedah kriteria performa secara detail; (4) Analisis data psikometrik asesmen (daya pembeda, tingkat kesukaran, reliabilitas) untuk evaluasi instruksional berkala.",
+      change: "Saya tidak lagi memandang asesmen sebagai vonis angka akhir semata (assessment of learning), melainkan sebagai alat navigasi dan diagnosis pedagogis yang memberikan peta pertumbuhan belajar setiap anak. Saya membiasakan diri membagikan rubrik penilaian analitik kepada siswa sebelum mereka memulai proyek, sehingga mereka memiliki acuan mutu mandiri (self-assessment)."
+    },
+    analisisArtefak: {
+      artefakTerpilih: [
+        "Laporan UTS PMAL: DUP Dekomposisi & Pengenalan Pola",
+        "Paket Instrumen Asesmen Autentik HOTS Informatika",
+        "Rubrik Penilaian Unjuk Kinerja Analitik",
+        "Laporan Analisis Hasil Evaluasi Belajar Siswa"
+      ],
+      alasanPemilihan: "Laporan UTS PMAL dan Paket Instrumen Asesmen HOTS dipilih karena membuktikan kemampuan saya merancang sistem evaluasi unjuk kerja autentik yang komprehensif. Artefak ini memuat indikator pencapaian kompetensi berpikir komputasional yang terukur dan rubrik analitik yang telah diuji validitasnya pada materi dekomposisi data siswa."
+    },
+    kaitanPraktis: {
+      konsepUtama: "Menerapkan rubrik analitik transparan yang dibagikan kepada peserta didik sebelum pengerjaan proyek komputasi, serta memberikan umpan balik deskriptif berkelanjutan pada setiap tahapan kerja siswa.",
+      perubahanMasaDepan: "Saya berkomitmen untuk membiasakan siswa melakukan penilaian antarteman (peer-assessment) dan refleksi diri (self-assessment) berbasis rubrik, serta memanfaatkan data asesmen diagnostik berkala untuk terus menyempurnakan kualitas metode pengajaran saya di kelas."
+    }
   },
   {
     id: "pse-2",
@@ -304,20 +477,42 @@ export const coursesData: CourseItem[] = [
       "Kerangka CASEL: Kesadaran Diri, Manajemen Diri, Kesadaran Sosial, Keterampilan Berelasi, dan Pengambilan Keputusan Bertanggung Jawab",
       "Penerapan teknik kesadaran penuh (Mindfulness) dengan metode STOP (Stop, Take a breath, Observe, Proceed)",
       "Penciptaan iklim kelas positif yang aman secara psikologis (psychological safety) di laboratorium komputer",
-      "Kesejahteraan psikologis (well-being) guru dan murid sebagai fondasi keberhasilan pembelajaran"
+      "Kesejahteraan psikologis (well-being) guru dan murid sebagai fondasi keberhasilan pembelajaran",
+      "Manajemen konflik emosional dan kolaborasi tim dalam tugas proyek"
     ],
     tugas: [
-      "Rancangan Modul Ajar Informatika terintegrasi KSE (Teknik STOP sebelum evaluasi logika)",
-      "Penyusunan Jurnal Refleksi Kesejahteraan Emosional Guru dan Peserta Didik",
-      "Studi kasus pengelolaan dinamika emosi dan kolaborasi kerja kelompok di laboratorium komputer"
+      "Rancangan Modul Ajar Informatika terintegrasi KSE (Modul Ajar UTS PSE Berpikir Komputasional)",
+      "Penyusunan Lembar Kerja Aktivitas PSE (1A - 1E Rev)",
+      "Studi Kasus Experiential Learning PSE (LK 3.1 & LK 3.2)",
+      "Laporan Kajian Kesejahteraan Emosional di Satuan Pendidikan (UAS School Well-Being)"
     ],
     refleksi: "Saya pernah mendapati seorang siswa yang frustrasi dan enggan melanjutkan tugas akibat kesalahan logika program yang berulang. Berkat bekal ilmu PSE, saya mendekatinya dengan empati dan mengajak mengambil jeda napas sejenak sebelum menelaah eror secara bersama. Pendekatan yang menenangkan tersebut mengembalikan rasa percaya dirinya. Menjadi pendidik adalah menyentuh hati sebelum mengisi daya pikir anak.",
     dokumentasi: [
-      "Modul Ajar UTS PSE Berpikir Komputasional",
-      "Jurnal Refleksi Emosional Guru & Peserta Didik (1A-1E)",
-      "Panduan Praktik STOP & Regulasi Diri di Kelas"
+      "Modul Ajar UTS PSE Berpikir Komputasional.docx",
+      "Lembar Kerja Aktivitas PSE 1A - 1E Rev.pdf",
+      "LK 3.1 Experiential Learning PSE.pdf",
+      "Laporan UAS School Well-Being SMPN 8 Surabaya"
     ],
-    arsipUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+    arsipUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID",
+    refleksi4C: {
+      connection: "Di era digital saat ini, peserta didik kerap dihadapkan pada disrupsi informasi, kecemasan kognitif saat program komputer error, dan tekanan interaksi digital. Mata kuliah PSE menghubungkan kecakapan teknis komputasi dengan ketahanan mental dan kecerdasan emosional. PSE menyadarkan saya bahwa otak yang sedang stres atau cemas tidak akan mampu berpikir logis secara optimal. Membangun ruang kelas yang aman secara emosional adalah prasyarat keberhasilan pembelajaran Informatika.",
+      challenge: "Tantangan yang saya hadapi adalah bagaimana mengintegrasikan 5 Kompetensi Sosial Emosional (KSE) ke dalam modul ajar Informatika secara kontekstual dan natural, tanpa terkesan dipaksakan atau mengurangi alokasi jam praktikum materi komputer yang padat.",
+      concept: "Konsep esensial yang dipelajari: (1) 5 Kompetensi KSE menurut CASEL: Kesadaran Diri, Manajemen Diri, Kesadaran Sosial, Keterampilan Berelasi, dan Pengambilan Keputusan yang Bertanggung Jawab; (2) Praktik kesadaran penuh (Mindfulness) dengan teknik STOP (Stop, Take a breath, Observe, Proceed); (3) Konsep School Well-Being dan Psychological Safety di ruang belajar; (4) Integrasi PSE secara eksplisit dan terintegrasi dalam mata pelajaran.",
+      change: "Saya bertransformasi menjadi pendidik yang mengedepankan empati, kehangatan, dan stabilitas emosi. Saya membiasakan diri menyapa kondisi perasaan murid sebelum memulai pelajaran. Ketika ada siswa yang mengalami frustrasi karena komputernya eror, saya tidak lagi merespons secara kaku, melainkan membimbingnya mengambil jeda napas sejenak untuk menenangkan pikiran sebelum menelaah kembali masalah secara jernih."
+    },
+    analisisArtefak: {
+      artefakTerpilih: [
+        "Modul Ajar UTS PSE Berpikir Komputasional.docx",
+        "Lembar Kerja Aktivitas PSE 1A - 1E Rev.pdf",
+        "LK 3.1 Experiential Learning PSE.pdf",
+        "Laporan UAS Kajian School Well-Being Siswa"
+      ],
+      alasanPemilihan: "Modul Ajar UTS PSE dan Lembar Kerja PSE 1A-1E dipilih karena membuktikan kemampuan saya mengintegrasikan teknik kesadaran penuh (teknik STOP) secara konkret ke dalam aktivitas pembelajaran Berpikir Komputasional. Dokumen ini menjadi bukti autentik penerapan pedagogi humanis yang memperhatikan kesehatan mental murid di ruang kelas komputer."
+    },
+    kaitanPraktis: {
+      konsepUtama: "Mengintegrasikan teknik STOP selama 2 menit di awal pembelajaran atau sebelum evaluasi kuis logika, serta membimbing siswa mengelola emosi frustrasi koding melalui komunikasi suportif dan kerja kelompok yang saling menghargai.",
+      perubahanMasaDepan: "Saya berkomitmen untuk senantiasa menempatkan kesejahteraan psikologis (well-being) murid sebagai prioritas utama iklim kelas saya, mengedukasi etika berelasi digital yang santun, serta terus melatih kematangan regulasi emosi pribadi dalam menghadapi segala dinamika kelas."
+    }
   },
   {
     id: "projek-kepemimpinan-2",
@@ -328,20 +523,42 @@ export const coursesData: CourseItem[] = [
       "Pendekatan Design Thinking: Empathize, Define, Ideate, Prototype, dan Testing untuk inovasi pendidikan",
       "Manajemen proyek sosial berbasis SMART (Specific, Measurable, Achievable, Relevant, Time-bound)",
       "Advokasi kemitraan, manajemen linimasa, penganggaran, dan mitigasi risiko kegiatan",
-      "Evaluasi dampak sosial program (Monitoring & Evaluation) serta pameran gelar karya (Exhibition)"
+      "Evaluasi dampak sosial program (Monitoring & Evaluation) serta pameran gelar karya (Exhibition)",
+      "Kepemimpinan transformasional dan kolaborasi lintas pemangku kepentingan"
     ],
     tugas: [
-      "Penyusunan Proposal Prakarsa Perubahan Projek Kepemimpinan Sosial",
-      "Pelaksanaan Aksi Nyata Program Literasi Digital & Media Interaktif di Komunitas Sasaran",
+      "Penyusunan Proposal Prakarsa Perubahan Projek Kepemimpinan Sosial (UTS PK Terbaru)",
+      "Pengerjaan Lembar Kerja Kelompok Projek (LK 2.3.A & LK 2.4.A)",
+      "Pelaksanaan Aksi Nyata Program Peningkatan Literasi Digital Komunitas Sasaran",
       "Pameran Gelar Karya (Exhibition) dan Laporan Pertanggungjawaban Akhir Projek"
     ],
     refleksi: "Memimpin proyek sosial bersama rekan mahasiswa di tengah padatnya jadwal PPL menuntut kematangan komunikasi dan manajemen waktu. Dari pengalaman ini, saya belajar bahwa kepemimpinan sejati bukanlah tentang mendikte, melainkan kemampuan mendengar, memfasilitasi kekuatan rekan tim, dan merawat komitmen bersama demi kemanfaatan yang berkelanjutan.",
     dokumentasi: [
-      "Proposal Prakarsa Perubahan Projek Kepemimpinan (UTS PK)",
-      "Dokumentasi Foto & Video Pelaksanaan Aksi Nyata",
-      "Laporan Akhir Dampak & Gelar Karya Projek"
+      "Proposal Prakarsa Perubahan Projek Kepemimpinan (UTS PK Terbaru.pdf)",
+      "LK 2.3.A & LK 2.4.A Tugas Kelompok Projek Kepemimpinan.pdf",
+      "Dokumentasi Gelar Karya & Pameran Projek Komunitas",
+      "Laporan Akhir Pertanggungjawaban Dampak Projek"
     ],
-    arsipUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+    arsipUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID",
+    refleksi4C: {
+      connection: "Mata kuliah Projek Kepemimpinan memperluas horizon peran saya: seorang pendidik profesional tidak boleh terisolasi hanya di dalam empat dinding ruang kelas, melainkan harus hadir sebagai agen perubahan sosial dan pemimpin yang melayani (servant leader) di masyarakat. Mata kuliah ini menghubungkan keahlian teknologi informasi saya dengan tanggung jawab pengabdian masyarakat guna menjawab kesenjangan literasi digital di lingkungan sasaran.",
+      challenge: "Tantangan terbesar yang dihadapi adalah menyelaraskan ide, ritme kerja, dan pembagian peran anggota tim di tengah padatnya jadwal praktik mengajar mandiri PPL, serta melakukan mitigasi risiko ketika terjadi kendala teknis dan dinamika komunikasi di lapangan sasaran.",
+      concept: "Konsep kunci yang dipelajari: (1) Pendekatan Design Thinking dalam rekayasa sosial pendidikan: Empathize, Define, Ideate, Prototype, dan Test; (2) Manajemen proyek berbasis target SMART (Specific, Measurable, Achievable, Relevant, Time-bound); (3) Pemetaan pemangku kepentingan (stakeholder mapping), manajemen anggaran, dan advokasi kemitraan; (4) Monitoring, evaluasi dampak terukur, dan diseminasi gelar karya.",
+      change: "Saya mengalami transformasi dalam gaya kepemimpinan. Dari yang awalnya berorientasi instruksional mandiri, saya belajar menjadi pemimpin yang inklusif, pendengar yang baik, serta mampu memfasilitasi kelebihan setiap rekan tim. Saya menyadari bahwa perubahan berkelanjutan lahir dari kolaborasi yang solid, bukan kerja individu."
+    },
+    analisisArtefak: {
+      artefakTerpilih: [
+        "Proposal Prakarsa Perubahan Projek Kepemimpinan (UTS_PK_TERBARU.pdf)",
+        "LK 2.3.A & LK 2.4.A Tugas Kelompok PK.pdf",
+        "2.2.a Tugas 4.1 Individu Projek Kepemimpinan.pdf",
+        "Laporan Pertanggungjawaban Akhir Gelar Karya Projek"
+      ],
+      alasanPemilihan: "Proposal UTS PK Terbaru dan LK 2.3.A dipilih karena mendokumentasikan secara rinci perencanaan aksi perubahan sosial yang kami gagas menggunakan pendekatan Design Thinking. Dokumen ini membuktikan kompetensi saya dalam merancang inisiatif pendidikan yang terukur, mengelola risiko, dan menggalang kemitraan demi dampak sosial yang nyata."
+    },
+    kaitanPraktis: {
+      konsepUtama: "Menggunakan metode Design Thinking dalam membedah dan memecahkan kendala pembelajaran di sekolah mitra, serta mengorganisasi kegiatan kolaboratif yang berdampak bagi komunitas sekitar.",
+      perubahanMasaDepan: "Saya berkomitmen untuk aktif menginisiasi dan menggerakkan Komunitas Belajar (Kombel) antar pendidik di satuan pendidikan tempat saya bertugas kelak, serta merancang proyek-proyek kolaborasi literasi digital yang menghubungkan sekolah dengan masyarakat luas."
+    }
   },
   {
     id: "inklusi-2",
@@ -352,20 +569,42 @@ export const coursesData: CourseItem[] = [
       "Filosofi pendidikan inklusif dan hak asasi setiap anak untuk memperoleh layanan pendidikan yang setara",
       "Identifikasi dan asesmen awal peserta didik berkebutuhan khusus (PDBK) di sekolah reguler",
       "Prinsip Akomodasi yang Layak: Modifikasi tujuan, materi, proses pembelajaran, dan format penilaian",
-      "Kerangka Universal Design for Learning (UDL): Ragam Keterlibatan, Ragam Representasi, dan Ragam Ekspresi"
+      "Kerangka Universal Design for Learning (UDL): Ragam Keterlibatan, Ragam Representasi, dan Ragam Ekspresi",
+      "Pengembangan media dan materi Informatika yang aksesibel (multimodal text, audio, visual)"
     ],
     tugas: [
-      "Analisis studi kasus identifikasi karakteristik PDBK di lingkungan sekolah mitra PPL",
-      "Penyusunan Modul Ajar Informatika Inklusif berbasis UDL (materi multimodal dan penugasan fleksibel)",
-      "Perancangan instrumen penilaian modifikasi yang adil dan apresiatif bagi peserta didik slow learner"
+      "Analisis studi kasus identifikasi karakteristik PDBK di lingkungan sekolah mitra PPL (Studi Kasus Siswa Inklusif Alya)",
+      "Penyusunan Modul Ajar Informatika Inklusif berbasis kerangka UDL",
+      "Perancangan instrumen penilaian modifikasi yang adil bagi peserta didik slow learner",
+      "Rancangan Aksi Nyata Lingkungan Belajar Ramah Inklusi di Laboratorium Komputer"
     ],
     refleksi: "Di laboratorium komputer, saya pernah mendampingi siswa dengan kecepatan membaca yang lebih lambat sehingga tertinggal saat membaca panduan tertulis. Pengalaman tersebut menegaskan bahwa pendidiklah yang wajib menyediakan jalur belajar alternatif—misalnya melalui infografis visual dan rekaman audio instruksi. Tidak ada satu pun anak yang boleh merasa tersisih di ruang kelas saya.",
     dokumentasi: [
       "Studi Kasus Mengenal Profil Siswa Inklusif Alya",
       "RPP Berdiferensiasi Informatika Berbasis UDL",
-      "Instrumen Asesmen Akomodasi yang Layak"
+      "Instrumen Asesmen Akomodasi yang Layak",
+      "Panduan Praktik Laboratorium Komputer Aksesibel"
     ],
-    arsipUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+    arsipUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID",
+    refleksi4C: {
+      connection: "Sebelum mendalami Pendidikan Inklusi, ada anggapan umum bahwa pelayanan bagi Peserta Didik Berkebutuhan Khusus (PDBK) adalah kewajiban eksklusif Sekolah Luar Biasa (SLB). Di era Kurikulum Merdeka, sekolah reguler membuka pintu bagi PDBK. Bagi calon guru Informatika, hal ini menjadi amanah besar: bagaimana memastikan bahwa pembelajaran teknologi tidak menjadi penghalang diskriminatif, melainkan menjadi jembatan pemberdayaan yang aksesibel bagi setiap anak dengan ragam hambatan belajar.",
+      challenge: "Tantangan terberat adalah mengidentifikasi hambatan belajar spesifik siswa secara objektif tanpa melakukan pelabelan negatif (labeling), serta memodifikasi materi dan modul ajar praktikum komputer agar dapat dipahami oleh siswa yang memiliki keterbatasan membaca, gangguan konsentrasi, maupun kecepatan belajar yang lambat (slow learner).",
+      concept: "Konsep kunci yang dipelajari: (1) Filosofi pendidikan inklusif berbasis hak asasi manusia; (2) Konsep Akomodasi yang Layak (modifikasi tujuan, proses instruksional, sarana, dan asesmen); (3) Kerangka Universal Design for Learning (UDL) dengan tiga prinsip utama: Ragam Representasi (Multiple Means of Representation), Ragam Keterlibatan (Engagement), dan Ragam Aksi/Ekspresi (Action & Expression); (4) Penerapan teknologi asistif sederhana.",
+      change: "Saya mengalami perubahan paradigma yang mendalam: tidak ada anak yang 'gagal belajar', yang ada adalah rancangan kurikulum dan instruksi guru yang belum menyediakan akses yang sesuai dengan pintu masuk pemahaman anak. Saya bertransformasi menjadi guru yang proaktif merancang materi pembelajaran multimodal (teks, diagram visual, video, dan panduan taktil berurutan)."
+    },
+    analisisArtefak: {
+      artefakTerpilih: [
+        "Studi Kasus Mengenal Profil Siswa Inklusif Alya",
+        "RPP Berdiferensiasi Informatika Berbasis UDL",
+        "Instrumen Asesmen Akomodasi yang Layak",
+        "Panduan Praktik Laboratorium Komputer Aksesibel"
+      ],
+      alasanPemilihan: "Studi Kasus Siswa Inklusif Alya dan RPP Berdiferensiasi UDL dipilih karena mendemonstrasikan secara nyata kemampuan saya dalam mengidentifikasi kebutuhan khusus murid dan merumuskan modifikasi kurikulum yang adil. Dokumen ini menjadi bukti autentik penerapan prinsip UDL dalam pembelajaran Informatika di sekolah mitra PPL."
+    },
+    kaitanPraktis: {
+      konsepUtama: "Menyediakan panduan praktikum visual langkah demi langkah (step-by-step pictorial guide) di laboratorium komputer dan memberikan opsi unjuk kerja fleksibel bagi siswa dengan kebutuhan khusus.",
+      perubahanMasaDepan: "Saya berkomitmen untuk selalu menerapkan prinsip Universal Design for Learning (UDL) pada setiap materi ajar digital yang saya rancang, memastikan perangkat lunak dan media pembelajaran yang digunakan memiliki fitur aksesibilitas yang ramah bagi seluruh peserta didik."
+    }
   },
   {
     id: "seminar-2",
@@ -376,24 +615,48 @@ export const coursesData: CourseItem[] = [
       "Metodologi Penelitian Tindakan Kelas (PTK) siklik model Kemmis & McTaggart (Plan - Act - Observe - Reflect)",
       "Penyusunan laporan Best Practice inovasi pembelajaran menggunakan kerangka STAR (Situasi, Tantangan, Aksi, Refleksi)",
       "Teknik presentasi dan argumentasi ilmiah pedagogis dalam forum ujian sidang seminar proposal",
-      "Diseminasi hasil refleksi pembelajaran demi peningkatan mutu pendidikan secara berkelanjutan"
+      "Diseminasi hasil refleksi pembelajaran demi peningkatan mutu pendidikan secara berkelanjutan",
+      "Integrasi inovasi media pembelajaran digital (Kompulogika) sebagai solusi empiris di sekolah"
     ],
     tugas: [
       "Penyusunan Proposal Penelitian Tindakan Kelas / Seminar Refleksi Inovasi Pembelajaran Informatika di Sekolah Mitra",
       "Slide presentasi sidang seminar proposal dan simulasi diseminasi karya ilmiah di depan dewan penguji",
-      "Penyusunan artikel reflektif Praktik Baik (Best Practice) pembelajaran Informatika di sekolah mitra PPL"
+      "Penyusunan artikel reflektif Praktik Baik (Best Practice) pembelajaran Informatika di sekolah mitra PPL",
+      "Laporan Inovasi Pembelajaran Kompulogika SMPN 8 Surabaya (83 Siswa, CBT Room 728953)"
     ],
     refleksi: "Menjalani ujian sidang seminar proposal memberikan pengalaman berharga dalam mempertahankan argumentasi pedagogis dengan dukungan data kelas nyata. Guru profesional adalah praktisi yang senantiasa menempatkan dirinya sebagai pembelajar sepanjang hayat (lifelong learner) dan peneliti atas praktiknya sendiri di kelas demi perbaikan mutu pembelajaran yang tiada henti.",
     dokumentasi: [
-      "Laporan Inovasi Pembelajaran Kompulogika SMPN 8",
-      "Slide Presentasi Ujian Sidang Seminar",
-      "Artikel Best Practice Pembelajaran Informatika"
+      "Laporan Inovasi Pembelajaran Kompulogika SMPN 8 Surabaya.docx",
+      "Slide Presentasi Ujian Sidang Seminar Proposal",
+      "Artikel Best Practice Pembelajaran Informatika Berbasis STAR",
+      "Tugas LK 1 Identifikasi Diri Calon Guru.pdf"
     ],
-    arsipUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID"
+    arsipUrl: "https://drive.google.com/drive/folders/1LPstJFB_T7uDid4g_84EDrx4W4dB6REM?hl=ID",
+    refleksi4C: {
+      connection: "Sebagai mata kuliah pemungkas dan muara dari seluruh rangkaian PPG Prajabatan, Seminar PPG memadukan seluruh teori pedagogik yang dipelajari di bangku kuliah dengan data empiris yang saya temukan selama bertugas di sekolah mitra PPL (SMAN 15 Surabaya dan SMPN 8 Surabaya). Mata kuliah ini mempertegas peran saya sebagai guru profesional yang reflektif dan adaptif: seorang pendidik yang tidak hanya mengajar, tetapi juga mampu meneliti, mengevaluasi, dan mendokumentasikan inovasi pembelajarannya secara ilmiah.",
+      challenge: "Tantangan terberat adalah menyusun karya tulis ilmiah reflektif yang didukung data kuantitatif dan kualitatif yang valid dari kelas nyata, serta mempertahankan argumentasi pedagogis inovasi pembelajaran (seperti inovasi media Kompulogika) di hadapan dewan penguji dan dosen pembimbing dalam forum sidang seminar proposal yang kritis.",
+      concept: "Konsep kunci yang dipelajari: (1) Metodologi Penelitian Tindakan Kelas (PTK) siklik model Kemmis & McTaggart (Perencanaan, Tindakan, Pengamatan, Refleksi); (2) Kerangka penulisan Praktik Baik (Best Practice) menggunakan metode STAR (Situasi, Tantangan, Aksi, Refleksi); (3) Teknik komunikasi dan diseminasi akademik dalam forum ilmiah kependidikan; (4) Konsep teacher as reflective practitioner and researcher (guru sebagai peneliti reflektif).",
+      change: "Saya menginternalisasi identitas baru sebagai pendidik pembelajar sepanjang hayat (lifelong learner) dan peneliti atas praktiknya sendiri di kelas. Saya tidak lagi memandang masalah pembelajaran di kelas sebagai keluhan yang pasrah diterima, melainkan sebagai tantangan riset tindakan yang dapat diselesaikan melalui intervensi inovatif yang terukur dan dapat dipertanggungjawabkan."
+    },
+    analisisArtefak: {
+      artefakTerpilih: [
+        "Laporan Inovasi Pembelajaran Kompulogika SMPN 8 Surabaya.docx",
+        "Tugas LK 1 Identifikasi Diri Calon Guru.pdf",
+        "Slide Presentasi Ujian Sidang Seminar Proposal",
+        "Naskah Artikel Best Practice Publikasi Ilmiah PPG"
+      ],
+      alasanPemilihan: "Laporan Inovasi Pembelajaran Kompulogika SMPN 8 Surabaya dan Slide Sidang Seminar dipilih sebagai artefak puncak karena merangkum secara utuh implementasi riset tindakan kelas yang saya lakukan pada 83 siswa kelas 9 di SMPN 8 Surabaya. Dokumen ini membuktikan integrasi antara pemecahan masalah empiris kelas (rendahnya minat komputasi abstrak) dengan rekayasa solusi pedagogis yang terukur dan sukses diseminasi di depan dewan penguji."
+    },
+    kaitanPraktis: {
+      konsepUtama: "Menerapkan kerangka STAR dan siklus PTK secara berkelanjutan untuk memecahkan kendala pembelajaran Informatika di kelas nyata, serta mendesain media interaktif yang mempermudah pemahaman konsep logika komputasi siswa.",
+      perubahanMasaDepan: "Saya berkomitmen untuk secara rutin mendokumentasikan setiap praktik baik dan inovasi mengajar saya dalam bentuk tulisan ilmiah, membagikannya dalam forum Komunitas Belajar (Kombel) atau Musyawarah Guru Mata Pelajaran (MGMP) Informatika, serta terus mempublikasikan karya reflektif di jurnal kependidikan."
+    }
   }
 ];
 
 export interface PplData {
+  jenjang?: string;
+  guruPamong?: string;
   sekolah: string;
   sekolahTerbimbing: string;
   sekolahMandiri: string;
@@ -414,6 +677,8 @@ export interface PplData {
 }
 
 export const pplData: PplData = {
+  jenjang: "Sekolah Menengah Pertama (SMP) & Sekolah Menengah Atas (SMA)",
+  guruPamong: "Pamuji Raharjo., S.Pd (SMPN 8 Surabaya)",
   sekolah: "SMAN 15 Surabaya (PPL Terbimbing) & SMPN 8 Surabaya (PPL Mandiri)",
   sekolahTerbimbing: "SMAN 15 Surabaya",
   sekolahMandiri: "SMP Negeri 8 Surabaya",
