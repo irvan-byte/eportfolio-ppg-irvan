@@ -1,7 +1,20 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { coursesData } from "@/data/portfolioData";
-import { BookOpen, FileText, CheckCircle2, ChevronDown, ChevronUp, ExternalLink, Lightbulb, Sparkles } from "lucide-react";
+import {
+  BookOpen,
+  FileText,
+  CheckCircle2,
+  ChevronDown,
+  ChevronUp,
+  ExternalLink,
+  Lightbulb,
+  Sparkles,
+  Link2,
+  AlertTriangle,
+  TrendingUp,
+  FolderCheck
+} from "lucide-react";
 import { useState } from "react";
 
 interface SemesterPageProps {
@@ -10,8 +23,9 @@ interface SemesterPageProps {
 
 /**
  * Modern Humanist & Reflective.
- * Menampilkan review mendalam setiap mata kuliah PPG dengan gaya mahasiswa natural,
- * terstruktur rapi untuk penilaian dosen & guru pamong.
+ * Menampilkan review mendalam setiap mata kuliah PPG Prajabatan Informatika UNESA,
+ * dilengkapi LEMBAR KERJA 2 (LK 2): Refleksi 4C, Analisis Artefak, dan Kaitan Praktis
+ * yang terstruktur rapi, elegan, dan mudah dinilai oleh dosen & guru pamong.
  */
 export default function SemesterPage({ semesterNum }: SemesterPageProps) {
   const filteredCourses = coursesData.filter((c) => c.semester === semesterNum);
@@ -30,23 +44,29 @@ export default function SemesterPage({ semesterNum }: SemesterPageProps) {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-950 tracking-tight leading-tight mb-4">
               Semester {semesterNum}: Refleksi, Teori, dan Praktik.
             </h1>
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-4">
               {semesterNum === 1
-                ? "Fondasi pedagogik, filosofi pendidikan Ki Hadjar Dewantara, growth mindset, kebugaran, dan perancangan pembelajaran mendalam berbasis Understanding by Design (UbD)."
-                : "Pengembangan kompetensi lanjutan: praktik mengajar mandiri (PMAL), pembelajaran sosial emosional (PSE), projek kepemimpinan sosial, pendidikan inklusi, dan seminar proposal riset tindakan."}
+                ? "Fondasi pedagogik, filosofi pendidikan Ki Hadjar Dewantara, growth mindset, kebugaran jasmani, pemahaman peserta didik (PPDP), pembelajaran mendalam (PMAD), dan praktik terbimbing di SMAN 15 Surabaya."
+                : "Pengembangan kompetensi lanjutan: pembelajaran mendalam & asesmen lanjutan (PMAL), pembelajaran sosial emosional (PSE), projek kepemimpinan sosial, pendidikan inklusi, dan seminar riset tindakan di SMPN 8 Surabaya."}
             </p>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-cyan-100/70 border border-cyan-200 text-cyan-900 text-xs font-medium">
+              <Sparkles className="w-4 h-4 text-cyan-700 shrink-0" />
+              <span>
+                Dilengkapi <strong>Lembar Kerja 2 (LK 2)</strong>: Refleksi 4C (Connection, Challenge, Concept, Change), Analisis Artefak & Kaitan Praktis.
+              </span>
+            </div>
           </div>
 
           {/* Course List Accordion */}
-          <div className="space-y-5">
+          <div className="space-y-6">
             {filteredCourses.map((course) => {
               const isExpanded = expandedId === course.id;
 
               return (
                 <div
                   key={course.id}
-                  className={`bg-white border rounded-2xl overflow-hidden transition-all duration-300 shadow-sm ${
-                    isExpanded ? "border-cyan-300 ring-2 ring-cyan-100 shadow-md" : "border-slate-200 hover:border-slate-300"
+                  className={`bg-white border rounded-2xl overflow-hidden transition-all duration-300 shadow-xs ${
+                    isExpanded ? "border-cyan-400 ring-2 ring-cyan-100 shadow-md" : "border-slate-200 hover:border-slate-300"
                   }`}
                 >
                   {/* Accordion Trigger */}
@@ -79,8 +99,8 @@ export default function SemesterPage({ semesterNum }: SemesterPageProps) {
 
                   {/* Accordion Content */}
                   {isExpanded && (
-                    <div className="p-6 sm:p-7 pt-0 border-t border-slate-100 space-y-6 animate-in fade-in duration-300">
-                      {/* Deskripsi & Ekspektasi */}
+                    <div className="p-6 sm:p-7 pt-0 border-t border-slate-100 space-y-7 animate-in fade-in duration-300">
+                      {/* Deskripsi & Pengantar */}
                       <div className="pt-6">
                         <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">
                           Pengantar & Esensi Mata Kuliah
@@ -91,7 +111,7 @@ export default function SemesterPage({ semesterNum }: SemesterPageProps) {
                       </div>
 
                       {/* Grid: Hal yang Dipelajari & Tugas/Aksi Nyata */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         {/* Hal yang Dipelajari */}
                         <div className="bg-slate-50 rounded-xl p-5 border border-slate-200/80">
                           <h4 className="text-xs font-bold text-cyan-800 uppercase tracking-wider mb-3 flex items-center gap-1.5">
@@ -125,31 +145,216 @@ export default function SemesterPage({ semesterNum }: SemesterPageProps) {
                         </div>
                       </div>
 
-                      {/* Refleksi Bermakna 4F */}
-                      <div className="bg-gradient-to-r from-amber-50/60 to-cyan-50/60 rounded-xl p-5 sm:p-6 border border-amber-200/60">
-                        <div className="flex items-center gap-2 mb-2.5 text-amber-900 font-bold text-xs uppercase tracking-wider">
-                          <Lightbulb className="w-4 h-4 text-amber-600" />
-                          Refleksi Pengalaman Belajar (Reflektif Alami)
+                      {/* LEMBAR KERJA 2 (LK 2): REFLEKSI PENGALAMAN BELAJAR */}
+                      <div className="pt-2">
+                        {/* Header LK 2 */}
+                        <div className="bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 text-white rounded-2xl p-5 sm:p-6 mb-6 shadow-sm border border-cyan-900/50">
+                          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-400/20 text-cyan-300 text-xs font-mono font-bold uppercase tracking-wider mb-2 border border-cyan-400/30">
+                            <Sparkles className="w-3.5 h-3.5" />
+                            LEMBAR KERJA 2 (LK 2) • PPG PRAJABATAN
+                          </div>
+                          <h3 className="text-lg sm:text-xl font-extrabold text-white tracking-tight">
+                            Refleksi Pengalaman Belajar Setiap Mata Kuliah
+                          </h3>
+                          <p className="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
+                            Kajian reflektif komprehensif mengintegrasikan kerangka Refleksi 4C, Analisis Artefak Pembelajaran, dan Kaitan Praktis Masa Depan.
+                          </p>
                         </div>
-                        <p className="text-slate-800 leading-relaxed text-sm italic">
-                          "{course.refleksi}"
-                        </p>
+
+                        {/* BAGIAN A: REFLEKSI MODEL 4C */}
+                        {course.refleksi4C && (
+                          <div className="mb-6">
+                            <div className="flex items-center gap-2.5 mb-4">
+                              <div className="w-7 h-7 rounded-lg bg-cyan-100 text-cyan-800 flex items-center justify-center font-bold text-xs border border-cyan-200">
+                                A
+                              </div>
+                              <div>
+                                <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider">
+                                  Refleksi Model 4C (Pola Pikir & Peran Pendidik)
+                                </h4>
+                                <p className="text-xs text-slate-500">
+                                  Kajian mendalam empat aspek terkait peran calon guru profesional
+                                </p>
+                              </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                              {/* 1. CONNECTION */}
+                              <div className="bg-white rounded-xl p-5 border-2 border-blue-100 hover:border-blue-300 transition-colors shadow-2xs">
+                                <div className="flex items-center gap-2.5 mb-2.5">
+                                  <div className="w-8 h-8 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center shrink-0 border border-blue-200">
+                                    <Link2 className="w-4 h-4" />
+                                  </div>
+                                  <div>
+                                    <div className="text-[11px] font-mono font-bold text-blue-700 uppercase tracking-wider">
+                                      Dimensi 1
+                                    </div>
+                                    <h5 className="text-sm font-bold text-slate-900">
+                                      Connection (Keterkaitan)
+                                    </h5>
+                                  </div>
+                                </div>
+                                <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                                  {course.refleksi4C.connection}
+                                </p>
+                              </div>
+
+                              {/* 2. CHALLENGE */}
+                              <div className="bg-white rounded-xl p-5 border-2 border-amber-100 hover:border-amber-300 transition-colors shadow-2xs">
+                                <div className="flex items-center gap-2.5 mb-2.5">
+                                  <div className="w-8 h-8 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center shrink-0 border border-amber-200">
+                                    <AlertTriangle className="w-4 h-4" />
+                                  </div>
+                                  <div>
+                                    <div className="text-[11px] font-mono font-bold text-amber-700 uppercase tracking-wider">
+                                      Dimensi 2
+                                    </div>
+                                    <h5 className="text-sm font-bold text-slate-900">
+                                      Challenge (Tantangan)
+                                    </h5>
+                                  </div>
+                                </div>
+                                <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                                  {course.refleksi4C.challenge}
+                                </p>
+                              </div>
+
+                              {/* 3. CONCEPT */}
+                              <div className="bg-white rounded-xl p-5 border-2 border-purple-100 hover:border-purple-300 transition-colors shadow-2xs">
+                                <div className="flex items-center gap-2.5 mb-2.5">
+                                  <div className="w-8 h-8 rounded-lg bg-purple-50 text-purple-700 flex items-center justify-center shrink-0 border border-purple-200">
+                                    <Lightbulb className="w-4 h-4" />
+                                  </div>
+                                  <div>
+                                    <div className="text-[11px] font-mono font-bold text-purple-700 uppercase tracking-wider">
+                                      Dimensi 3
+                                    </div>
+                                    <h5 className="text-sm font-bold text-slate-900">
+                                      Concept (Konsep Kunci)
+                                    </h5>
+                                  </div>
+                                </div>
+                                <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                                  {course.refleksi4C.concept}
+                                </p>
+                              </div>
+
+                              {/* 4. CHANGE */}
+                              <div className="bg-white rounded-xl p-5 border-2 border-emerald-100 hover:border-emerald-300 transition-colors shadow-2xs">
+                                <div className="flex items-center gap-2.5 mb-2.5">
+                                  <div className="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0 border border-emerald-200">
+                                    <TrendingUp className="w-4 h-4" />
+                                  </div>
+                                  <div>
+                                    <div className="text-[11px] font-mono font-bold text-emerald-700 uppercase tracking-wider">
+                                      Dimensi 4
+                                    </div>
+                                    <h5 className="text-sm font-bold text-slate-900">
+                                      Change (Perubahan Diri)
+                                    </h5>
+                                  </div>
+                                </div>
+                                <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                                  {course.refleksi4C.change}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+
+                        {/* BAGIAN B: ANALISIS ARTEFAK */}
+                        {course.analisisArtefak && (
+                          <div className="mb-6 bg-slate-50/80 border border-slate-200 rounded-xl p-5 sm:p-6">
+                            <div className="flex items-center gap-2.5 mb-3">
+                              <div className="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-xs border border-blue-200">
+                                B
+                              </div>
+                              <div>
+                                <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider">
+                                  Analisis Artefak Pembelajaran
+                                </h4>
+                                <p className="text-xs text-slate-500">
+                                  Identifikasi bukti dukung hasil refleksi beserta alasan pedagogis pemilihannya
+                                </p>
+                              </div>
+                            </div>
+
+                            <div className="space-y-3.5 pt-2">
+                              <div>
+                                <div className="text-xs font-bold text-slate-700 mb-2">
+                                  Artefak Pembelajaran Terpilih:
+                                </div>
+                                <div className="flex flex-wrap gap-2">
+                                  {course.analisisArtefak.artefakTerpilih.map((art, idx) => (
+                                    <span
+                                      key={idx}
+                                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-800 text-xs font-medium shadow-2xs"
+                                    >
+                                      <FolderCheck className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                                      {art}
+                                    </span>
+                                  ))}
+                                </div>
+                              </div>
+
+                              <div className="bg-white rounded-lg p-4 border border-slate-200">
+                                <div className="text-xs font-bold text-blue-900 uppercase tracking-wider mb-1.5">
+                                  Alasan Pemilihan Artefak Sebagai Bukti Belajar Terbaik:
+                                </div>
+                                <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                                  {course.analisisArtefak.alasanPemilihan}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+
+                        {/* BAGIAN C: KAITAN PRAKTIS */}
+                        {course.kaitanPraktis && (
+                          <div className="mb-6 bg-gradient-to-br from-cyan-50/60 to-blue-50/60 border border-cyan-200 rounded-xl p-5 sm:p-6">
+                            <div className="flex items-center gap-2.5 mb-4">
+                              <div className="w-7 h-7 rounded-lg bg-cyan-200 text-cyan-900 flex items-center justify-center font-bold text-xs border border-cyan-300">
+                                C
+                              </div>
+                              <div>
+                                <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider">
+                                  Kaitan Praktis & Rencana Perubahan Masa Depan
+                                </h4>
+                                <p className="text-xs text-slate-600">
+                                  Integrasi konsep di kelas nyata dan komitmen perbaikan berkelanjutan
+                                </p>
+                              </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                              <div className="bg-white/95 rounded-lg p-4 border border-cyan-100 shadow-2xs">
+                                <div className="text-xs font-bold text-cyan-900 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                                  <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0" />
+                                  Konsep Utama yang Diterapkan di Kelas
+                                </div>
+                                <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                                  {course.kaitanPraktis.konsepUtama}
+                                </p>
+                              </div>
+
+                              <div className="bg-white/95 rounded-lg p-4 border border-blue-100 shadow-2xs">
+                                <div className="text-xs font-bold text-blue-900 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                                  <Sparkles className="w-4 h-4 text-blue-600 shrink-0" />
+                                  Rencana Perubahan & Aksi Masa Depan
+                                </div>
+                                <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                                  {course.kaitanPraktis.perubahanMasaDepan}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        )}
                       </div>
 
-                      {/* Bukti & Artefak Dokumen */}
-                      <div className="pt-2">
-                        <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
-                          Artefak Pembelajaran & Bukti Karya
-                        </h4>
-                        <div className="flex flex-wrap gap-2 mb-4">
-                          {course.dokumentasi.map((doc, idx) => (
-                            <span
-                              key={idx}
-                              className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-medium shadow-xs"
-                            >
-                              &bull; {doc}
-                            </span>
-                          ))}
+                      {/* Folder & Arsip Dokumen Lengkap di Google Drive */}
+                      <div className="pt-2 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                        <div className="text-xs text-slate-500">
+                          Seluruh dokumen portofolio dan artefak pembelajaran tersimpan secara resmi di cloud repository.
                         </div>
 
                         {course.arsipUrl && (
@@ -157,10 +362,10 @@ export default function SemesterPage({ semesterNum }: SemesterPageProps) {
                             href={course.arsipUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-cyan-700 hover:bg-cyan-800 text-white font-semibold text-xs transition-colors shadow-xs"
+                            className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-cyan-700 hover:bg-cyan-800 text-white font-semibold text-xs transition-colors shadow-xs shrink-0"
                           >
                             <ExternalLink className="w-3.5 h-3.5" />
-                            Buka Folder Artefak di Google Drive
+                            Buka Folder Artefak Lengkap di Google Drive
                           </a>
                         )}
                       </div>
