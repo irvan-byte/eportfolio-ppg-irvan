@@ -46,7 +46,7 @@ export function Footer() {
             <ul className="space-y-2.5 text-sm mb-6">
               <li><Link href="/semester-1" className="hover:text-cyan-400 transition-colors">Semester 1</Link></li>
               <li><Link href="/semester-2" className="hover:text-cyan-400 transition-colors">Semester 2</Link></li>
-              <li><Link href="/refleksi" className="hover:text-cyan-400 transition-colors">Jurnal Refleksi</Link></li>
+              <li><Link href="/kompulogika" className="hover:text-cyan-400 transition-colors">Inovasi Kompulogika</Link></li>
               <li><Link href="/galeri" className="hover:text-cyan-400 transition-colors">Galeri Dokumentasi</Link></li>
               <li><Link href="/kontak" className="hover:text-cyan-400 transition-colors">Kontak</Link></li>
             </ul>

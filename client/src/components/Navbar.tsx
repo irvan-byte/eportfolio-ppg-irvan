@@ -38,7 +38,7 @@ export function Navbar() {
     { href: "/perjalanan", label: "Perjalanan PPG" },
     { href: "/ppl", label: "PPL" },
     { href: "/portofolio", label: "Portofolio" },
-    { href: "/refleksi", label: "Refleksi" },
+    { href: "/kompulogika", label: "Inovasi Kompulogika" },
     { href: "/galeri", label: "Galeri" },
     { href: "/kontak", label: "Kontak" },
   ];
@@ -46,7 +46,7 @@ export function Navbar() {
     { href: "/semester-1", label: "Semester 1" },
     { href: "/semester-2", label: "Semester 2" },
   ];
-  const isActive = (href: string) => href === "/" ? location === "/" : location.startsWith(href);
+  const isActive = (href: string) => href === "/" ? location === "/" : href === "/kompulogika" ? (location.startsWith("/kompulogika") || location.startsWith("/refleksi") || location.startsWith("/inovasi")) : location.startsWith(href);
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 text-white transition-all duration-300 ${scrolled ? "bg-slate-950/95 shadow-lg backdrop-blur-md py-3" : "bg-slate-950/85 backdrop-blur-sm py-4"}`}>

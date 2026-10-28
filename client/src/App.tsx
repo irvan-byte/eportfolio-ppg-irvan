@@ -11,7 +11,7 @@ import TimelinePage from "./pages/TimelinePage";
 import SemesterPage from "./pages/SemesterPage";
 import PplPage from "./pages/PplPage";
 import PortfolioPage from "./pages/PortfolioPage";
-import ReflectionsPage from "./pages/ReflectionsPage";
+import KompulogikaPage from "./pages/KompulogikaPage";
 import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
 
@@ -46,8 +46,11 @@ function Router() {
         <Route path="/portfolio" component={PortfolioPage} />
 
         {/* Refleksi Pedagogik */}
-        <Route path="/refleksi" component={ReflectionsPage} />
-        <Route path="/reflections" component={ReflectionsPage} />
+        {/* Inovasi Pembelajaran Digital: Web Kompulogika */}
+        <Route path="/kompulogika" component={KompulogikaPage} />
+        <Route path="/inovasi" component={KompulogikaPage} />
+        <Route path="/refleksi" component={KompulogikaPage} />
+        <Route path="/reflections" component={KompulogikaPage} />
 
         {/* Galeri Foto Dokumentasi */}
         <Route path="/galeri" component={GalleryPage} />
