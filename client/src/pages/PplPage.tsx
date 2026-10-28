@@ -334,7 +334,7 @@ export default function PplPage() {
                         Arsitektur Sistem Inovasi
                       </h4>
                       <p className="text-xs text-slate-300 leading-relaxed">
-                        Mengintegrasikan gamifikasi 4 pilar (Dekomposisi, Pola, Abstraksi, Algoritma), simulator diagram alir berstandar ANSI/ISO dengan penilai otomatis cerdas, serta sistem evaluasi CBT anti-curang.
+                        Mengintegrasikan 4 pilar berpikir komputasional (Dekomposisi, Pola, Abstraksi, Algoritma), latihan diagram alir interaktif dengan pengecekan logika otomatis, serta sistem evaluasi CBT terpadu.
                       </p>
                     </div>
 
