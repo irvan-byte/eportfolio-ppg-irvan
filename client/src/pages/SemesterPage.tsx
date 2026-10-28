@@ -27,6 +27,15 @@ interface SemesterPageProps {
 
 type TabType = "4c" | "artefak" | "praktis" | "silabus";
 
+const getAssetUrl = (url: string) => {
+  if (!url) return "#";
+  if (url.startsWith("http://") || url.startsWith("https://")) return url;
+  const base = import.meta.env.BASE_URL || "/";
+  const cleanBase = base.endsWith("/") ? base.slice(0, -1) : base;
+  const cleanUrl = url.startsWith("/") ? url : `/${url}`;
+  return `${cleanBase}${cleanUrl}`;
+};
+
 /**
  * Modern Humanist, Accessible & Eye-Friendly Reading Experience.
  * Menyajikan review komprehensif Lembar Kerja 2 (LK 2) PPG Prajabatan Informatika UNESA:
@@ -389,7 +398,7 @@ export default function SemesterPage({ semesterNum }: SemesterPageProps) {
                                 {course.analisisArtefak.artefakDetail.map((art, idx) => (
                                   <a
                                     key={idx}
-                                    href={art.url}
+                                    href={getAssetUrl(art.url)}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="group p-3.5 rounded-xl bg-slate-50/50 border border-slate-200 hover:border-cyan-400 hover:bg-white hover:shadow-xs transition-all flex items-start gap-3"
