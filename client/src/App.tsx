@@ -12,6 +12,7 @@ import SemesterPage from "./pages/SemesterPage";
 import PplPage from "./pages/PplPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import KompulogikaPage from "./pages/KompulogikaPage";
+import Lk3Page from "./pages/Lk3Page";
 import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
 
@@ -51,6 +52,11 @@ function Router() {
         <Route path="/inovasi" component={KompulogikaPage} />
         <Route path="/refleksi" component={KompulogikaPage} />
         <Route path="/reflections" component={KompulogikaPage} />
+
+        {/* Lembar Kerja 3 (LK 3): Refleksi Akhir Program PPG */}
+        <Route path="/lk-3" component={Lk3Page} />
+        <Route path="/lk3" component={Lk3Page} />
+        <Route path="/refleksi-akhir" component={Lk3Page} />
 
         {/* Galeri Foto Dokumentasi */}
         <Route path="/galeri" component={GalleryPage} />

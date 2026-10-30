@@ -47,6 +47,7 @@ export function Footer() {
               <li><Link href="/semester-1" className="hover:text-cyan-400 transition-colors">Semester 1</Link></li>
               <li><Link href="/semester-2" className="hover:text-cyan-400 transition-colors">Semester 2</Link></li>
               <li><Link href="/kompulogika" className="hover:text-cyan-400 transition-colors">Inovasi Kompulogika</Link></li>
+              <li><Link href="/lk-3" className="hover:text-cyan-400 transition-colors font-medium text-cyan-300">LK 3: Refleksi Akhir PPG</Link></li>
               <li><Link href="/galeri" className="hover:text-cyan-400 transition-colors">Galeri Dokumentasi</Link></li>
               <li><Link href="/kontak" className="hover:text-cyan-400 transition-colors">Kontak</Link></li>
             </ul>
